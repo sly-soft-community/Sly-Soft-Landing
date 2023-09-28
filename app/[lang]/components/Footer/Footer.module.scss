@@ -1,1 +1,36 @@
 @import "@/styles/mixins.scss";
+
+.footerContainer {
+  margin-bottom: 85px;
+}
+
+.links {
+  display: inline-flex;
+  align-items: center;
+  font-weight: 700;
+  gap: 30px;
+  margin-bottom: 34px;
+}
+
+.footerLine {
+  border-bottom: 1px solid #bbb;
+  margin-bottom: 58px;
+}
+
+.footerBot {
+    width: 1040px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footerInsideMatters {
+  display: flex;
+  align-items: center;
+  gap: 62px;
+}
+
+.policy {
+    display: flex;
+    align-items: center;
+    gap: 72px;
+}
