@@ -39,10 +39,22 @@ body {
     -ms-text-size-adjust: 100%;
     -moz-text-size-adjust: 100%;
     -webkit-text-size-adjust: 100%;
-    color: #0e0e2c;
+    background-color: #0A0A0A;
+    color: white;
     max-width: 100vw;
     overflow-x: hidden;
 }
+
+.container {
+    max-width: 1170px;
+    min-height: 100vh;
+    margin: 0 auto;
+    // padding: 0 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
 
 input::-ms-clear {
     display: none;
