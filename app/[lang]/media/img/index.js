@@ -9,3 +9,5 @@ export const Icons = {
     Get,
     SunMoon,
 }
+
+// export { default as En } form "./en.svg" 

@@ -3,7 +3,7 @@ import { Icons } from "@/media/img";
 import Image from "next/image";
 import styles from "./ImageGet.module.scss";
 
-const ImageGet = () => {
+const ImageGet = ({name}) => {
   const handleClick = () => {
     alert("Кнопка нажата");
   };
@@ -36,7 +36,7 @@ const ImageGet = () => {
             </linearGradient>
           </defs>
         </svg>
-        <span className={styles.text}>Get in touch</span>
+        <span className={styles.text}>{name}</span>
       </div>
     </button>
   );

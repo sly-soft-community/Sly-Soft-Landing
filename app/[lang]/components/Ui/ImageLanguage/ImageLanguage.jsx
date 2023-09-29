@@ -1,6 +1,6 @@
 import styles from "./ImageLanguage.module.scss";
 
-const ImageLanguage = () => {
+const ImageLanguage = ({name}) => {
   const handleClick = () => {
     alert("Кнопка нажата");
   };
@@ -33,7 +33,7 @@ const ImageLanguage = () => {
             </linearGradient>
           </defs>
         </svg>
-        <span className={styles.text}>EN</span>
+        <span className={styles.text}>{name}</span>
       </div>
     </button>
   );

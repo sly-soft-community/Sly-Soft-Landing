@@ -3,9 +3,9 @@ import styles from "./NavBar.module.scss";
 import Link from "next/link";
 import Logo from "../../media/Logo.png";
 import Image from "next/image";
-import ImageWrapper from "../Ui/ImageLanguage/ImageLanguage";
 import ImageSun from "../Ui/ImageSun/ImageSun";
 import ImageGet from "../Ui/ImageGet/ImageGet";
+import ImageLanguage from "../Ui/ImageLanguage/ImageLanguage";
 
 const item = [
   {
@@ -52,9 +52,9 @@ const NavBar = () => {
         </ul>
       </div>
       <div className={styles.btn}>
-        <ImageWrapper />
+        <ImageLanguage name={"EN"}/>
         <ImageSun />
-        <ImageGet />
+        <ImageGet name={"Get in touch"}/>
       </div>
     </div>
   );
