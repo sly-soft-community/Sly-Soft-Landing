@@ -4,15 +4,18 @@ import Header from "../components/Header/Header";
 import Footer from "@/components/Footer/Footer";
 import { getDictionary } from "../../../get-dictionary";
 
+
 const inter = Inter({ subsets: ["latin"] });
 
 export default async function RootLayout({ children, params }) {
-    const dictionary = getDictionary(params.lang);
-    return (
-        <div className={`${inter.className} page`}>
-            <Header  />
-            {children}
-            <Footer />
-        </div>
-    );
+  const dictionary = getDictionary(params.lang);
+  return (
+    <div className={`${inter.className} page`}>
+      <div className="container">
+        <Header />
+        {children}
+        <Footer />
+      </div>
+    </div>
+  );
 }
