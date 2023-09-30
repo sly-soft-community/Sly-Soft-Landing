@@ -1,5 +1,6 @@
 import React from "react";
 import styles from "./Footer.module.scss";
+import "../../globals.scss";
 import Link from "next/link";
 import Image from "next/image";
 import Logo from "../../media/Logo.png";
@@ -26,7 +27,7 @@ const item = [
 const Footer = ({ dictionary }) => {
   return (
     <footer className={styles.footerContainer}>
-      <div>
+      <div className="container">
         <ul className={styles.links}>
           {item.map((items) => (
             <li key={items.id} className={styles.item}>

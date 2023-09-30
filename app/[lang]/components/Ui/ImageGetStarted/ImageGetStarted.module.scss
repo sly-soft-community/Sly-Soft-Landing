@@ -1,0 +1,26 @@
+.button {
+    display: flex;
+    background: none;
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    margin: 0;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .iconContainer {
+    position: relative;
+  }
+  
+  .text {
+    font-size: 20px;
+    font-weight: 400;
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    white-space: nowrap; 
+  }

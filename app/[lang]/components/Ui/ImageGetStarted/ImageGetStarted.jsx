@@ -1,33 +1,33 @@
 "use client";
 import React from "react";
-import styles from "./ImageGet.module.scss";
+import styles from "./ImageGetStarted.module.scss";
 
-const ImageGet = ({ name }) => {
+const ImageGetStarted = ({name}) => {
   const handleClick = () => {
     alert("Кнопка нажата");
   };
-
   return (
     <button className={styles.button} onClick={handleClick}>
       <div className={styles.iconContainer}>
         <svg
           xmlns="http://www.w3.org/2000/svg"
-          width="182"
-          height="40"
-          viewBox="0 0 182 40"
+          width="170"
+          height="56"
+          viewBox="0 0 170 56"
           fill="none"
         >
           <path
-            d="M28 0H177C179.761 0 182 2.23858 182 5V21.9289C182 23.255 181.473 24.5268 180.536 25.4645L167.464 38.5355C166.527 39.4732 165.255 40 163.929 40H0L10.5355 29.4645C11.4732 28.5268 12 27.255 12 25.9289V5C12 2.23858 14.2386 0 17 0H28Z"
-            fill="url(#paint0_linear_1564_208)"
+            d="M23.2426 2.17157C23.9928 1.42143 25.0102 1 26.0711 1H165C167.209 1 169 2.79086 169 5V29.9289C169 30.9898 168.579 32.0072 167.828 32.7574L146.757 53.8284C146.007 54.5786 144.99 55 143.929 55H5C2.79086 55 1 53.2091 1 51V26.0711C1 25.0102 1.42143 23.9928 2.17157 23.2426L23.2426 2.17157Z"
+            stroke="url(#paint0_linear_1206_186)"
+            strokeWidth="2"
           />
           <defs>
             <linearGradient
-              id="paint0_linear_1564_208"
-              x1="91"
+              id="paint0_linear_1206_186"
+              x1="85"
               y1="0"
-              x2="91"
-              y2="40"
+              x2="85"
+              y2="56"
               gradientUnits="userSpaceOnUse"
             >
               <stop stopColor="#C2252C" />
@@ -41,4 +41,4 @@ const ImageGet = ({ name }) => {
   );
 };
 
-export default ImageGet;
+export default ImageGetStarted;

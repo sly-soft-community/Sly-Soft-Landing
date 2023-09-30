@@ -10,4 +10,4 @@ export const Icons = {
     SunMoon,
 }
 
-// export { default as En } form "./en.svg" 
+// export { default as Sun } from "./sun.svg" 

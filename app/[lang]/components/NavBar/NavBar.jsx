@@ -52,9 +52,9 @@ const NavBar = () => {
         </ul>
       </div>
       <div className={styles.btn}>
-        <ImageLanguage name={"EN"}/>
+        <ImageLanguage name={"EN"} />
         <ImageSun />
-        <ImageGet name={"Get in touch"}/>
+        <ImageGet name={"Get in touch"} />
       </div>
     </div>
   );
