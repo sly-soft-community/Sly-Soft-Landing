@@ -1,6 +1,7 @@
+"use client";
 import styles from "./ImageLanguage.module.scss";
 
-const ImageLanguage = ({name}) => {
+const ImageLanguage = ({ name }) => {
   const handleClick = () => {
     alert("Кнопка нажата");
   };

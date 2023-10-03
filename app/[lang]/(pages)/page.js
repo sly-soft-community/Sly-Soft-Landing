@@ -1,6 +1,7 @@
 import styles from "./page.module.scss";
 import { getDictionary } from "../../../get-dictionary";
 import { i18n } from "../../../i18n-config";
+import HeroSection from "@/components/Hero/HeroSection";
 
 export async function generateStaticParams() {
   return i18n.locales.map((locale) => ({ lang: locale }));
@@ -24,5 +25,9 @@ export async function generateMetadata({ params: { lang } }) {
 export default function Home({ params: { lang } }) {
   const dictionary = getDictionary(lang);
 
-  return <main className={styles.main}>контент сайта</main>;
+  return (
+    <main className={styles.main}>
+      <HeroSection />
+    </main>
+  );
 }

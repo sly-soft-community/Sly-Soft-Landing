@@ -1,3 +1,4 @@
+"use client";
 import Image from "next/image";
 import styles from "./ImageSun.module.scss";
 import { Icons } from "@/media/img";
@@ -36,12 +37,7 @@ const ImageSun = () => {
           </defs>
         </svg>
         <div className={styles.sun}>
-          <Image
-            src={Icons.Sun}
-            width={24}
-            height={24}
-            alt=""
-          />
+          <Image src={Icons.Sun} width={24} height={24} alt="" />
         </div>
       </div>
     </button>

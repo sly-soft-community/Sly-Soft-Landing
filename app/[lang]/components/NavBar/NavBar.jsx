@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import styles from "./NavBar.module.scss";
 import Link from "next/link";
 import Logo from "../../media/Logo.png";
@@ -31,18 +31,27 @@ const item = [
 ];
 
 const NavBar = () => {
+  const [isActive, setIsActive] = useState(false);
+
+  const handleToggle = () => {
+    setIsActive(!isActive);
+  };
+  
+
   return (
-    <div className={styles.container}>
-      <Link href="/">
-        <Image
-          src={Logo}
-          width={130}
-          height={56}
-          priority={true}
-          alt="SlySoft"
-        />
-      </Link>
+    <div className={styles.containerNav}>
       <div>
+        <Link href="/">
+          <Image
+            src={Logo}
+            width={130}
+            height={56}
+            priority={true}
+            alt="SlySoft"
+          />
+        </Link>
+      </div>
+      <nav className={`${styles.linksItem} ${isActive ? styles.active : ""}`}>
         <ul className={styles.links}>
           {item.map((items) => (
             <li key={items.id} className={styles.item}>
@@ -50,11 +59,20 @@ const NavBar = () => {
             </li>
           ))}
         </ul>
-      </div>
-      <div className={styles.btn}>
-        <ImageLanguage name={"EN"}/>
+      </nav>
+      <div className={`${styles.btn} ${isActive ? styles.active : ""}`}>
+        <ImageLanguage name={"EN"} />
         <ImageSun />
-        <ImageGet name={"Get in touch"}/>
+        <ImageGet name={"Get in touch"} />
+      </div>
+      <div>
+        <div
+          className={`${styles.menuIcon} ${isActive ? styles.active : ""}`}
+          onClick={handleToggle}
+        >
+          <span></span>
+          <span></span>
+        </div>
       </div>
     </div>
   );

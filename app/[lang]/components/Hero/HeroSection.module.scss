@@ -1,0 +1,86 @@
+.customImg {
+  max-width: 100%;
+  min-height: 832px;
+  background: url("../../media/img/home/SlySoft-Background.jpg") center/cover
+    no-repeat fixed;
+  display: flex;
+  justify-content: center;
+  transition: 0.5s;
+
+  @media (max-width: 1180px) {
+    min-height: 640px;
+  }
+
+  .overlay {
+    margin-top: 120px;
+
+    .overlayB {
+      max-width: 638px;
+      margin: auto;
+      margin-bottom: 120px;
+
+      @media (max-width: 580px) {
+        max-width: 350px;
+      }
+
+      @media (max-width: 320px) {
+        max-width: 250px;
+      }
+    }
+
+    .heroText {
+      text-align: center;
+      font-weight: 700;
+      font-size: 54px;
+      background: var(
+        --Gradient,
+        linear-gradient(180deg, #c2252c 0%, #ed8127 100%)
+      );
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      line-height: 70px;
+
+      @media (max-width: 580px) {
+        font-size: 32px;
+        line-height: normal;
+      }
+    }
+
+    .item {
+      @media (max-width: 680px) {
+        margin-bottom: 20px;
+      }
+    }
+
+    .links {
+      display: flex;
+      gap: 30px;
+      font-size: 18px;
+      color: rgba(255, 255, 255, 0.8);
+      text-align: center;
+
+      @media (max-width: 680px) {
+        display: block;
+      }
+
+      .itemTitle {
+        width: 270px;
+        // width: 100%;
+        font-weight: 700;
+        margin-bottom: 30px;
+        white-space: nowrap;
+
+        @media (max-width: 1180px) {
+          width: 100%;
+        }
+        @media (max-width: 680px) {
+          margin-bottom: 15px;
+        }
+      }
+      .itemSub {
+        line-height: 28px;
+      }
+    }
+  }
+}
