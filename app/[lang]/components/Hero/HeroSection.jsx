@@ -1,10 +1,6 @@
-import Image from "next/image";
 import React from "react";
 import styles from "./HeroSection.module.scss";
 import "../../globals.scss";
-import ImageGet from "../Ui/ImageGet/ImageGet";
-import ImageLanguage from "../Ui/ImageLanguage/ImageLanguage";
-import ImageGetStarted from "../Ui/ImageGetStarted/ImageGetStarted";
 
 const item = [
   {
@@ -38,7 +34,6 @@ const HeroSection = () => {
             <h1 className={styles.heroText}>
               High-quality software development created for business automation
             </h1>
-            {/* <ImageGetStarted name={"Get Started"} /> */}
           </div>
           <div className={styles.item}>
             <ul className={styles.links}>
@@ -52,7 +47,7 @@ const HeroSection = () => {
           </div>
         </div>
       </div>
-        {/* <div className={styles.advantages}>Наши преимущества</div> */}
+      {/* <div className={styles.advantages}>Наши преимущества</div> */}
     </div>
   );
 };

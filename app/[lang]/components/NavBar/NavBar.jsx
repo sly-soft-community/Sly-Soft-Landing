@@ -36,6 +36,7 @@ const NavBar = () => {
   const handleToggle = () => {
     setIsActive(!isActive);
   };
+  
 
   return (
     <div className={styles.containerNav}>
@@ -59,7 +60,7 @@ const NavBar = () => {
           ))}
         </ul>
       </nav>
-      <div className={styles.btn}>
+      <div className={`${styles.btn} ${isActive ? styles.active : ""}`}>
         <ImageLanguage name={"EN"} />
         <ImageSun />
         <ImageGet name={"Get in touch"} />
