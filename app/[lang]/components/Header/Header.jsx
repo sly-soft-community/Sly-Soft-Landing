@@ -6,8 +6,10 @@ import NavBar from "../NavBar/NavBar";
 
 function Header({ lang, dictionary }) {
   return (
-    <header className="container">
-      <NavBar />
+    <header className={styles.header}>
+      <div className="container">
+        <NavBar />
+      </div>
     </header>
   );
 }

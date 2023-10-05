@@ -7,16 +7,27 @@
 html {
   --C1-A: rgb(36, 40, 52);
   --C1-B: rgb(64, 71, 93);
-
+  --primary: #FFFFFF;
+  --primary-bg: #0A0A0A;
 }
 
 
 html[data-theme="dark"] {
   --C1-A-to-C1-B: var(--C1-A);
+  --primary: #FFFFFF;
+  --primary-bg: #0A0A0A;
 
 }
 
 html[data-theme="light"] {
   --C1-A-to-C1-B: var(--C1-B);
+  --primary: #0A0A0A;
+  --primary-bg: #FFFFFF;
 
+}
+.theme-dependent-text {
+  background-color: var(--C1-A-to-C1-B);
+  color: var(--C1-A);
+
+  
 }

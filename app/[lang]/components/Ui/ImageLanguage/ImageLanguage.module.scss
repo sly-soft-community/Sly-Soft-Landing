@@ -1,7 +1,7 @@
 .button {
   display: flex;
   background: none;
-  color: white;
+  color: var(--primary);
   border: none;
   cursor: pointer;
   padding: 0;
@@ -22,5 +22,5 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  border-bottom: 1px solid white;
+  border-bottom: 1px solid  var(--primary);
 }
