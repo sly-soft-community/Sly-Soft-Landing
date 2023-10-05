@@ -7,6 +7,7 @@ import ImageSun from "../Ui/ImageSun/ImageSun";
 import ImageGet from "../Ui/ImageGet/ImageGet";
 import ImageLanguage from "../Ui/ImageLanguage/ImageLanguage";
 
+
 const item = [
   {
     id: 1,

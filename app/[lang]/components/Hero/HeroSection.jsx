@@ -1,6 +1,13 @@
+"use client";
 import React from "react";
 import styles from "./HeroSection.module.scss";
 import "../../globals.scss";
+import "swiper/css";
+import "swiper/css/navigation";
+import "./Swiper.scss";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Autoplay, Navigation } from "swiper/modules";
+import useWindowSize from "../../hooks/useWindowSize";
 
 const item = [
   {
@@ -26,6 +33,34 @@ const item = [
 ];
 
 const HeroSection = () => {
+  const windowSize = useWindowSize();
+
+  const isSmallScreen = windowSize.width <= 680;
+
+  // if (isSmallScreen) {
+  //   return (
+  //     <Swiper
+  //       autoplay={{
+  //         delay: 2000,
+  //         disableOnInteraction: false,
+  //       }}
+  //       modules={[Autoplay, Navigation]}
+  //       className="mySwiper"
+  //     >
+  //       {item.map((item) => (
+  //         <SwiperSlide key={item.id} className={styles.item}>
+  //           <ul className={styles.links}>
+  //             <li key={item.id} className={styles.item}>
+  //               <div className={styles.itemTitle}>{item.title}</div>
+  //               <div className={styles.itemSub}>{item.subTitle}</div>
+  //             </li>
+  //           </ul>
+  //         </SwiperSlide>
+  //       ))}
+  //     </Swiper>
+  //   );
+  // }
+
   return (
     <div className={styles.customImg}>
       <div className="container">
@@ -36,14 +71,36 @@ const HeroSection = () => {
             </h1>
           </div>
           <div className={styles.item}>
-            <ul className={styles.links}>
-              {item.map((items) => (
-                <li key={items.id} className={styles.item}>
-                  <div className={styles.itemTitle}>{items.title}</div>
-                  <div className={styles.itemSub}>{items.subTitle}</div>
-                </li>
-              ))}
-            </ul>
+            {isSmallScreen ? (
+              <Swiper
+                autoplay={{
+                  delay: 2000,
+                  disableOnInteraction: false,
+                }}
+                modules={[Autoplay, Navigation]}
+                className="mySwiper"
+              >
+                {item.map((item) => (
+                  <SwiperSlide key={item.id} className={styles.item}>
+                    <ul className={styles.links}>
+                      <li key={item.id} className={styles.item}>
+                        <div className={styles.itemTitle}>{item.title}</div>
+                        <div className={styles.itemSub}>{item.subTitle}</div>
+                      </li>
+                    </ul>
+                  </SwiperSlide>
+                ))}
+              </Swiper>
+            ) : (
+              <ul className={styles.links}>
+                {item.map((items) => (
+                  <li key={items.id} className={styles.item}>
+                    <div className={styles.itemTitle}>{items.title}</div>
+                    <div className={styles.itemSub}>{items.subTitle}</div>
+                  </li>
+                ))}
+              </ul>
+            )}
           </div>
         </div>
       </div>
