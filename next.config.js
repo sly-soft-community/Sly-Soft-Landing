@@ -1,9 +1,12 @@
+const withSvgr = require('next-plugin-svgr');
 const withExportImages = require("next-export-optimize-images");
 
-/** @type {import('next').NextConfig} */
-const nextConfig = withExportImages({
+module.exports = withSvgr(
+  withExportImages({
     output: "export",
     trailingSlash: true,
-});
-
-module.exports = nextConfig;
+    experimental: {
+      serverComponents: false, 
+    },
+  })
+);

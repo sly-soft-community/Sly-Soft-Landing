@@ -10,10 +10,9 @@ html {
   --primary-bg: #0a0a0a;
   --text-light: rgba(255, 255, 255, 0.8);
   --text-dark: rgba(10, 10, 10, 0.8);
-  // --dark-bg: background: url("../media/img/home/SlySoft-Background.jpg") center/cover
-  // no-repeat fixed;
-  // --light-bg: background: url("../media/img/home/SlySoft-Background-light.jpg") center/cover
-  // no-repeat fixed;
+  --main-bg: url("../media/img/home/SlySoft-Background.jpg") center/cover
+    no-repeat fixed;
+  --hero-bg: linear-gradient(0deg, #0b0b0b 0%, rgba(0, 0, 0, 0) 100%);
 }
 
 html[data-theme="dark"] {
@@ -28,4 +27,7 @@ html[data-theme="light"] {
   --primary: #0a0a0a;
   --primary-bg: #ffffff;
   --text-light: rgba(10, 10, 10, 0.8);
+  --main-bg: url("../media/img/home/SlySoft-Background-light.jpg") center/cover
+    no-repeat fixed;
+  --hero-bg: linear-gradient(0deg, #fff 0%, rgba(255, 255, 255, 0) 100%);
 }

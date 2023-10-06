@@ -2,9 +2,7 @@
 .customImg {
   max-width: 100%;
   min-height: 832px;
-  background: url("../../media/img/home/SlySoft-Background.jpg") center/cover
-    no-repeat fixed;
-  // background: var(--hero-bg);
+  background: var(--main-bg);
   display: flex;
   justify-content: center;
   transition: 0.5s;

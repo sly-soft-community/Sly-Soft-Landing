@@ -2,6 +2,8 @@ import styles from "./page.module.scss";
 import { getDictionary } from "../../../get-dictionary";
 import { i18n } from "../../../i18n-config";
 import HeroSection from "@/components/Hero/HeroSection";
+import Advantages from "@/components/Advantages/Advantages";
+import "../globals.scss";
 
 export async function generateStaticParams() {
   return i18n.locales.map((locale) => ({ lang: locale }));
@@ -28,7 +30,7 @@ export default function Home({ params: { lang } }) {
   return (
     <main className={styles.main}>
       <HeroSection />
-      
+      <Advantages />
     </main>
   );
 }

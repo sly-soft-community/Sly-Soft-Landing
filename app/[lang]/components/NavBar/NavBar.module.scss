@@ -58,9 +58,10 @@
     height: 100vh;
     width: 80%;
     background-color: var(--C1-A-to-C1-B);
+    z-index: 10;
     overflow: auto;
     padding: 20px 0;
-    transition: left 0.2s;
+    transition: 0.5s;
     &.active {
       left: 0;
       + .btn {
@@ -106,7 +107,8 @@
     left: -100%;
     width: 80%;
     padding: 20px 0;
-    transition: left 0.2s;
+    transition: 0.5s;
+    z-index: 10;
     &.active {
       left: 0;
     }
