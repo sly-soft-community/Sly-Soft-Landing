@@ -4,6 +4,7 @@
   min-height: 832px;
   background: url("../../media/img/home/SlySoft-Background.jpg") center/cover
     no-repeat fixed;
+  // background: var(--hero-bg);
   display: flex;
   justify-content: center;
   transition: 0.5s;
@@ -52,6 +53,7 @@
     }
 
     .item {
+      // color: var(--text-color);
       @media (max-width: 680px) {
         margin-bottom: 20px;
       }
@@ -61,7 +63,7 @@
       display: flex;
       gap: 30px;
       font-size: 18px;
-      color: rgba(255, 255, 255, 0.8);
+      color: var(--text-light);
       text-align: center;
 
       @media (max-width: 680px) {

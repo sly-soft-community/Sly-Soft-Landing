@@ -23,7 +23,7 @@
         position: absolute;
         width: 100%;
         height: 2px;
-        background-color: #f9f9f9;
+        background-color: var(--primary);
         &:first-child {
           top: 0;
         }
@@ -57,7 +57,7 @@
     left: -100%;
     height: 100vh;
     width: 80%;
-    background-color: var(--primary);
+    background-color: var(--C1-A-to-C1-B);
     overflow: auto;
     padding: 20px 0;
     transition: left 0.2s;

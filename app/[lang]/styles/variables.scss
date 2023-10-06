@@ -3,31 +3,29 @@
   --border-radius-s: 30px;
 }
 
-
 html {
   --C1-A: rgb(36, 40, 52);
-  --C1-B: rgb(64, 71, 93);
-  --primary: #FFFFFF;
-  --primary-bg: #0A0A0A;
+  --C1-B: rgb(157, 163, 183);
+  --primary: #ffffff;
+  --primary-bg: #0a0a0a;
+  --text-light: rgba(255, 255, 255, 0.8);
+  --text-dark: rgba(10, 10, 10, 0.8);
+  // --dark-bg: background: url("../media/img/home/SlySoft-Background.jpg") center/cover
+  // no-repeat fixed;
+  // --light-bg: background: url("../media/img/home/SlySoft-Background-light.jpg") center/cover
+  // no-repeat fixed;
 }
-
 
 html[data-theme="dark"] {
   --C1-A-to-C1-B: var(--C1-A);
-  --primary: #FFFFFF;
-  --primary-bg: #0A0A0A;
-
+  --primary: #ffffff;
+  --primary-bg: #0a0a0a;
+  --text-light: rgba(255, 255, 255, 0.8);
 }
 
 html[data-theme="light"] {
   --C1-A-to-C1-B: var(--C1-B);
-  --primary: #0A0A0A;
-  --primary-bg: #FFFFFF;
-
-}
-.theme-dependent-text {
-  background-color: var(--C1-A-to-C1-B);
-  color: var(--C1-A);
-
-  
+  --primary: #0a0a0a;
+  --primary-bg: #ffffff;
+  --text-light: rgba(10, 10, 10, 0.8);
 }

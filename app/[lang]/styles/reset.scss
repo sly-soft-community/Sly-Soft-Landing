@@ -39,7 +39,7 @@ body {
   -ms-text-size-adjust: 100%;
   -moz-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
-  background: rgba(10, 10, 10, 0.7);
+  background: var(--primary-bg);
   color: white;
   max-width: 100vw;
   overflow-x: hidden;
