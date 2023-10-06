@@ -28,6 +28,7 @@ export default function Home({ params: { lang } }) {
   return (
     <main className={styles.main}>
       <HeroSection />
+      
     </main>
   );
 }
