@@ -1,9 +1,11 @@
+"use client"
 import React from "react";
 import styles from "./Footer.module.scss";
 import "../../globals.scss";
 import Link from "next/link";
 import Image from "next/image";
 import Logo from "../../media/Logo.png";
+import Icons from "@/media/img";
 
 const item = [
   {
@@ -45,6 +47,7 @@ const Footer = ({ dictionary }) => {
                 height={56}
                 priority={true}
                 alt="SlySoft"
+                loader={({ src }) => src}
               />
             </Link>
             <span>Inside Matters</span>

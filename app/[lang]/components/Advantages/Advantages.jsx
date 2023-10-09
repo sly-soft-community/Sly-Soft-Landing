@@ -1,15 +1,16 @@
 import React from "react";
 // import AdvantagesIcon from "../Ui/Advantages/AdvantagesIcon";
-import Image from "next/image";
 import { advantagesItem } from "./advantagesItem";
 import styles from "./Advantages.module.scss";
+import Icons from "@/media/img";
 
 const Advantages = ({}) => {
   return (
     <div>
       <h2 className={styles.advantagesTitle}>Наши преимущества</h2>
       <div className="container">
-        <ul className={styles.list}>
+          <Icons.Stroke className={styles.colorStroke}/>
+        {/* <ul className={styles.list}>
           {advantagesItem.map((item) => (
             <li className={styles.item} key={item.id}>
               <div>
@@ -26,7 +27,7 @@ const Advantages = ({}) => {
               </div>
             </li>
           ))}
-        </ul>
+        </ul> */}
       </div>
     </div>
   );

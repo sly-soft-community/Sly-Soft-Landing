@@ -1,12 +1,19 @@
-const withSvgr = require('next-plugin-svgr');
 const withExportImages = require("next-export-optimize-images");
 
-module.exports = withSvgr(
-  withExportImages({
+/** @type {import('next').NextConfig} */
+const nextConfig = withExportImages({
     output: "export",
     trailingSlash: true,
-    experimental: {
-      serverComponents: false, 
-    },
-  })
-);
+});
+
+module.exports = {
+  ...nextConfig,
+  webpack(config) {
+    config.module.rules.push({
+      test: /\.svg$/,
+      use: ["@svgr/webpack"]
+    });
+
+    return config;
+  }
+};

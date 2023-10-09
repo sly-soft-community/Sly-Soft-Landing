@@ -12,7 +12,7 @@ import People from "./People.svg";
 import Script from "./Script.svg";
 import Time from "./Time.svg";
 
-export const Icons = {
+const Icons = {
   Sun,
   En,
   Get,
@@ -28,4 +28,4 @@ export const Icons = {
   Time,
 };
 
-// export { default as Sun } from "./sun.svg"
+export default Icons;

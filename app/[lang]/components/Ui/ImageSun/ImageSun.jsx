@@ -1,8 +1,9 @@
 "use client";
 import Image from "next/image";
 import styles from "./ImageSun.module.scss";
-import { Icons } from "@/media/img";
+// import { Icons } from "@/media/img";
 import { useTheme } from "../../../hooks/useTheme";
+import Icons from "@/media/img";
 
 const ImageSun = () => {
   const handleClick = () => {
@@ -82,7 +83,8 @@ const ImageSun = () => {
               </defs>
             </svg>
           ) : (
-            <Image src={Icons.Sun} width={24} height={24} alt="" />
+            // <Image src={Icons.Sun} width={24} height={24} alt="" />
+            <Icons.Sun />
           )}
         </div>
       </div>
