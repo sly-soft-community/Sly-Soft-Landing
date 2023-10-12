@@ -5,7 +5,6 @@ import SunMoon from "./sun-moon.svg";
 import Key from "./key.svg";
 import Stroke from "./Stroke.svg";
 import StrokeT from "./Stroke-2.svg";
-import StrokeTh from "./Stroke-3.svg";
 import Persone from "./Persone.svg";
 import Computer from "./Computer.svg";
 import People from "./People.svg";
@@ -20,7 +19,6 @@ const Icons = {
   Key,
   Stroke,
   StrokeT,
-  StrokeTh,
   Persone,
   Computer,
   People,

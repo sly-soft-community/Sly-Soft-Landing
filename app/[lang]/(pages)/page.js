@@ -4,6 +4,7 @@ import { i18n } from "../../../i18n-config";
 import HeroSection from "@/components/Hero/HeroSection";
 import Advantages from "@/components/Advantages/Advantages";
 import "../globals.scss";
+import Services from "@/components/Services/Services";
 
 export async function generateStaticParams() {
   return i18n.locales.map((locale) => ({ lang: locale }));
@@ -31,6 +32,7 @@ export default function Home({ params: { lang } }) {
     <main className={styles.main}>
       <HeroSection />
       <Advantages />
+      <Services />
     </main>
   );
 }

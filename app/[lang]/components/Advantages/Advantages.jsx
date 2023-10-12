@@ -11,7 +11,7 @@ const Advantages = ({}) => {
   const isSmallScreen = windowSize.width <= 1204;
 
   return (
-    <div>
+    <div className={styles.advantages}>
       <h2 className={styles.advantagesTitle}>Наши преимущества</h2>
       <div className="container">
         <div className={styles.section}>
