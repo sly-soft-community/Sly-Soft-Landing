@@ -32,7 +32,9 @@ export default function Home({ params: { lang } }) {
     <main className={styles.main}>
       <HeroSection />
       <Advantages />
-      <Services />
+      <div className="container">
+        <Services />
+      </div>
     </main>
   );
 }

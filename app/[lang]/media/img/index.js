@@ -1,6 +1,7 @@
 import Sun from "./sun.svg";
 import En from "./en.svg";
 import Get from "./get.svg";
+import GetInTouch from "./GetInTouch.svg";
 import SunMoon from "./sun-moon.svg";
 import Key from "./key.svg";
 import Stroke from "./Stroke.svg";
@@ -10,11 +11,14 @@ import Computer from "./Computer.svg";
 import People from "./People.svg";
 import Script from "./Script.svg";
 import Time from "./Time.svg";
+import ServicesBg from "./ServicesBg.svg";
+import ServicesBgSecond from "./ServicesBgSecond.svg";
 
 const Icons = {
   Sun,
   En,
   Get,
+  GetInTouch,
   SunMoon,
   Key,
   Stroke,
@@ -24,6 +28,8 @@ const Icons = {
   People,
   Script,
   Time,
+  ServicesBg,
+  ServicesBgSecond,
 };
 
 export default Icons;

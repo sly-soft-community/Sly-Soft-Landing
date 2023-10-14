@@ -8,14 +8,16 @@ html {
   --C1-B: rgb(157, 163, 183);
   --C2-A: #ed8127;
   --C2-B: #c2252c;
-  --colors-white: #FFF;
-  --stop-color:#FFF;
+  --C3-A:#1F1F1F;
+  --colors-white: #fff;
+  --stop-color: #fff;
   --primary: #ffffff;
   --primary-bg: #0a0a0a;
   --text-light: rgba(255, 255, 255, 0.8);
   --text-dark: rgba(10, 10, 10, 0.8);
   --main-bg: url("../media/img/home/SlySoft-Background.jpg") center/cover
     no-repeat fixed;
+  --services-bg: url("../media/ServicesBg.png") center/cover no-repeat;
   --hero-bg: linear-gradient(0deg, #0b0b0b 0%, rgba(0, 0, 0, 0) 100%);
 }
 
@@ -23,7 +25,7 @@ html[data-theme="dark"] {
   --C1-A-to-C1-B: var(--C1-A);
   --primary: #ffffff;
   --primary-bg: #0a0a0a;
-  --stop-color:#FFF;
+  --stop-color: #fff;
   --text-light: rgba(255, 255, 255, 0.8);
 }
 
@@ -31,9 +33,10 @@ html[data-theme="light"] {
   --C1-A-to-C1-B: var(--C1-B);
   --primary: #0a0a0a;
   --primary-bg: #ffffff;
-  --colors-white: #0A0A0A;
-  --stop-color:#696969;
+  --colors-white: #0a0a0a;
+  --stop-color: #696969;
   --text-light: rgba(10, 10, 10, 0.8);
+  --C3-A:#F5F5F5;
   --main-bg: url("../media/img/home/SlySoft-Background-light.jpg") center/cover
     no-repeat fixed;
   --hero-bg: linear-gradient(0deg, #fff 0%, rgba(255, 255, 255, 0) 100%);
