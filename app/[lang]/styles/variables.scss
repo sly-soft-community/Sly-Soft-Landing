@@ -19,6 +19,7 @@ html {
     no-repeat fixed;
   --services-bg: url("../media/ServicesBg.png") center/cover no-repeat;
   --hero-bg: linear-gradient(0deg, #0b0b0b 0%, rgba(0, 0, 0, 0) 100%);
+  --opacity: 0.5;
 }
 
 html[data-theme="dark"] {
@@ -40,4 +41,5 @@ html[data-theme="light"] {
   --main-bg: url("../media/img/home/SlySoft-Background-light.jpg") center/cover
     no-repeat fixed;
   --hero-bg: linear-gradient(0deg, #fff 0%, rgba(255, 255, 255, 0) 100%);
+  --opacity: 0.8;
 }
