@@ -82,6 +82,7 @@
     }
     .item {
       color: var(--primary);
+      cursor: pointer;
       @media (max-width: 1024px) {
         line-height: 50px;
         font-size: 30px;

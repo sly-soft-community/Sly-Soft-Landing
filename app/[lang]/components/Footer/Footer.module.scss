@@ -11,7 +11,10 @@
   font-weight: 700;
   gap: 30px;
   margin-bottom: 34px;
+}
+.item {
   color: var(--primary);
+  cursor: pointer;
 }
 
 .footerLine {
