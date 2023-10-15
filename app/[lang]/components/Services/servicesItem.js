@@ -47,7 +47,7 @@ export const servicesItems = [
     fillIcon: Icons.ServicesBgFourth,
     mobileFillIcon: Icons.ServicesBgThree,
     ratated: "mobile",
-    id: 4,
+    id: 6,
     title: "Обеспечение качества (QA)",
     subTitle:
       "Мы тщательно тестируем и доводим до совершенства наши решения, чтобы убедиться, что они соответствуют самым высоким стандартам производительности и удовлетворенности пользователей.",
