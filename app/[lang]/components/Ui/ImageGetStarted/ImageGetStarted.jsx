@@ -10,7 +10,7 @@ const ImageGetStarted = ({name}) => {
   return (
     <button className={styles.button} onClick={handleClick}>
       <div className={styles.iconContainer}>
-        <Icons.GetInTouch/>
+        <Icons.GetInTouch className={styles.bt}/>
         <span className={styles.text}>{name}</span>
       </div>
     </button>

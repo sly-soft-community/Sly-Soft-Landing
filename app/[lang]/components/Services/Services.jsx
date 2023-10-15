@@ -1,9 +1,15 @@
+"use client"
 import React from "react";
 import styles from "./Services.module.scss";
 import ImageGetStarted from "../Ui/ImageGetStarted/ImageGetStarted";
 import Icons from "@/media/img";
-
+import { servicesItems } from "./servicesItem"
+import useMediaScreen from "@/hooks/useMediaScreen";
+ 
 const Services = () => {
+
+  const smallScreen = useMediaScreen(1200)
+
   return (
     <div className={styles.services}>
       <div className={styles.servicesTitle}>
@@ -12,31 +18,18 @@ const Services = () => {
       </div>
       <div className={styles.containerImg}>
       <div className={styles.customBgImg}>
+        <div className={styles.backdrop}></div>
         <div className={styles.colon}>
-          <div className={styles.colonBlock}>
-            <Icons.ServicesBg className={styles.colorFill} />
+          {servicesItems.map((item, index) => <div key={item.id} className={`${styles.colonBlock} ${index === 3 || index === 5 ? styles.margined : ""}`}>
+            {smallScreen ? <item.mobileFillIcon className={`${styles.colorFill} ${item.ratated === "mobile" ? styles.ratated : ''}`} /> :<item.fillIcon className={`${styles.colorFill} ${item.ratated === "desctop" ? styles.ratated : ''}`} />}
             <div className={styles.content}>
-              <h5 className={styles.title}>Разработка сайтов</h5>
+              <h5 className={styles.title}>{item.title}</h5>
               <p className={styles.titleSub}>
-                Увеличьте свое присутствие в Интернете с помощью профессионально
-                созданных веб-сайтов, включающие: сайты-визитки, корпоративные
-                сайты, лендинги, интернет-магазины и промо-сайты.
+                {item.subTitle}
               </p>
               <ImageGetStarted name="Explore"/>
             </div>
-          </div>
-          {/* <div className={styles.colonBlock}>
-            <Icons.ServicesBgSecond className={styles.colorFill} />
-            <div className={styles.content}>
-              <h5 className={styles.title}>Разработка сайтов</h5>
-              <p className={styles.titleSub}>
-                Увеличьте свое присутствие в Интернете с помощью профессионально
-                созданных веб-сайтов, включающие: сайты-визитки, корпоративные
-                сайты, лендинги, интернет-магазины и промо-сайты.
-              </p>
-              <ImageGetStarted name="Explore"/>
-            </div>
-          </div> */}
+          </div>)}
         </div>
       </div>
       </div>

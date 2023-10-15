@@ -13,6 +13,8 @@ import Script from "./Script.svg";
 import Time from "./Time.svg";
 import ServicesBg from "./ServicesBg.svg";
 import ServicesBgSecond from "./ServicesBgSecond.svg";
+import ServicesBgThree from "./ServicesBgThree.svg";
+import ServicesBgFourth from "./ServicesBgFourth.svg";
 
 const Icons = {
   Sun,
@@ -30,6 +32,8 @@ const Icons = {
   Time,
   ServicesBg,
   ServicesBgSecond,
+  ServicesBgThree,
+  ServicesBgFourth
 };
 
 export default Icons;
