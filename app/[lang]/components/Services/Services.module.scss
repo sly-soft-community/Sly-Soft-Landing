@@ -5,13 +5,23 @@
     justify-content: space-between;
     margin-bottom: 40px;
 
+    @media (max-width: 450px) {
+      justify-content: center;
+    }
+
     .servicesText {
       color: var(--primary);
       font-size: 42px;
       line-height: 48px;
       font-weight: 700;
       letter-spacing: -0.4px;
+
+      @media (max-width: 450px) {
+        font-size: 24px;
+        line-height: 24px;
+      }
     }
+    
   }
 
   .containerImg {
@@ -36,12 +46,12 @@
     &::before {
       top: 0;
       border-width: 40px 40px 0 0;
-      border-color: #0a0a0a transparent transparent transparent;
+      border-color: var(--primary-bg) transparent transparent transparent;
     }
     &::after {
       bottom: 0;
       border-width: 0 0 40px 40px;
-      border-color: transparent transparent #0a0a0a transparent;
+      border-color: transparent transparent var(--primary-bg) transparent;
       right: 0;
     }
     @media (max-width: 768px) {
@@ -67,13 +77,13 @@
       position: relative;
       transition: 0.5s;
 
-      @media (max-width:350px) {
+      @media (max-width: 350px) {
         height: 232px;
       }
 
       &.margined {
         @media screen and (min-width: 1200px) {
-          margin-top: -41px;
+          margin-top: -40px;
           .content {
             padding-top: 100px;
           }
@@ -90,7 +100,7 @@
         max-width: 585px;
         transition: 0.5s;
 
-        @media (max-width:350px) {
+        @media (max-width: 350px) {
           height: 232px;
         }
         &.ratated {
@@ -110,10 +120,10 @@
         position: relative;
         z-index: 1;
         transition: 0.5s;
-        @media (max-width:600px) {
+        @media (max-width: 600px) {
           padding: 20px 60px 0px 70px;
         }
-        @media (max-width:460px) {
+        @media (max-width: 460px) {
           padding: 16px 15px;
         }
 
@@ -123,8 +133,8 @@
           line-height: 32px;
           font-weight: 700;
           margin-bottom: 18px;
-          
-          @media (max-width:350px) {
+
+          @media (max-width: 350px) {
             font-size: 18px;
             line-height: 24px;
             margin-bottom: 8px;
@@ -140,10 +150,10 @@
           margin-bottom: 59px;
           opacity: 0.8;
 
-          @media (max-width:425px) {
+          @media (max-width: 425px) {
             line-height: 18px;
           }
-          @media (max-width:350px) {
+          @media (max-width: 350px) {
             font-size: 12px;
             line-height: 16px;
             margin-bottom: 24px;

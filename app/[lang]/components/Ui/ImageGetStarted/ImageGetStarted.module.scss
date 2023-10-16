@@ -9,6 +9,10 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
+
+  // @media (max-width: 450px) {
+  //   display: none;
+  // }
 }
 
 .iconContainer {
