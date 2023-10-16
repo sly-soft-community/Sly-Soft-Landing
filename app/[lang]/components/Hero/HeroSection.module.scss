@@ -1,9 +1,7 @@
-
 .customImg {
   max-width: 100%;
   min-height: 832px;
-  background: url("../../media/img/home/SlySoft-Background.jpg") center/cover
-    no-repeat fixed;
+  background: var(--main-bg);
   display: flex;
   justify-content: center;
   transition: 0.5s;
@@ -19,6 +17,9 @@
       max-width: 638px;
       margin: auto;
       margin-bottom: 120px;
+      @media (max-width: 1180px) {
+        margin-bottom: 50px;
+      }
 
       @media (max-width: 580px) {
         max-width: 350px;
@@ -44,7 +45,7 @@
 
       color: var(--hui);
 
-      @media (max-width: 580px) {
+      @media (max-width: 630px) {
         font-size: 32px;
         line-height: normal;
         // max-width: 300px;
@@ -52,6 +53,7 @@
     }
 
     .item {
+      // color: var(--text-color);
       @media (max-width: 680px) {
         margin-bottom: 20px;
       }
@@ -61,7 +63,7 @@
       display: flex;
       gap: 30px;
       font-size: 18px;
-      color: rgba(255, 255, 255, 0.8);
+      color: var(--text-light);
       text-align: center;
 
       @media (max-width: 680px) {

@@ -34,32 +34,7 @@ const item = [
 
 const HeroSection = () => {
   const windowSize = useWindowSize();
-
   const isSmallScreen = windowSize.width <= 680;
-
-  // if (isSmallScreen) {
-  //   return (
-  //     <Swiper
-  //       autoplay={{
-  //         delay: 2000,
-  //         disableOnInteraction: false,
-  //       }}
-  //       modules={[Autoplay, Navigation]}
-  //       className="mySwiper"
-  //     >
-  //       {item.map((item) => (
-  //         <SwiperSlide key={item.id} className={styles.item}>
-  //           <ul className={styles.links}>
-  //             <li key={item.id} className={styles.item}>
-  //               <div className={styles.itemTitle}>{item.title}</div>
-  //               <div className={styles.itemSub}>{item.subTitle}</div>
-  //             </li>
-  //           </ul>
-  //         </SwiperSlide>
-  //       ))}
-  //     </Swiper>
-  //   );
-  // }
 
   return (
     <div className={styles.customImg}>

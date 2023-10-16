@@ -1,0 +1,37 @@
+import React from "react";
+
+const AdvantagesIcon = () => {
+  return (
+    <div>
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="370"
+        height="264"
+        viewBox="0 0 370 264"
+        fill="none"
+      >
+        <path
+          opacity="0.6"
+          d="M38.364 3.05025C39.6767 1.7375 41.4572 1 43.3137 1H362C365.866 1 369 4.13401 369 8V220.628C369 222.515 368.239 224.321 366.889 225.639L330.632 261.01C329.325 262.286 327.571 263 325.744 263H8.00001C4.13401 263 1 259.866 1 256V43.3137C1 41.4572 1.7375 39.6767 3.05025 38.364L38.364 3.05025Z"
+          stroke="url(#paint0_linear_1238_269)"
+          stroke-width="2"
+        />
+        <defs>
+          <linearGradient
+            id="paint0_linear_1238_269"
+            x1="185"
+            y1="0"
+            x2="185"
+            y2="264"
+            gradientUnits="userSpaceOnUse"
+          >
+            <stop stop-color="#C2252C" />
+            <stop offset="1" stop-color="#ED8127" />
+          </linearGradient>
+        </defs>
+      </svg>
+    </div>
+  );
+};
+
+export default AdvantagesIcon;

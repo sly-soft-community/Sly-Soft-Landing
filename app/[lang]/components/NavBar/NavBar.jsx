@@ -49,6 +49,7 @@ const NavBar = () => {
             height={56}
             priority={true}
             alt="SlySoft"
+            loader={({ src }) => src}
           />
         </Link>
       </div>

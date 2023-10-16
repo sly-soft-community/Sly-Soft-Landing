@@ -2,6 +2,7 @@
 
 .footerContainer {
   margin-bottom: 85px;
+  margin-top: 140px;
 }
 
 .links {
@@ -11,6 +12,10 @@
   gap: 30px;
   margin-bottom: 34px;
 }
+.item {
+  color: var(--primary);
+  cursor: pointer;
+}
 
 .footerLine {
   border-bottom: 1px solid #bbb;
@@ -18,9 +23,10 @@
 }
 
 .footerBot {
-  width: 1040px;
+  max-width: 1040px;
   display: flex;
   justify-content: space-between;
+  color: var(--primary);
 }
 
 .footerInsideMatters {
