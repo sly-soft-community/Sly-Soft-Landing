@@ -9,10 +9,6 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
-
-  // @media (max-width: 450px) {
-  //   display: none;
-  // }
 }
 
 .iconContainer {
@@ -20,7 +16,7 @@
 
   .bt {
     max-width: 130px;
-    height: 48px;
+    height: 48.505px;
 
     @media (max-width: 350px) {
       height: 32px;
