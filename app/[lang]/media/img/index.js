@@ -15,6 +15,12 @@ import ServicesBg from "./ServicesBg.svg";
 import ServicesBgSecond from "./ServicesBgSecond.svg";
 import ServicesBgThree from "./ServicesBgThree.svg";
 import ServicesBgFourth from "./ServicesBgFourth.svg";
+import Explore from "./Explore.svg";
+import OurWorks from "./OurWorks.svg";
+import OurWorksSecond from "./OurWorksSecond.svg";
+import OurWorksThree from "./OurWorksThree.svg";
+import OurWorksFourth from "./OurWorksFourth.svg";
+import StrokeOurWorks from "./StrokeOurWorks.svg";
 
 const Icons = {
   Sun,
@@ -33,7 +39,13 @@ const Icons = {
   ServicesBg,
   ServicesBgSecond,
   ServicesBgThree,
-  ServicesBgFourth
+  ServicesBgFourth,
+  Explore,
+  OurWorks,
+  OurWorksSecond,
+  OurWorksThree,
+  OurWorksFourth,
+  StrokeOurWorks,
 };
 
 export default Icons;

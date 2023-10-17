@@ -1,4 +1,4 @@
-"use client";
+// "use client";
 import React from "react";
 import styles from "./ImageGetStarted.module.scss";
 import Icons from "@/media/img";

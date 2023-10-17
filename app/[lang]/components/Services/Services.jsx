@@ -5,6 +5,7 @@ import ImageGetStarted from "../Ui/ImageGetStarted/ImageGetStarted";
 import Icons from "@/media/img";
 import { servicesItems } from "./servicesItem"
 import useMediaScreen from "@/hooks/useMediaScreen";
+import Explore from "../Ui/Explore/Explore";
  
 const Services = () => {
 
@@ -14,7 +15,9 @@ const Services = () => {
     <div className={styles.services}>
       <div className={styles.servicesTitle}>
         <h3 className={styles.servicesText}>Наши услуги</h3>
+        <div className={styles.getInTouch}>
         <ImageGetStarted name={"Get in touch"} />
+        </div>
       </div>
       <div className={styles.containerImg}>
       <div className={styles.customBgImg}>
@@ -27,7 +30,7 @@ const Services = () => {
               <p className={styles.titleSub}>
                 {item.subTitle}
               </p>
-              <ImageGetStarted name="Explore"/>
+              <Explore name="Explore"/>
             </div>
           </div>)}
         </div>

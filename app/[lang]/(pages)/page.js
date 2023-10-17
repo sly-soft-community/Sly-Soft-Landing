@@ -6,6 +6,7 @@ import Advantages from "@/components/Advantages/Advantages";
 import "../globals.scss";
 import Services from "@/components/Services/Services";
 import AnswersOnQuestions from "@/components/AnswersOnQuestions/AnswersOnQuestions";
+import OurWorks from "@/components/OurWorks/OurWorks";
 
 export async function generateStaticParams() {
   return i18n.locales.map((locale) => ({ lang: locale }));
@@ -31,11 +32,12 @@ export default function Home({ params: { lang } }) {
 
   return (
     <main className={styles.main}>
-      <HeroSection />
-      <Advantages />
+      {/* <HeroSection />
+      <Advantages /> */}
       <div className="container">
-        <Services />
-        <AnswersOnQuestions />
+        {/* <Services />
+        <AnswersOnQuestions /> */}
+        <OurWorks />
       </div>
     </main>
   );

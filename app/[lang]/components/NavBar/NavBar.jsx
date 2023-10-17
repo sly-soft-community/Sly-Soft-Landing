@@ -67,7 +67,7 @@ const NavBar = () => {
         <ImageSun />
         <ImageGet name={"Get in touch"} />
       </div>
-      <div>
+      <div className={styles.menu}>
         <div
           className={`${styles.menuIcon} ${isActive ? styles.active : ""}`}
           onClick={handleToggle}
