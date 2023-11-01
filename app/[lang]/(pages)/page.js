@@ -7,6 +7,7 @@ import "../globals.scss";
 import Services from "@/components/Services/Services";
 import AnswersOnQuestions from "@/components/AnswersOnQuestions/AnswersOnQuestions";
 import OurWorks from "@/components/OurWorks/OurWorks";
+import WorkProcess from "@/components/WorkProcess/WorkProcess";
 
 export async function generateStaticParams() {
   return i18n.locales.map((locale) => ({ lang: locale }));
@@ -37,8 +38,9 @@ export default function Home({ params: { lang } }) {
       <div className="container">
         {/* <Services /> */}
         {/* <AnswersOnQuestions /> */}
-        <OurWorks />
+        {/* <OurWorks /> */}
       </div>
+        <WorkProcess />
     </main>
   );
 }

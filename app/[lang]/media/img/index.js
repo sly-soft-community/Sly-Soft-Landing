@@ -22,7 +22,10 @@ import OurWorksThree from "./OurWorksThree.svg";
 import OurWorksFourth from "./OurWorksFourth.svg";
 import StrokeOurWorks from "./StrokeOurWorks.svg";
 import StrokeOurWorksSecond from "./StrokeOurWorksSecond.svg";
-import Frame from "./Frame-1.svg";
+import Planning from "./Planning.svg";
+import Design from "./Design.svg";
+import Testing from "./Testing.svg";
+import Support from "./Support.svg";
 
 const Icons = {
   Sun,
@@ -49,7 +52,10 @@ const Icons = {
   OurWorksFourth,
   StrokeOurWorks,
   StrokeOurWorksSecond,
-  Frame
+  Planning,
+  Design,
+  Testing,
+  Support,
 };
 
 export default Icons;
