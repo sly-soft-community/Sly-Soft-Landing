@@ -40,6 +40,7 @@
     position: relative;
     height: 60vh;
     padding: 32px 0;
+    overflow-x: auto;
     .list {
       // display: flex;
       // flex-direction: column;
@@ -48,7 +49,7 @@
       .subTitle {
         justify-content: center;
         align-items: center;
-        background: var(--bttn);
+        // background: var(--bttn);
         border-radius: 8px;
         color: var(--colors-white);
         font-size: 24px;

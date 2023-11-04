@@ -17,25 +17,35 @@ const WorkProcess = () => {
           ))}
         </div>
         <div className={styles.wrapper}>
-            {workProcessItems.map((item) => (
-              <ul key={item.id} className={styles.list} style={{
+          {workProcessItems.map((item) => (
+            <ul
+              key={item.id}
+              className={styles.list}
+              style={{
                 width: item.width,
-              }}>
-                {item.subTitle.map((subItem, index) => (
-                  <li
-                    key={index}
-                    style={{
-                      display: subItem.styles.display,
-                      width: subItem.styles.width,
-                      padding: subItem.styles.padding,
-                    }}
-                    className={styles.subTitle}
-                  >
-                    {subItem.title}
-                  </li>
-                ))}
-              </ul>
-            ))}
+                display: item.display,
+                flexDirection: item.flexDirection,
+                left: item.left,
+                top: item.top,
+              }}
+            >
+              {item.subTitle.map((subItem, index) => (
+                <li
+                  key={index}
+                  style={{
+                    display: subItem.styles.display,
+                    width: subItem.styles.width,
+                    padding: subItem.styles.padding,
+                    background: subItem.styles.background,
+                    alignSelf: subItem.styles.alignSelf,
+                  }}
+                  className={styles.subTitle}
+                >
+                  {subItem.title}
+                </li>
+              ))}
+            </ul>
+          ))}
         </div>
       </div>
 
