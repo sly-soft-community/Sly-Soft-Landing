@@ -8,23 +8,22 @@ const WorkProcess = () => {
   const [hoverItem, SetHoverItem] = useState(null);
   const wrapperRef = useRef(null)
   const [elementRefs,SetElementRefs] = useState([])
-  // const elementRef = workProcessItems.map(() => useRef(null))
-  console.log(elementRefs);
+  // console.log(elementRefs);
 
 useEffect(() => {
   SetElementRefs(workProcessItems.map(element => ({id:element.id, ref:React.createRef()})))
 },[])
 
-const handleWheel = (e) => {
-  e.preventDefault()
-}  
 const scrollToElement = (id) => {
   const elementRef = elementRefs.find((ref) => ref.id === id);
-  if (elementRef && elementRef.current) {
-    wrapperRef.current.scrollTo({ left: elementRef.offsetLeft });
-    console.log("Adawdadaw");
+
+  if (elementRef && elementRef.ref.current) {
+    const wrapperLeft = wrapperRef.current.offsetLeft;
+    const elementLeft = elementRef.ref.current.offsetLeft;
+    wrapperRef.current.scrollTo({ left: elementLeft - wrapperLeft, behavior: 'smooth' });
   }
 };
+
   return (
     <div className={styles.workProcess}>
       <div className="container">
