@@ -5,7 +5,11 @@ import GetInTouch from "./GetInTouch.svg";
 import SunMoon from "./sun-moon.svg";
 import Key from "./key.svg";
 import Stroke from "./Stroke.svg";
+import StrokeTwo from "./StrokeTwo.svg";
 import StrokeT from "./Stroke-2.svg";
+import StrokeSecond from "./StrokeSecond.svg";
+import StrokeThree from "./StrokeThree.svg";
+import StrokeForth from "./StrokeForth.svg";
 import Persone from "./Persone.svg";
 import Computer from "./Computer.svg";
 import People from "./People.svg";
@@ -35,7 +39,11 @@ const Icons = {
   SunMoon,
   Key,
   Stroke,
+  StrokeTwo,
   StrokeT,
+  StrokeSecond,
+  StrokeThree,
+  StrokeForth,
   Persone,
   Computer,
   People,

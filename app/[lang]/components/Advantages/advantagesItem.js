@@ -18,7 +18,7 @@ export const advantagesItem = [
       "Мы тщательно анализируем и разрабатываем стратегию, чтобы предложить наиболее подходящее решение, адаптированное к вашим потребностям проекта и бюджета.",
   },
   {
-    stroke: Icons.StrokeT,
+    stroke: Icons.StrokeSecond,
     icon: Icons.Computer,
     id: 3,
     title: "Решения, ориентированные на будущее",
@@ -26,7 +26,7 @@ export const advantagesItem = [
       "наши решения разработаны с учетом масштабируемости и будущего обслуживания, что гарантирует ваш успех на долгие годы.",
   },
   {
-    stroke: Icons.Stroke,
+    stroke: Icons.StrokeTwo,
     icon: Icons.People,
     id: 4,
     title: "Всесторонний опыт работы в команде",
@@ -34,7 +34,7 @@ export const advantagesItem = [
       "Полные команды специалистов, от дизайнеров до экспертов по базам данных, слаженно работающих для достижения ваших целей.",
   },
   {
-    stroke: Icons.StrokeT,
+    stroke: Icons.StrokeThree,
     icon: Icons.Script,
     id: 5,
     title: "Чистый и эффективный код",
@@ -42,7 +42,7 @@ export const advantagesItem = [
       "Наши решения разработаны с высокой точностью, предлагая правильный и лаконичный код, сопровождаемый исчерпывающей технической документацией.",
   },
   {
-    stroke: Icons.StrokeT,
+    stroke: Icons.StrokeForth,
     icon: Icons.Time,
     id: 6,
     title: "Проектный менеджер всегда на связи",

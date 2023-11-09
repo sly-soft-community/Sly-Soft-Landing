@@ -40,7 +40,7 @@ export default function Home({ params: { lang } }) {
         {/* <AnswersOnQuestions /> */}
         {/* <OurWorks /> */}
       </div>
-        <WorkProcess />
+        {/* <WorkProcess /> */}
     </main>
   );
 }
