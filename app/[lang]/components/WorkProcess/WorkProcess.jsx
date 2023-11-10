@@ -26,7 +26,7 @@ const scrollToElement = (id) => {
 
   return (
     <div className={styles.workProcess}>
-      <div className="container">
+      {/* <div className="container"> */}
         <h1 className={styles.workProcessText}>Процесс работы</h1>
         <div className={styles.workProcessItmes}>
           {workProcessItems.map((item, index) => (
@@ -44,7 +44,7 @@ const scrollToElement = (id) => {
             </div>
           ))}
         </div>
-        <div ref={wrapperRef} style={{maxWidth:"1205px", overflowX:"auto"}}>
+        <div ref={wrapperRef} style={{maxWidth:"1205px", overflowX:"auto", overflow:"hidden"}}>
           <div className={styles.wrapper}>
             {workProcessItems.map((item, index) => (
               <ul ref={elementRefs.find((element) => element.id === item.id)?.ref}
@@ -75,7 +75,7 @@ const scrollToElement = (id) => {
             ))}
           </div>
         </div>
-      </div>
+      {/* </div> */}
     </div>
   );
 };

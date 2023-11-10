@@ -37,7 +37,7 @@ const HeroSection = () => {
   const isSmallScreen = windowSize.width <= 680;
 
   return (
-    <div className={styles.customImg}>
+    <div className={styles.customBg}>
       <div className="container">
         <div className={styles.overlay}>
           <div className={styles.overlayB}>

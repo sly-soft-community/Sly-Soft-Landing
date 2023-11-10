@@ -1,0 +1,12 @@
+.customBg {
+  max-width: 100%;
+  min-height: 832px;
+  background: var(--main-bg);
+  display: flex;
+  justify-content: center;
+  transition: 0.5s;
+
+  @media (max-width: 1180px) {
+    min-height: 640px;
+  }
+}
