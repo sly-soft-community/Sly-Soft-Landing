@@ -2,13 +2,65 @@
   max-width: 100%;
   min-height: 832px;
   background: var(--main-bg);
-  display: flex;
-  justify-content: center;
   transition: 0.5s;
 
   @media (max-width: 1180px) {
     min-height: 640px;
   }
-  
-  
+
+  .blur {
+    background: var(--blur);
+    height: 160px;
+    transition: 0.5s all ease;
+  }
+
+  .contactSection {
+    display: flex;
+    justify-content: center;
+
+    .contact {
+      max-width: 470px;
+      .contactText {
+        color: var(--colors-white);
+        font-size: 42px;
+        line-height: 48px;
+        font-weight: 700;
+        letter-spacing: -0.4px;
+        margin-bottom: 32px;
+      }
+      .contactDesc {
+        color: var(--colors-white);
+        font-size: 22px;
+        line-height: 32px;
+        margin-bottom: 62px;
+      }
+      .contactInfo {
+        max-width: 270px;
+        .contactNumber {
+          display: flex;
+          align-items: center;
+          color: var(--colors-white);
+          font-size: 16px;
+          line-height: 24px;
+          margin-bottom: 48px;
+          .number {
+            margin-right: 8px;
+          }
+        }
+        .contactWorld {
+          display: flex;
+          color: var(--colors-white);
+          font-family: Play;
+          font-size: 16px;
+          line-height: 24px;
+          .dot {
+            margin-right: 8px;
+          }
+        }
+      }
+    }
+  }
+}
+.ContactStroke {
+  width: 240px;
 }

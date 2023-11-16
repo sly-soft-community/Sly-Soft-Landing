@@ -30,6 +30,12 @@ import Planning from "./Planning.svg";
 import Design from "./Design.svg";
 import Testing from "./Testing.svg";
 import Support from "./Support.svg";
+import Blur from "./contactUs/Blur.svg";
+import Number from "./contactUs/Number.svg";
+import Dot from "./contactUs/Dot.svg";
+import ContactStroke from "./contactUs/ContactStroke.svg";
+import ContactStrokeSecond from "./contactUs/ContactStrokeSecond.svg";
+import ContactStrokeThree from "./contactUs/ContactStrokeThree.svg";
 
 const Icons = {
   Sun,
@@ -64,6 +70,12 @@ const Icons = {
   Design,
   Testing,
   Support,
+  Blur,
+  Number,
+  Dot,
+  ContactStroke,
+  ContactStrokeSecond,
+  ContactStrokeThree,
 };
 
 export default Icons;
