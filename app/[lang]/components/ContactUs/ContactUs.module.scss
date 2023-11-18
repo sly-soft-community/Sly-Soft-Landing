@@ -59,6 +59,25 @@
         }
       }
     }
+
+    .contactForm {
+      position: relative;
+      .contactForm {
+        position: absolute;
+        top: 0;
+        padding: 56px 30px;
+
+        .customStroke {
+          // max-width: 240px;
+        }
+        .customInput {
+          outline: none;
+          border: none;
+          color: white;
+          background-color: transparent;
+        }
+      }
+    }
   }
 }
 .ContactStroke {

@@ -1,6 +1,7 @@
 import React from "react";
 import styles from "./ContactUs.module.scss";
 import Icons from "@/media/img";
+import Stroke from "../Ui/Stroke/Stroke";
 
 const ContactUs = () => {
   return (
@@ -14,11 +15,11 @@ const ContactUs = () => {
           </p>
           <div className={styles.contactInfo}>
             <div className={styles.contactNumber}>
-              <Icons.Number className={styles.number}/>
+              <Icons.Number className={styles.number} />
               +996 990 003 990
             </div>
             <div className={styles.contactWorld}>
-            <Icons.Dot className={styles.dot}/>
+              <Icons.Dot className={styles.dot} />
               Работаем по всему миру Worldwide
             </div>
           </div>
@@ -27,13 +28,18 @@ const ContactUs = () => {
           <div>
             <Icons.Blur />
           </div>
-          <form>
+          <form className={styles.contactForm}>
             <div>
               <label htmlFor="name">Ваше имя</label>
-              <input type="text" placeholder="name" />
-              <Icons.ContactStroke className={styles.ContactStroke}/>
+              <div>
+                <Stroke className={styles.customStroke}>
+                  <input type="text" className={styles.customInput}/>
+                </Stroke>
+                {/* <input type="text" placeholder="name" /> */}
+                {/* <Icons.ContactStroke className={styles.ContactStroke}/> */}
+              </div>
             </div>
-            <div>
+            {/* <div>
               <label htmlFor="name">BUDGET</label>
               <input type="text" placeholder="$500" />
               <Icons.ContactStrokeSecond className={styles.budget}/>
@@ -51,7 +57,7 @@ const ContactUs = () => {
               <input type="checkbox" name="sendCopy" />
               <label htmlFor="sendCopy">Send me a copy</label>
               <button>Send</button>
-            </div>
+            </div> */}
           </form>
         </div>
       </div>
