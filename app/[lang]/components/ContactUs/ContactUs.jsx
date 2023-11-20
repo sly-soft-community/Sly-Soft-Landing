@@ -2,6 +2,7 @@ import React from "react";
 import styles from "./ContactUs.module.scss";
 import Icons from "@/media/img";
 import Stroke from "../Ui/Stroke/Stroke";
+import Corner from "../Ui/Corner/Corner";
 
 const ContactUs = () => {
   return (
@@ -33,8 +34,11 @@ const ContactUs = () => {
               <label htmlFor="name">Ваше имя</label>
               <div>
                 <Stroke className={styles.customStroke}>
-                  <input type="text" className={styles.customInput}/>
+                  <input type="text" placeholder="First name" className={styles.customInput}/>
                 </Stroke>
+                <Corner borderWidth="2px" edgeSize="17px" padding="13px 129px 11px 24px" height="48px" width="240px" >
+                  <input type="text" placeholder="First name" className={styles.customInput} />
+                </Corner>
                 {/* <input type="text" placeholder="name" /> */}
                 {/* <Icons.ContactStroke className={styles.ContactStroke}/> */}
               </div>

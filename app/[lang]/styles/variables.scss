@@ -6,6 +6,8 @@
 html {
   --C1-A: rgb(36, 40, 52);
   --C1-B: rgb(157, 163, 183);
+  --C1-C: rgb(129 129 130);
+  --C1-D: rgba(255, 255, 255, 1);
   --C2-A: #ed8127;
   --C2-B: #c2252c;
   --C3-A: #1f1f1f;
@@ -45,6 +47,8 @@ html[data-theme="light"] {
   --stop-color: #696969;
   --text-light: rgba(10, 10, 10, 0.8);
   --C3-A: #f5f5f5;
+  --C1-C: #fff;
+  --C1-D: rgb(129 129 130);
   --main-bg: url("../media/img/home/SlySoft-Background-light.jpg") center/cover
     no-repeat fixed;
   --services-bg: url("../media/ServicesBgSecond.png") center/cover no-repeat;

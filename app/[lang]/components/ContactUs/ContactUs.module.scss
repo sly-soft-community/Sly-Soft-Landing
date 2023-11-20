@@ -73,8 +73,11 @@
         .customInput {
           outline: none;
           border: none;
-          color: white;
+          color: var(--text-light);
           background-color: transparent;
+        }
+        .customInput::placeholder {
+          color: var(--text-light);
         }
       }
     }
