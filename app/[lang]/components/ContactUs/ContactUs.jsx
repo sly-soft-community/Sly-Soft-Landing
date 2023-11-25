@@ -33,14 +33,8 @@ const ContactUs = () => {
             <div>
               <label htmlFor="name">Ваше имя</label>
               <div>
-                <Stroke className={styles.customStroke}>
-                  <input type="text" placeholder="First name" className={styles.customInput}/>
-                </Stroke>
-                <Corner borderWidth="2px" edgeSize="17px" padding="13px 129px 11px 24px" height="48px" width="240px" >
-                  <input type="text" placeholder="First name" className={styles.customInput} />
-                </Corner>
-                {/* <input type="text" placeholder="name" /> */}
-                {/* <Icons.ContactStroke className={styles.ContactStroke}/> */}
+                <input type="text" placeholder="name" />
+                <Icons.ContactStroke className={styles.ContactStroke} />
               </div>
             </div>
             {/* <div>

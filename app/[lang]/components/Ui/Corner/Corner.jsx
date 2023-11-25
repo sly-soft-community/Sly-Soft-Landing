@@ -20,6 +20,10 @@ const Corner = ({
     <div style={buttonStyles} className={styles.corner}>
       {children}
     </div>
+    
+  //   <Corner borderWidth="2px" edgeSize="17px" padding="13px 129px 11px 24px" height="48px" width="240px" >
+  //   <input type="text" placeholder="First name" className={styles.customInput} />
+  // </Corner>
   );
 };
 
