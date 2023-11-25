@@ -5,7 +5,11 @@ import GetInTouch from "./GetInTouch.svg";
 import SunMoon from "./sun-moon.svg";
 import Key from "./key.svg";
 import Stroke from "./Stroke.svg";
+import StrokeTwo from "./StrokeTwo.svg";
 import StrokeT from "./Stroke-2.svg";
+import StrokeSecond from "./StrokeSecond.svg";
+import StrokeThree from "./StrokeThree.svg";
+import StrokeForth from "./StrokeForth.svg";
 import Persone from "./Persone.svg";
 import Computer from "./Computer.svg";
 import People from "./People.svg";
@@ -21,6 +25,17 @@ import OurWorksSecond from "./OurWorksSecond.svg";
 import OurWorksThree from "./OurWorksThree.svg";
 import OurWorksFourth from "./OurWorksFourth.svg";
 import StrokeOurWorks from "./StrokeOurWorks.svg";
+import StrokeOurWorksSecond from "./StrokeOurWorksSecond.svg";
+import Planning from "./Planning.svg";
+import Design from "./Design.svg";
+import Testing from "./Testing.svg";
+import Support from "./Support.svg";
+import Blur from "./contactUs/Blur.svg";
+import Number from "./contactUs/Number.svg";
+import Dot from "./contactUs/Dot.svg";
+import ContactStroke from "./contactUs/ContactStroke.svg";
+import ContactStrokeSecond from "./contactUs/ContactStrokeSecond.svg";
+import ContactStrokeThree from "./contactUs/ContactStrokeThree.svg";
 
 const Icons = {
   Sun,
@@ -30,7 +45,11 @@ const Icons = {
   SunMoon,
   Key,
   Stroke,
+  StrokeTwo,
   StrokeT,
+  StrokeSecond,
+  StrokeThree,
+  StrokeForth,
   Persone,
   Computer,
   People,
@@ -46,6 +65,17 @@ const Icons = {
   OurWorksThree,
   OurWorksFourth,
   StrokeOurWorks,
+  StrokeOurWorksSecond,
+  Planning,
+  Design,
+  Testing,
+  Support,
+  Blur,
+  Number,
+  Dot,
+  ContactStroke,
+  ContactStrokeSecond,
+  ContactStrokeThree,
 };
 
 export default Icons;

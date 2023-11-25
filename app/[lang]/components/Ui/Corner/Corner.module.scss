@@ -1,0 +1,59 @@
+.corner {
+    --border-width: 3px;
+    --edge-size: 20px;
+    --padding: padding;
+    --width: width,
+    --height: height,
+  
+    cursor: pointer;
+    position: relative;
+    display: flex;
+    // background: white;
+    padding: var(--padding);
+    height: var(--height);
+    width: var(--width);
+    border: 0;
+    clip-path: polygon(
+      var(--edge-size) 0%,
+      100% 0,
+      100% calc(100% - var(--edge-size)),
+      calc(100% - var(--edge-size)) 100%,
+      0 100%,
+      0% var(--edge-size)
+    );
+  }
+  .corner::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: var(--C1-D);
+    // opacity: 0.3;
+    z-index: -2;
+    transition: 0.5s all ease;
+  }
+  
+  .corner::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: var(--C1-C);
+    // opacity: 0.3;
+    z-index: -1;
+    transition: 0.5s all ease;
+    clip-path: polygon(
+      /* // top left 1 */
+      var(--border-width) calc(var(--edge-size) + var(--border-width) * 0.5),
+      /* // top left 2 */
+      calc(var(--edge-size) + var(--border-width) * 0.5) var(--border-width),
+      /* // top right */
+      calc(100% - var(--border-width)) var(--border-width),
+      /* //bottom right - 1 */
+      calc(100% - var(--border-width))
+        calc(100% - calc(var(--edge-size) + var(--border-width) * 0.5)),
+      /* // bottom right - 2 */
+      calc(100% - calc(var(--edge-size) + var(--border-width) * 0.5))
+        calc(100% - var(--border-width)),
+      /* // bottom left */
+      calc(var(--border-width)) calc(100% - var(--border-width))
+    );
+  }
