@@ -1,0 +1,151 @@
+.contactForm {
+  position: absolute;
+  top: 0;
+  padding: 56px 30px;
+  .filling {
+    display: flex;
+    margin-bottom: 39px;
+    .firstName {
+      margin-right: 30px;
+      .labelText {
+        color: #0a0a0a;
+        font-size: 14px;
+        line-height: 16px;
+        font-weight: 700;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        margin-left: 20px;
+      }
+      .inputName {
+        margin-top: 16px;
+        .customInput {
+          position: absolute;
+          padding: 13px 24px 11px 24px;
+          width: 240px;
+          font-size: 18px;
+          line-height: 24px;
+          outline: none;
+          border: none;
+          color: var(--text-light);
+          background-color: transparent;
+        }
+        .customInput::placeholder {
+          color: var(--text-light);
+          font-size: 18px;
+          line-height: 24px;
+        }
+        .nameStroke {
+          width: 240px;
+          color: var(--C1-E);
+        }
+      }
+    }
+    .budget {
+      .labelText {
+        color: #0a0a0a;
+        font-size: 14px;
+        line-height: 16px;
+        font-weight: 700;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+      }
+      .inputBudget {
+        margin-top: 16px;
+        .arrowBudget {
+          position: absolute;
+          .customInput {
+            padding: 11px 10px 13px 24px;
+            width: 110px;
+            font-size: 18px;
+            line-height: 24px;
+            outline: none;
+            border: none;
+            color: var(--colors-white);
+            background-color: transparent;
+          }
+          .customInput::placeholder {
+            color: var(--colors-white);
+            font-size: 18px;
+            line-height: 24px;
+          }
+          .arrow {
+            cursor: pointer;
+            color: var(--colors-white);
+          }
+        }
+
+        .budgetStroke {
+          width: 140px;
+          color: var(--C1-E);
+        }
+      }
+    }
+  }
+  .email {
+    margin-bottom: 40px;
+    .labelText {
+      color: #0a0a0a;
+      font-size: 14px;
+      line-height: 16px;
+      font-weight: 700;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      margin-left: 20px;
+    }
+    .inputEmail {
+      margin-top: 17px;
+      .customInput {
+        position: absolute;
+        padding: 13px 20px 11px 20px;
+        width: 410px;
+        font-size: 18px;
+        line-height: 24px;
+        outline: none;
+        border: none;
+        color: var(--colors-white);
+        background-color: transparent;
+      }
+      .customInput::placeholder {
+        color: var(--colors-white);
+        font-size: 18px;
+        line-height: 24px;
+      }
+      .emailStroke {
+        width: 410px;
+        color: var(--C1-E);
+      }
+    }
+  }
+  .message {
+    .labelText {
+      color: #0a0a0a;
+      font-size: 14px;
+      line-height: 16px;
+      font-weight: 700;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      margin-left: 20px;
+    }
+    .textMessage {
+      margin-top: 16px;
+      .customText {
+        display: block;
+        position: absolute;
+        width: 330px;
+        height: 100px;
+        margin-left: 39px;
+        margin-top: 13px;
+        resize: none;
+        font-size: 18px;
+        line-height: 24px;
+        overflow: hidden;
+      }
+      .customText::placeholder {
+        color: rgba(21, 20, 57, 0.40);
+      }
+      .messageStroke {
+        color: var(--C1-E);
+      }
+    }
+  }
+}

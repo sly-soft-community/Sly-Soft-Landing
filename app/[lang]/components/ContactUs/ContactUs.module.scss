@@ -60,29 +60,8 @@
       }
     }
 
-    .contactForm {
+    .contactBlur {
       position: relative;
-      .contactForm {
-        position: absolute;
-        top: 0;
-        padding: 56px 30px;
-
-        .customStroke {
-          // max-width: 240px;
-        }
-        .customInput {
-          outline: none;
-          border: none;
-          color: var(--text-light);
-          background-color: transparent;
-        }
-        .customInput::placeholder {
-          color: var(--text-light);
-        }
-      }
     }
   }
-}
-.ContactStroke {
-  width: 240px;
 }

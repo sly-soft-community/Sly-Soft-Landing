@@ -36,6 +36,8 @@ import Dot from "./contactUs/Dot.svg";
 import ContactStroke from "./contactUs/ContactStroke.svg";
 import ContactStrokeSecond from "./contactUs/ContactStrokeSecond.svg";
 import ContactStrokeThree from "./contactUs/ContactStrokeThree.svg";
+import ContactStrokeFourth from "./contactUs/ContactStrokeFourth.svg";
+import Arrow from "./contactUs/Arrow.svg";
 
 const Icons = {
   Sun,
@@ -76,6 +78,8 @@ const Icons = {
   ContactStroke,
   ContactStrokeSecond,
   ContactStrokeThree,
+  ContactStrokeFourth,
+  Arrow,
 };
 
 export default Icons;
