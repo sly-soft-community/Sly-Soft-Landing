@@ -117,6 +117,7 @@
     }
   }
   .message {
+    margin-bottom: 39px;
     .labelText {
       color: #0a0a0a;
       font-size: 14px;
@@ -131,8 +132,8 @@
       .customText {
         display: block;
         position: absolute;
-        width: 330px;
-        height: 100px;
+        width: 320px;
+        height: 80px;
         margin-left: 39px;
         margin-top: 13px;
         resize: none;
@@ -145,6 +146,7 @@
       }
       .messageStroke {
         color: var(--C1-E);
+        // height: 112px;
       }
     }
   }
