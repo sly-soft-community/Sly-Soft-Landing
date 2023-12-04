@@ -1,5 +1,6 @@
 import React from "react";
 import styles from "./Checkbox.module.scss";
+import ImageGetStarted from "@/components/Ui/ImageGetStarted/ImageGetStarted";
 
 const Checkbox = () => {
   return (
@@ -9,7 +10,7 @@ const Checkbox = () => {
         <label htmlFor="check">Send me a copy</label>
       </div>
       <div>
-      <button>Send</button>
+        <ImageGetStarted name={"send"}/>
       </div>
     </div>
   );

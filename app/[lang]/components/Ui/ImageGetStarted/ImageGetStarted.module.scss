@@ -17,9 +17,32 @@
   .bt {
     max-width: 130px;
     height: 48.505px;
+      stop {
+        stop-color: transparent;
+      }
+      defs:nth-of-type(2) {
+        stop:first-child {
+          stop-color: var(--C2-B);
+        }
+  
+        stop:last-child {
+          stop-color: var(--C2-A);
+        }
+      }
 
     @media (max-width: 350px) {
       height: 32px;
+    }
+  }
+  &:hover {
+    .bt {
+      stop:first-child {
+        stop-color: var(--C2-B);
+      }
+
+      stop:last-child {
+        stop-color: var(--C2-A);
+      }
     }
   }
 }

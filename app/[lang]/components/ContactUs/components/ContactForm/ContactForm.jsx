@@ -71,7 +71,7 @@ const ContactForm = () => {
           </div>
         </div>
         <div>
-          <Checkbox checked={isChecked} onChange={handleCheckboxChange} />
+          <Checkbox />
         </div>
       </form>
     </div>
