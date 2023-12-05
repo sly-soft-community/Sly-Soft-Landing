@@ -3,6 +3,7 @@ import Icons from "@/media/img";
 import styles from "./ContactForm.module.scss";
 import React, { useState } from "react";
 import Checkbox from "../Checkbox/Checkbox";
+import ImageGetStarted from "@/components/Ui/ImageGetStarted/ImageGetStarted";
 
 const ContactForm = () => {
   const [isChecked, setIsChecked] = useState(false);
@@ -70,8 +71,9 @@ const ContactForm = () => {
             <Icons.ContactStrokeFourth className={styles.messageStroke} />
           </div>
         </div>
-        <div>
+        <div className={styles.contactSend}>
           <Checkbox />
+          <ImageGetStarted name={"send"}/>
         </div>
       </form>
     </div>

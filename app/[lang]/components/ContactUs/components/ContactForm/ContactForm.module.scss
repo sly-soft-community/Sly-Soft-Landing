@@ -142,12 +142,18 @@
         overflow: hidden;
       }
       .customText::placeholder {
-        color: rgba(21, 20, 57, 0.40);
+        color: rgba(21, 20, 57, 0.4);
       }
       .messageStroke {
         color: var(--C1-E);
         // height: 112px;
       }
     }
+  }
+  .contactSend {
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 20px 0px 20px;
+    align-items: center;
   }
 }
