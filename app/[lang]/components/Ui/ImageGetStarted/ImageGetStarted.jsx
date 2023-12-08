@@ -8,7 +8,7 @@ const ImageGetStarted = ({name}) => {
     alert("Кнопка нажата");
   };
   return (
-    <button className={styles.button} onClick={handleClick}>
+    <button type="button" className={styles.button} onClick={handleClick}>
       <div className={styles.iconContainer}>
         <Icons.GetInTouch className={styles.bt}/>
         <span className={styles.text}>{name}</span>

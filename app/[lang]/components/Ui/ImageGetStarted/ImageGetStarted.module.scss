@@ -1,7 +1,7 @@
 .button {
   display: flex;
   background: none;
-  color: white;
+  color: var(--primary);
   border: none;
   cursor: pointer;
   padding: 0;
@@ -10,6 +10,9 @@
   align-items: center;
   justify-content: center;
 }
+.button:hover {
+  color: #fff;
+}
 
 .iconContainer {
   position: relative;
@@ -17,15 +20,38 @@
   .bt {
     max-width: 130px;
     height: 48.505px;
+    stop {
+      stop-color: transparent;
+    }
+    defs:nth-of-type(2) {
+      stop:first-child {
+        stop-color: var(--C2-B);
+      }
+
+      stop:last-child {
+        stop-color: var(--C2-A);
+      }
+    }
 
     @media (max-width: 350px) {
       height: 32px;
     }
   }
+  &:hover {
+    .bt {
+      stop:first-child {
+        stop-color: var(--C2-B);
+      }
+
+      stop:last-child {
+        stop-color: var(--C2-A);
+      }
+    }
+  }
 }
 
 .text {
-  color: var(--primary);
+  
   text-align: center;
   font-size: 16px;
   font-weight: 700;
@@ -36,8 +62,11 @@
   transform: translate(-50%, -50%);
   white-space: nowrap;
 
+  
+
   @media (max-width: 350px) {
     font-size: 14px;
     line-height: 22px;
   }
 }
+
