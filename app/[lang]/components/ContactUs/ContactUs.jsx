@@ -33,6 +33,7 @@ const ContactUs = () => {
           <ContactForm />
         </div>
       </div>
+      <div className={styles.blurT}></div>
     </div>
   );
 };

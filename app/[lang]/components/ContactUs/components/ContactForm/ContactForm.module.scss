@@ -4,9 +4,9 @@
   padding: 56px 30px;
   .filling {
     display: flex;
-    margin-bottom: 39px;
+    margin-bottom: 24px;
     .firstName {
-      margin-right: 30px;
+      margin-right: 24px;
       .labelText {
         color: #0a0a0a;
         font-size: 14px;
@@ -21,7 +21,7 @@
         .customInput {
           position: absolute;
           padding: 13px 24px 11px 24px;
-          width: 240px;
+          width: 193px;
           font-size: 18px;
           line-height: 24px;
           outline: none;
@@ -35,12 +35,12 @@
           line-height: 24px;
         }
         .nameStroke {
-          width: 240px;
+          width: 193px;
           color: var(--C1-E);
         }
       }
     }
-    .budget {
+    .number {
       .labelText {
         color: #0a0a0a;
         font-size: 14px;
@@ -49,40 +49,33 @@
         letter-spacing: 2px;
         text-transform: uppercase;
       }
-      .inputBudget {
+      .inputNumber {
         margin-top: 16px;
-        .arrowBudget {
+        .customInput {
           position: absolute;
-          .customInput {
-            padding: 11px 10px 13px 24px;
-            width: 110px;
-            font-size: 18px;
-            line-height: 24px;
-            outline: none;
-            border: none;
-            color: var(--colors-white);
-            background-color: transparent;
-          }
-          .customInput::placeholder {
-            color: var(--colors-white);
-            font-size: 18px;
-            line-height: 24px;
-          }
-          .arrow {
-            cursor: pointer;
-            color: var(--colors-white);
-          }
+          padding: 13px 24px 11px 24px;
+          width: 193px;
+          font-size: 18px;
+          line-height: 24px;
+          outline: none;
+          border: none;
+          color: var(--text-light);
+          background-color: transparent;
         }
-
-        .budgetStroke {
-          width: 140px;
+        .customInput::placeholder {
+          color: var(--text-light);
+          font-size: 18px;
+          line-height: 24px;
+        }
+        .numberStroke {
+          width: 193px;
           color: var(--C1-E);
         }
       }
     }
   }
   .email {
-    margin-bottom: 40px;
+    margin-bottom: 24px;
     .labelText {
       color: #0a0a0a;
       font-size: 14px;
@@ -151,9 +144,6 @@
     }
   }
   .contactSend {
-    display: flex;
-    justify-content: space-between;
-    padding: 0px 20px 0px 20px;
-    align-items: center;
+    
   }
 }

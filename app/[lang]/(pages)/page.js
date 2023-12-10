@@ -34,15 +34,17 @@ export default function Home({ params: { lang } }) {
 
   return (
     <main className={styles.main}>
-      {/* <HeroSection /> */}
-       {/* <Advantages /> */}
+      <HeroSection />
+       <Advantages />
       <div className="container">
-        {/* <Services /> */}
-        {/* <AnswersOnQuestions /> */}
+        <Services />
         {/* <OurWorks /> */}
-        {/* <WorkProcess /> */}
+        <WorkProcess />
       </div>
         <ContactUs />
+        <div className="container">
+        <AnswersOnQuestions />
+      </div>
     </main>
   );
 }

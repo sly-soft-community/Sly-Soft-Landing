@@ -29,7 +29,7 @@
   flex-wrap: wrap;
   justify-content: space-between;
 
-  @media (max-width: 1180px) {
+  @media (max-width: 870px) {
     justify-content: center;
   }
 
@@ -79,8 +79,8 @@
         .mini {
           @media (max-width: 450px) {
             display: flex;
-            margin-bottom: 16px;
-            width: 220px;
+            margin-bottom: 8px;
+            width: 223px;
           }
           .smallIcon {
             margin-bottom: 24px;
@@ -99,7 +99,6 @@
           line-height: 24px;
           letter-spacing: 2px;
           text-transform: uppercase;
-          margin-bottom: 8px;
           transition: 0.5s;
 
           @media (max-width: 450px) {
@@ -189,7 +188,6 @@
         line-height: 24px;
         letter-spacing: 2px;
         text-transform: uppercase;
-        margin-bottom: 8px;
         transition: 0.5s;
         white-space: pre-line;
 

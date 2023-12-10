@@ -41,9 +41,13 @@
     }
 
     label {
+      max-width: 380px;
       color: var(--colors-white);
-      font-size: 16px;
-      line-height: 24px; /* 150% */
+      font-size: 12px;
+      line-height: 16px; /* 150% */
+    }
+    label .underline {
+      text-decoration-line: underline;
     }
   }
 }

@@ -28,20 +28,17 @@ const ContactForm = () => {
               <Icons.ContactStroke className={styles.nameStroke} />
             </div>
           </div>
-          <div className={styles.budget}>
+          <div className={styles.number}>
             <label htmlFor="name" className={styles.labelText}>
-              BUDGET
+            Номер телефона
             </label>
-            <div className={styles.inputBudget}>
-              <div className={styles.arrowBudget}>
+            <div className={styles.inputNumber}>
                 <input
                   type="text"
-                  placeholder="$500"
+                  placeholder="+996 ххх ххх ххх"
                   className={styles.customInput}
                 />
-                <Icons.Arrow className={styles.arrow} />
-              </div>
-              <Icons.ContactStrokeSecond className={styles.budgetStroke} />
+              <Icons.ContactStrokeSecond className={styles.numberStroke} />
             </div>
           </div>
         </div>
@@ -60,12 +57,12 @@ const ContactForm = () => {
         </div>
         <div className={styles.message}>
           <label htmlFor="name" className={styles.labelText}>
-            your message
+          Ваше сообщение
           </label>
           <div className={styles.textMessage}>
             <textarea
               name="message"
-              placeholder="Message"
+              placeholder="Текст"
               className={styles.customText}
             ></textarea>
             <Icons.ContactStrokeFourth className={styles.messageStroke} />
