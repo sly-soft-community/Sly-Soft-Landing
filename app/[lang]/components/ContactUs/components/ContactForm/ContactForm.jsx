@@ -4,6 +4,7 @@ import styles from "./ContactForm.module.scss";
 import React, { useState } from "react";
 import Checkbox from "../Checkbox/Checkbox";
 import ImageGetStarted from "@/components/Ui/ImageGetStarted/ImageGetStarted";
+import Send from "@/components/Ui/Send/Send";
 
 const ContactForm = () => {
   const [isChecked, setIsChecked] = useState(false);
@@ -30,14 +31,14 @@ const ContactForm = () => {
           </div>
           <div className={styles.number}>
             <label htmlFor="name" className={styles.labelText}>
-            Номер телефона
+              Номер телефона
             </label>
             <div className={styles.inputNumber}>
-                <input
-                  type="text"
-                  placeholder="+996 ххх ххх ххх"
-                  className={styles.customInput}
-                />
+              <input
+                type="text"
+                placeholder="+996 ххх ххх ххх"
+                className={styles.customInput}
+              />
               <Icons.ContactStrokeSecond className={styles.numberStroke} />
             </div>
           </div>
@@ -57,7 +58,7 @@ const ContactForm = () => {
         </div>
         <div className={styles.message}>
           <label htmlFor="name" className={styles.labelText}>
-          Ваше сообщение
+            Ваше сообщение
           </label>
           <div className={styles.textMessage}>
             <textarea
@@ -70,7 +71,7 @@ const ContactForm = () => {
         </div>
         <div className={styles.contactSend}>
           <Checkbox />
-          <ImageGetStarted name={"send"}/>
+          <Send name={"send"} />
         </div>
       </form>
     </div>

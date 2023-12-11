@@ -4,6 +4,7 @@ import Icons from "@/media/img";
 import Stroke from "../Ui/Stroke/Stroke";
 import Corner from "../Ui/Corner/Corner";
 import ContactForm from "./components/ContactForm/ContactForm";
+import { contactUsItems } from "./сontactUsItems";
 
 const ContactUs = () => {
   return (
@@ -16,13 +17,28 @@ const ContactUs = () => {
             Напишите нам! И мы воплотим ваши цифровые желания в реальность!
           </p>
           <div className={styles.contactInfo}>
-            <div className={styles.contactNumber}>
-              <Icons.Number className={styles.number} />
-              +996 990 003 990
+            <div className={styles.contactTop}>
+              <div className={styles.contactNumber}>
+                <Icons.Number className={styles.number} />
+                +996 990 003 990
+              </div>
+              <div className={styles.contactWorld}>
+                <Icons.Dot className={styles.dot} />
+                Работаем по всему миру
+              </div>
             </div>
-            <div className={styles.contactWorld}>
-              <Icons.Dot className={styles.dot} />
-              Работаем по всему миру Worldwide
+            <div className={styles.contactBot}>
+              <h6 className={styles.socialText}>Мы в социальных сетях:</h6>
+              {contactUsItems.map((item) => (
+                <div key={item.id}   className={styles.socialLayout}>
+                  <div className={styles.socialDesc}>{item.title}</div>
+                  <div className={styles.socialIcon}>
+                    {item.icons.map((Icon, index) => (
+                      <Icon key={index} />
+                    ))}
+                  </div>
+                </div>
+              ))}
             </div>
           </div>
         </div>

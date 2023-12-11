@@ -38,29 +38,53 @@
         color: var(--colors-white);
         font-size: 22px;
         line-height: 32px;
-        margin-bottom: 62px;
+        margin-bottom: 40px;
       }
       .contactInfo {
         max-width: 270px;
-        .contactNumber {
-          display: flex;
-          align-items: center;
-          color: var(--colors-white);
-          font-size: 16px;
-          line-height: 24px;
-          margin-bottom: 48px;
-          .number {
-            margin-right: 8px;
+        .contactTop {
+          margin-bottom: 24px;
+          .contactNumber {
+            display: flex;
+            align-items: center;
+            color: var(--colors-white);
+            font-size: 16px;
+            line-height: 24px;
+            margin-bottom: 24px;
+            .number {
+              margin-right: 8px;
+            }
+          }
+          .contactWorld {
+            display: flex;
+            color: var(--colors-white);
+            font-family: Play;
+            font-size: 16px;
+            line-height: 24px;
+            .dot {
+              margin-right: 8px;
+            }
           }
         }
-        .contactWorld {
-          display: flex;
-          color: var(--colors-white);
-          font-family: Play;
-          font-size: 16px;
-          line-height: 24px;
-          .dot {
-            margin-right: 8px;
+        .contactBot {
+          .socialText {
+            color: var(--colors-white);
+            font-size: 22px;
+            line-height: 24px;
+            margin-bottom: 8px;
+          }
+          .socialLayout {
+            margin-bottom: 8px;
+            .socialDesc {
+              color: var(--colors-white);
+              font-size: 16px;
+              line-height: 24px;
+            }
+            .socialIcon {
+              display: flex;
+              gap: 24px;
+              color: var(--colors-white);
+            }
           }
         }
       }

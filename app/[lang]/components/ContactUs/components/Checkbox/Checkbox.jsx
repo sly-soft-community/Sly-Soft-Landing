@@ -1,5 +1,6 @@
 import React from "react";
 import styles from "./Checkbox.module.scss";
+import Link from "next/link";
 
 const Checkbox = () => {
   return (
@@ -7,8 +8,8 @@ const Checkbox = () => {
       <div className={styles.group}>
         <input type="checkbox" id="check" className={styles.checkbox} />
         <label htmlFor="check">
-          Даю согласие на обработку моих персональных данных, согласно
-          <span className={styles.underline}>политике конфиденциальности</span>
+          Даю согласие на обработку моих персональных данных, согласно{' '}
+          <Link href="#" className={styles.underline}>политике конфиденциальности</Link >
         </label>
       </div>
     </div>

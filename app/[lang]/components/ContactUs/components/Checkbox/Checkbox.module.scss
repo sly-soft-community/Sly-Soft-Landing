@@ -1,9 +1,9 @@
 .wrapper {
-  
+  margin-bottom: 24px;
   .group {
     display: flex;
     align-items: center;
-    gap: 12px;
+    gap: 6px;
 
     .checkbox {
       position: relative;
@@ -44,10 +44,12 @@
       max-width: 380px;
       color: var(--colors-white);
       font-size: 12px;
-      line-height: 16px; /* 150% */
+      line-height: 16px; 
+      cursor: pointer;
     }
     label .underline {
       text-decoration-line: underline;
+      color: inherit;
     }
   }
 }

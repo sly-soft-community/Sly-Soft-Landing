@@ -43,6 +43,15 @@ import ContactStrokeSecond from "./contactUs/ContactStrokeSecond.svg";
 import ContactStrokeThree from "./contactUs/ContactStrokeThree.svg";
 import ContactStrokeFourth from "./contactUs/ContactStrokeFourth.svg";
 import Arrow from "./contactUs/Arrow.svg";
+import CheckIcon from "./contactUs/CheckIcon.svg";
+import SendStroke from "./contactUs/SendStroke.svg";
+import Vk from "./contactUs/Vk.svg";
+import Tg from "./contactUs/Tg.svg";
+import Facebook from "./contactUs/Facebook.svg";
+import Inst from "./contactUs/Inst.svg";
+import Linkedin from "./contactUs/Linkedin.svg";
+import World from "./contactUs/World.svg";
+import Be from "./contactUs/Be.svg";
 
 const Icons = {
   Sun,
@@ -90,6 +99,15 @@ const Icons = {
   ContactStrokeThree,
   ContactStrokeFourth,
   Arrow,
+  CheckIcon,
+  SendStroke,
+  Vk,
+  Tg,
+  Facebook,
+  Inst,
+  Linkedin,
+  World,
+  Be,
 };
 
 export default Icons;

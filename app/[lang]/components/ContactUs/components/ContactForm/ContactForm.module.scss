@@ -1,7 +1,7 @@
 .contactForm {
   position: absolute;
   top: 0;
-  padding: 56px 30px;
+  padding: 48px 30px;
   .filling {
     display: flex;
     margin-bottom: 24px;
@@ -17,7 +17,7 @@
         margin-left: 20px;
       }
       .inputName {
-        margin-top: 16px;
+        margin-top: 8px;
         .customInput {
           position: absolute;
           padding: 13px 24px 11px 24px;
@@ -50,7 +50,7 @@
         text-transform: uppercase;
       }
       .inputNumber {
-        margin-top: 16px;
+        margin-top: 8px;
         .customInput {
           position: absolute;
           padding: 13px 24px 11px 24px;
@@ -86,7 +86,7 @@
       margin-left: 20px;
     }
     .inputEmail {
-      margin-top: 17px;
+      margin-top: 8px;
       .customInput {
         position: absolute;
         padding: 13px 20px 11px 20px;
@@ -110,7 +110,7 @@
     }
   }
   .message {
-    margin-bottom: 25px;
+    margin-bottom: 40px;
     .labelText {
       color: #0a0a0a;
       font-size: 14px;
@@ -121,7 +121,7 @@
       margin-left: 20px;
     }
     .textMessage {
-      margin-top: 16px;
+      margin-top: 8px;
       .customText {
         display: block;
         position: absolute;
@@ -144,6 +144,8 @@
     }
   }
   .contactSend {
-    
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
   }
 }

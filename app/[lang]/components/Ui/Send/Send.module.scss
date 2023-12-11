@@ -1,0 +1,71 @@
+.button {
+    display: flex;
+    background: none;
+    color: var(--primary);
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    margin: 0;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .button:hover {
+    color: #fff;
+  }
+  
+  .iconContainer {
+    position: relative;
+  
+    .bt {
+      max-width: 270px;
+      height: 48px;
+      stop {
+        stop-color: transparent;
+      }
+      defs:nth-of-type(2) {
+        stop:first-child {
+          stop-color: var(--C2-B);
+        }
+  
+        stop:last-child {
+          stop-color: var(--C2-A);
+        }
+      }
+  
+      @media (max-width: 350px) {
+        height: 32px;
+      }
+    }
+    &:hover {
+      .bt {
+        stop:first-child {
+          stop-color: var(--C2-B);
+          transition: 0.3s ease;
+        }
+  
+        stop:last-child {
+          stop-color: var(--C2-A);
+          transition: 0.3s ease;
+        }
+      }
+    }
+  }
+  
+  .text {
+    text-align: center;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 22px;
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    white-space: nowrap;
+  
+    @media (max-width: 350px) {
+      font-size: 14px;
+      line-height: 22px;
+    }
+  }
+  
