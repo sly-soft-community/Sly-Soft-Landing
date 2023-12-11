@@ -1,5 +1,8 @@
 .wrapper {
   margin-bottom: 24px;
+  @media (max-width:480px) {
+    margin-bottom: 16px;
+  }
   .group {
     display: flex;
     align-items: center;
@@ -46,6 +49,9 @@
       font-size: 12px;
       line-height: 16px; 
       cursor: pointer;
+      @media (max-width:480px) {
+        max-width: 190px;
+      }
     }
     label .underline {
       text-decoration-line: underline;

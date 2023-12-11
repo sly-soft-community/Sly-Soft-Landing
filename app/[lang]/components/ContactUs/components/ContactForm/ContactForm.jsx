@@ -1,17 +1,13 @@
 "use client";
 import Icons from "@/media/img";
 import styles from "./ContactForm.module.scss";
-import React, { useState } from "react";
 import Checkbox from "../Checkbox/Checkbox";
-import ImageGetStarted from "@/components/Ui/ImageGetStarted/ImageGetStarted";
 import Send from "@/components/Ui/Send/Send";
+import useMediaScreen from "@/hooks/useMediaScreen";
+import SendSecond from "@/components/Ui/SendSecond/SendSecond";
 
 const ContactForm = () => {
-  const [isChecked, setIsChecked] = useState(false);
-
-  const handleCheckboxChange = () => {
-    setIsChecked(!isChecked);
-  };
+  const isMobileScreen = useMediaScreen(480);
   return (
     <div>
       <form className={styles.contactForm}>
@@ -53,7 +49,11 @@ const ContactForm = () => {
               placeholder="name@mail.com"
               className={styles.customInput}
             />
-            <Icons.ContactStrokeThree className={styles.emailStroke} />
+            {isMobileScreen ? (
+              <Icons.ContactStrokeSecond className={styles.emailStroke} />
+            ) : (
+              <Icons.ContactStrokeThree className={styles.emailStroke} />
+            )}
           </div>
         </div>
         <div className={styles.message}>
@@ -66,12 +66,20 @@ const ContactForm = () => {
               placeholder="Текст"
               className={styles.customText}
             ></textarea>
-            <Icons.ContactStrokeFourth className={styles.messageStroke} />
+            {isMobileScreen ? (
+              <Icons.ContactStrokeSmall className={styles.emailStroke} />
+            ) : (
+              <Icons.ContactStrokeFourth className={styles.emailStroke} />
+            )}
           </div>
         </div>
         <div className={styles.contactSend}>
           <Checkbox />
-          <Send name={"send"} />
+          {isMobileScreen ? (
+            <SendSecond name={"send"} />
+          ) : (
+            <Send name={"send"} />
+          )}
         </div>
       </form>
     </div>

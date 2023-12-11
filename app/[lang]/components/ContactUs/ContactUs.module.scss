@@ -23,27 +23,54 @@
   .contactSection {
     display: flex;
     justify-content: center;
+    @media (max-width: 1024px) {
+      flex-direction: column;
+      align-items: center;
+      
+    }
 
     .contact {
       max-width: 470px;
-      .contactText {
-        color: var(--colors-white);
-        font-size: 42px;
-        line-height: 48px;
-        font-weight: 700;
-        letter-spacing: -0.4px;
-        margin-bottom: 32px;
+      @media (max-width:1024px) {
+        margin-bottom: 72px;
       }
-      .contactDesc {
-        color: var(--colors-white);
-        font-size: 22px;
-        line-height: 32px;
-        margin-bottom: 40px;
+      .contacts {
+        @media (max-width:1024px) {
+          max-width: 250px;
+        }
+        .contactText {
+          color: var(--colors-white);
+          font-size: 42px;
+          line-height: 48px;
+          font-weight: 700;
+          letter-spacing: -0.4px;
+          margin-bottom: 32px;
+          @media (max-width: 1024px) {
+            font-size: 24px;
+            line-height: 24px;
+            margin-bottom: 8px;
+            text-align: center;
+          }
+        }
+        .contactDesc {
+          color: var(--colors-white);
+          font-size: 22px;
+          line-height: 32px;
+          margin-bottom: 40px;
+          @media (max-width: 1024px) {
+            font-size: 14px;
+            line-height: 20px;
+          }
+        }
       }
+
       .contactInfo {
         max-width: 270px;
         .contactTop {
           margin-bottom: 24px;
+          @media (max-width:1024px) {
+            margin-bottom: 16px; 
+          }
           .contactNumber {
             display: flex;
             align-items: center;
@@ -51,6 +78,9 @@
             font-size: 16px;
             line-height: 24px;
             margin-bottom: 24px;
+            @media (max-width:1024px) {
+              margin-bottom: 16px; 
+            }
             .number {
               margin-right: 8px;
             }
@@ -72,9 +102,13 @@
             font-size: 22px;
             line-height: 24px;
             margin-bottom: 8px;
+            @media (max-width:1024px) {
+              font-size: 18px;
+            }
           }
           .socialLayout {
             margin-bottom: 8px;
+          
             .socialDesc {
               color: var(--colors-white);
               font-size: 16px;
