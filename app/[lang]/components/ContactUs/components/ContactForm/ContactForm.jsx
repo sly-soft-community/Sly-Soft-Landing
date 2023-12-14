@@ -1,16 +1,13 @@
 "use client";
 import Icons from "@/media/img";
 import styles from "./ContactForm.module.scss";
-import React, { useState } from "react";
 import Checkbox from "../Checkbox/Checkbox";
-import ImageGetStarted from "@/components/Ui/ImageGetStarted/ImageGetStarted";
+import Send from "@/components/Ui/Send/Send";
+import useMediaScreen from "@/hooks/useMediaScreen";
+import SendSecond from "@/components/Ui/SendSecond/SendSecond";
 
 const ContactForm = () => {
-  const [isChecked, setIsChecked] = useState(false);
-
-  const handleCheckboxChange = () => {
-    setIsChecked(!isChecked);
-  };
+  const isMobileScreen = useMediaScreen(480);
   return (
     <div>
       <form className={styles.contactForm}>
@@ -28,20 +25,17 @@ const ContactForm = () => {
               <Icons.ContactStroke className={styles.nameStroke} />
             </div>
           </div>
-          <div className={styles.budget}>
+          <div className={styles.number}>
             <label htmlFor="name" className={styles.labelText}>
-              BUDGET
+              Номер телефона
             </label>
-            <div className={styles.inputBudget}>
-              <div className={styles.arrowBudget}>
-                <input
-                  type="text"
-                  placeholder="$500"
-                  className={styles.customInput}
-                />
-                <Icons.Arrow className={styles.arrow} />
-              </div>
-              <Icons.ContactStrokeSecond className={styles.budgetStroke} />
+            <div className={styles.inputNumber}>
+              <input
+                type="text"
+                placeholder="+996 ххх ххх ххх"
+                className={styles.customInput}
+              />
+              <Icons.ContactStrokeSecond className={styles.numberStroke} />
             </div>
           </div>
         </div>
@@ -55,25 +49,37 @@ const ContactForm = () => {
               placeholder="name@mail.com"
               className={styles.customInput}
             />
-            <Icons.ContactStrokeThree className={styles.emailStroke} />
+            {isMobileScreen ? (
+              <Icons.ContactStrokeSecond className={styles.emailStroke} />
+            ) : (
+              <Icons.ContactStrokeThree className={styles.emailStroke} />
+            )}
           </div>
         </div>
         <div className={styles.message}>
           <label htmlFor="name" className={styles.labelText}>
-            your message
+            Ваше сообщение
           </label>
           <div className={styles.textMessage}>
             <textarea
               name="message"
-              placeholder="Message"
+              placeholder="Текст"
               className={styles.customText}
             ></textarea>
-            <Icons.ContactStrokeFourth className={styles.messageStroke} />
+            {isMobileScreen ? (
+              <Icons.ContactStrokeSmall className={styles.emailStroke} />
+            ) : (
+              <Icons.ContactStrokeFourth className={styles.emailStroke} />
+            )}
           </div>
         </div>
         <div className={styles.contactSend}>
           <Checkbox />
-          <ImageGetStarted name={"send"}/>
+          {isMobileScreen ? (
+            <SendSecond name={"send"} />
+          ) : (
+            <Send name={"send"} />
+          )}
         </div>
       </form>
     </div>

@@ -28,6 +28,7 @@ const scrollToElement = (id) => {
     <div className={styles.workProcess}>
       {/* <div className="container"> */}
         <h1 className={styles.workProcessText}>Процесс работы</h1>
+        <div className={styles.wrapperItems}>
         <div className={styles.workProcessItmes}>
           {workProcessItems.map((item, index) => (
             <div
@@ -43,6 +44,7 @@ const scrollToElement = (id) => {
               <h4 className={styles.title}>{item.title}</h4>
             </div>
           ))}
+        </div>
         </div>
         <div ref={wrapperRef} style={{maxWidth:"1205px", overflowX:"auto", overflow:"hidden"}}>
           <div className={styles.wrapper}>

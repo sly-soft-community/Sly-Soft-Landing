@@ -11,8 +11,8 @@ const OurWorks = () => {
   const isSmallScreen = windowSize.width <= 433;
 
   return (
-    <div>
-      <div className={styles.ourWorks}>
+    <div className={styles.ourWorks}>
+      <div className={styles.ourWorksTop}>
         <h2 className={styles.text}>Наши работы</h2>
         <div className={styles.checkOut}>
           <p className={styles.checkOutDesc}>

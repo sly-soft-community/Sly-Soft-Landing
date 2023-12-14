@@ -3,6 +3,7 @@ import Icons from "@/media/img";
 export const advantagesItem = [
   {
     stroke: Icons.Stroke,
+    strokeSmall: Icons.Stroke,
     icon: Icons.Key,
     id: 1,
     title: 'Разработка проекта "под ключ"',
@@ -11,6 +12,7 @@ export const advantagesItem = [
   },
   {
     stroke: Icons.StrokeT,
+    strokeSmall: Icons.StrokeSmallSecond,
     icon: Icons.Persone,
     id: 2,
     title: "Поиск оптимального решения",
@@ -19,6 +21,7 @@ export const advantagesItem = [
   },
   {
     stroke: Icons.StrokeSecond,
+    strokeSmall: Icons.StrokeSmallThird,
     icon: Icons.Computer,
     id: 3,
     title: "Решения, ориентированные на будущее",
@@ -27,6 +30,7 @@ export const advantagesItem = [
   },
   {
     stroke: Icons.StrokeTwo,
+    strokeSmall: Icons.StrokeSmallForth,
     icon: Icons.People,
     id: 4,
     title: "Всесторонний опыт работы в команде",
@@ -35,6 +39,7 @@ export const advantagesItem = [
   },
   {
     stroke: Icons.StrokeThree,
+    strokeSmall: Icons.StrokeSmallFifth,
     icon: Icons.Script,
     id: 5,
     title: "Чистый и эффективный код",
@@ -43,6 +48,7 @@ export const advantagesItem = [
   },
   {
     stroke: Icons.StrokeForth,
+    strokeSmall: Icons.StrokeSmallSixth,
     icon: Icons.Time,
     id: 6,
     title: "Проектный менеджер всегда на связи",

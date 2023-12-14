@@ -11,6 +11,15 @@
   font-weight: 700;
   gap: 30px;
   margin-bottom: 34px;
+  @media (max-width: 580px) {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    gap: 8px 16px;
+    align-self: stretch;
+    flex-wrap: wrap;
+    margin-bottom: 23px;
+  }
 }
 .item {
   color: var(--primary);
@@ -20,6 +29,9 @@
 .footerLine {
   border-bottom: 1px solid #bbb;
   margin-bottom: 58px;
+  @media (max-width: 580px) {
+    margin-bottom: 23px;
+  }
 }
 
 .footerBot {
@@ -27,16 +39,30 @@
   display: flex;
   justify-content: space-between;
   color: var(--primary);
+  @media (max-width: 580px) {
+    display: block;
+  }
 }
 
 .footerInsideMatters {
   display: flex;
   align-items: center;
   gap: 62px;
+  @media (max-width: 580px) {
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+  }
 }
 
 .policy {
   display: flex;
   align-items: center;
   gap: 72px;
+  @media (max-width: 580px) {
+    span:last-child {
+      display: none;
+    }
+    justify-content: center;
+  }
 }

@@ -18,7 +18,7 @@ const Advantages = ({}) => {
           {advantagesItem.map((item, index) => (
             <div key={item.id} className={`${styles.sectionBlock} ${index === 0 || index === 3 ? "" : styles.second}` }>
               {isSmallScreen ? (
-            <Icons.Stroke className={styles.colorStroke} />
+            <item.strokeSmall className={styles.colorStroke} />
           ) : (
             <item.stroke key={item.id} className={styles.colorStroke} />
           )}

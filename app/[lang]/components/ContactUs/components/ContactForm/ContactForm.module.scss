@@ -1,12 +1,25 @@
 .contactForm {
   position: absolute;
+  max-width: 470px;
   top: 0;
-  padding: 56px 30px;
+  padding: 48px 30px;
+  @media (max-width: 480px) {
+    max-width: 250px;
+    padding: 16px 15px;
+  }
   .filling {
     display: flex;
-    margin-bottom: 39px;
+    margin-bottom: 24px;
+    @media (max-width: 480px) {
+      flex-direction: column;
+      margin-bottom: 16px;
+    }
     .firstName {
-      margin-right: 30px;
+      margin-right: 24px;
+      @media (max-width:480px) {
+        margin-right: 0px;
+        margin-bottom: 16px;
+      }
       .labelText {
         color: #0a0a0a;
         font-size: 14px;
@@ -17,11 +30,11 @@
         margin-left: 20px;
       }
       .inputName {
-        margin-top: 16px;
+        margin-top: 8px;
         .customInput {
           position: absolute;
           padding: 13px 24px 11px 24px;
-          width: 240px;
+          width: 193px;
           font-size: 18px;
           line-height: 24px;
           outline: none;
@@ -35,12 +48,12 @@
           line-height: 24px;
         }
         .nameStroke {
-          width: 240px;
+          width: 193px;
           color: var(--C1-E);
         }
       }
     }
-    .budget {
+    .number {
       .labelText {
         color: #0a0a0a;
         font-size: 14px;
@@ -48,41 +61,40 @@
         font-weight: 700;
         letter-spacing: 2px;
         text-transform: uppercase;
-      }
-      .inputBudget {
-        margin-top: 16px;
-        .arrowBudget {
-          position: absolute;
-          .customInput {
-            padding: 11px 10px 13px 24px;
-            width: 110px;
-            font-size: 18px;
-            line-height: 24px;
-            outline: none;
-            border: none;
-            color: var(--colors-white);
-            background-color: transparent;
-          }
-          .customInput::placeholder {
-            color: var(--colors-white);
-            font-size: 18px;
-            line-height: 24px;
-          }
-          .arrow {
-            cursor: pointer;
-            color: var(--colors-white);
-          }
+        @media (max-width:480px) {
+          margin-left: 20px;
         }
-
-        .budgetStroke {
-          width: 140px;
+      }
+      .inputNumber {
+        margin-top: 8px;
+        .customInput {
+          position: absolute;
+          padding: 13px 24px 11px 24px;
+          width: 193px;
+          font-size: 18px;
+          line-height: 24px;
+          outline: none;
+          border: none;
+          color: var(--text-light);
+          background-color: transparent;
+        }
+        .customInput::placeholder {
+          color: var(--text-light);
+          font-size: 18px;
+          line-height: 24px;
+        }
+        .numberStroke {
+          width: 193px;
           color: var(--C1-E);
         }
       }
     }
   }
   .email {
-    margin-bottom: 40px;
+    margin-bottom: 24px;
+    @media (max-width:480px) {
+      margin-bottom: 16px;
+    }
     .labelText {
       color: #0a0a0a;
       font-size: 14px;
@@ -93,7 +105,7 @@
       margin-left: 20px;
     }
     .inputEmail {
-      margin-top: 17px;
+      margin-top: 8px;
       .customInput {
         position: absolute;
         padding: 13px 20px 11px 20px;
@@ -104,6 +116,9 @@
         border: none;
         color: var(--colors-white);
         background-color: transparent;
+        @media (max-width:480px) {
+          width: 193px;
+        }
       }
       .customInput::placeholder {
         color: var(--colors-white);
@@ -113,11 +128,17 @@
       .emailStroke {
         width: 410px;
         color: var(--C1-E);
+        @media (max-width:480px) {
+          width: 193px;
+        }
       }
     }
   }
   .message {
-    margin-bottom: 25px;
+    margin-bottom: 40px;
+    @media (max-width:480px) {
+      margin-bottom: 24px;
+    }
     .labelText {
       color: #0a0a0a;
       font-size: 14px;
@@ -128,7 +149,7 @@
       margin-left: 20px;
     }
     .textMessage {
-      margin-top: 16px;
+      margin-top: 8px;
       .customText {
         display: block;
         position: absolute;
@@ -140,6 +161,12 @@
         font-size: 18px;
         line-height: 24px;
         overflow: hidden;
+        @media (max-width:480px) {
+          width: 187px;
+          height: 97px;
+          margin-left: 16px;
+          margin-top: 10px;
+        }
       }
       .customText::placeholder {
         color: rgba(21, 20, 57, 0.4);
@@ -151,9 +178,8 @@
     }
   }
   .contactSend {
+    justify-content: center;
     display: flex;
-    justify-content: space-between;
-    padding: 0px 20px 0px 20px;
-    align-items: center;
+    flex-wrap: wrap;
   }
 }

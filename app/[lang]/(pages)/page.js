@@ -38,11 +38,13 @@ export default function Home({ params: { lang } }) {
        {/* <Advantages /> */}
       <div className="container">
         {/* <Services /> */}
-        {/* <AnswersOnQuestions /> */}
         {/* <OurWorks /> */}
         {/* <WorkProcess /> */}
       </div>
         <ContactUs />
+        <div className="container">
+        {/* <AnswersOnQuestions /> */}
+      </div>
     </main>
   );
 }

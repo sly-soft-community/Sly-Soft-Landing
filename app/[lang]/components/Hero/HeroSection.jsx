@@ -34,7 +34,7 @@ const item = [
 
 const HeroSection = () => {
   const windowSize = useWindowSize();
-  const isSmallScreen = windowSize.width <= 680;
+  const isSmallScreen = windowSize.width <= 820;
 
   return (
     <div className={styles.customBg}>
@@ -42,7 +42,7 @@ const HeroSection = () => {
         <div className={styles.overlay}>
           <div className={styles.overlayB}>
             <h1 className={styles.heroText}>
-              High-quality software development created for business automation
+            High-quality software development created for business automation
             </h1>
           </div>
           <div className={styles.item}>
