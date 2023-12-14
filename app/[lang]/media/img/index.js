@@ -18,7 +18,7 @@ import Time from "./Time.svg";
 import ServicesBg from "./ServicesBg.svg";
 import ServicesBgSecond from "./ServicesBgSecond.svg";
 import ServicesBgThree from "./ServicesBgThree.svg";
-import ServicesBgFourth from "./ServicesBgFourth.svg";
+import ServicesBgFourth from "./ServicesbgFourth.svg";
 import Explore from "./Explore.svg";
 import OurWorks from "./OurWorks.svg";
 import OurWorksSecond from "./OurWorksSecond.svg";
@@ -38,6 +38,10 @@ import ContactStrokeSecond from "./contactUs/ContactStrokeSecond.svg";
 import ContactStrokeThree from "./contactUs/ContactStrokeThree.svg";
 import ContactStrokeFourth from "./contactUs/ContactStrokeFourth.svg";
 import Arrow from "./contactUs/Arrow.svg";
+import GitIcon from "./GitIcon.svg";
+import JiraIcon from "./jiraIcon.svg";
+import NotionIcon from "./NotionIcon.svg";
+import СonfluenceIcon from "./СonfluenceIcon.svg";
 
 const Icons = {
   Sun,
@@ -80,6 +84,10 @@ const Icons = {
   ContactStrokeThree,
   ContactStrokeFourth,
   Arrow,
+  GitIcon,
+  JiraIcon,
+  NotionIcon,
+  СonfluenceIcon,
 };
 
 export default Icons;

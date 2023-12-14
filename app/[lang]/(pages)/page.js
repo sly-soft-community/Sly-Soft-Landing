@@ -9,6 +9,7 @@ import AnswersOnQuestions from "@/components/AnswersOnQuestions/AnswersOnQuestio
 import OurWorks from "@/components/OurWorks/OurWorks";
 import WorkProcess from "@/components/WorkProcess/WorkProcess";
 import ContactUs from "@/components/ContactUs/ContactUs";
+import OurTechnilogy from "@/components/OurTechnilogy/OurTechnilogy";
 
 export async function generateStaticParams() {
   return i18n.locales.map((locale) => ({ lang: locale }));
@@ -34,15 +35,19 @@ export default function Home({ params: { lang } }) {
 
   return (
     <main className={styles.main}>
-      {/* <HeroSection /> */}
-       {/* <Advantages /> */}
+      <HeroSection />
+      <Advantages />
       <div className="container">
-        {/* <Services /> */}
-        {/* <AnswersOnQuestions /> */}
-        {/* <OurWorks /> */}
-        {/* <WorkProcess /> */}
+        <Services />
+        <AnswersOnQuestions />
+        <OurWorks />
+
       </div>
-        <ContactUs />
+      <OurTechnilogy />
+      <div className="container">
+        <WorkProcess />
+      </div>
+      <ContactUs />
     </main>
   );
 }

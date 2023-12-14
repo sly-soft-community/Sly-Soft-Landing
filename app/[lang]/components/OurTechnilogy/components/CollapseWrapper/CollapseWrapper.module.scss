@@ -1,0 +1,119 @@
+@import "@/styles/mixins.scss";
+
+.box.open {
+    border-top: 1px solid #F2F2F2;
+
+}
+.box {
+    z-index: 1;
+    position: relative;
+}
+
+.content {
+    height: 0;
+    overflow: hidden;
+    transition: all 0.5s ease-out;
+}
+
+.content.open {
+    height: var(--hightOpen);
+    transition: all 0.5s ease-out;
+
+}
+
+.title {
+    cursor: pointer;
+    padding: 4px 8px;
+    display: flex;
+    justify-content: space-between;
+    background: transparent;
+    border-bottom: 1px solid rgba(255, 255, 255, 1);
+
+    .iconBox {
+        display: none;
+    }
+
+    span {
+        color: rgba(255, 255, 255, 0.90);
+        display: block;
+        width: 100%;
+        text-align: center;
+        font-family: 'Play';
+        font-size: 30px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 40px;
+        /* 133.333% */
+        letter-spacing: -0.4px;
+
+    }
+
+    @include respond-to("lg") {
+        justify-content: space-between;
+
+        span {
+            display: block;
+            width: fit-content;
+            color: rgba(255, 255, 255, 0.90);
+
+            font-family: 'Play';
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 32px;
+            text-align: left;
+        }
+
+        .iconBox {
+            display: block;
+            width: 24px;
+            height: 24x;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .icon {
+            height: 22px;
+            width: 22px;
+            transition: all 0.5s ease;
+
+        }
+        .icon.open {
+            transform: rotate(45deg);
+            transition: all 0.5s ease;
+        }
+    }
+
+}
+
+
+@media screen and (max-width:768px) {
+    .box {
+        padding: 0 15px;
+    }
+
+
+    .title {
+        // cursor: pointer;
+        // padding: 4px 8px;
+        // display: flex;
+        // justify-content: space-between;
+        // border: 2px solid var(--text-neutral-c-1-b, #40475D);
+        // background: var(--text-neutral-c-1-b, #40475D);
+
+
+        // span {
+        //     color: var(--text-neutral-c-1-g, #F9F9F9);
+        //     font-family: "Futura Now Headline";
+        //     font-size: 14px;
+        //     font-style: normal;
+        //     font-weight: 500;
+        //     line-height: 16px;
+        //     /* 114.286% */
+        // }
+
+
+    }
+
+}

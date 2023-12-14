@@ -1,3 +1,10 @@
+@import "@/styles/mixins.scss";
+
+.section {
+  padding-bottom: 120px;
+
+}
+
 .ourWorks {
   text-align: center;
   margin-bottom: 120px;
@@ -10,9 +17,11 @@
     letter-spacing: -0.4px;
     margin-bottom: 24px;
   }
+
   .checkOut {
     display: flex;
     justify-content: center;
+
     .checkOutDesc {
       color: var(--primary);
       max-width: 770px;
@@ -28,31 +37,6 @@
   position: relative;
   max-width: 570px;
 
-  &::before,
-  &::after {
-    content: "";
-    position: absolute;
-    width: 0;
-    border-style: solid;
-    z-index: 2;
-  }
-  &::before {
-    top: 0;
-    border-width: 40px 40px 0 0;
-    border-color: transparent;
-  }
-  &::after {
-    bottom: 0;
-    border-width: 0 0 40px 40px;
-    border-color: transparent;
-    right: 0;
-  }
-
-  .colorFill {
-    position: absolute;
-    color: red;
-  }
-
   .content {
     padding: 345px 30px 24px 30px;
     position: relative;
@@ -63,30 +47,19 @@
       max-width: 570px;
       height: 100px;
     }
-    .title {
-      color: var(--colors-white);
-      font-size: 22px;
-      line-height: 32px;
-      font-weight: 700;
-      margin-bottom: 16px;
-    }
-    .titleSub {
-      color: var(--colors-white);
-      font-size: 16px;
-      line-height: 24px;
-      font-weight: 400;
-      opacity: 0.8;
-      margin-bottom: 16px;
-    }
-    .tag {
-      display: flex;
-      color: var(--C2-A);
-      font-size: 14px;
-      line-height: 16px;
-      font-weight: 700;
-      letter-spacing: 2px;
-      text-transform: uppercase;
-    }
+
+  }
+}
+
+.containerBlock {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 30px;
+  row-gap: 32px;
+
+  @include respond-to("lg") {
+    grid-template-columns: 1fr;
+    justify-items: center;
   }
 }
 
