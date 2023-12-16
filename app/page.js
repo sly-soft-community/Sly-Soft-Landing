@@ -1,14 +1,6 @@
-import GoToApp from "./ru/components/GoToApp/GoToApp";
-import { i18n } from "../i18n-config";
+import { redirect } from 'next/navigation';
+import { defaultLocale } from '@/navigation';
 
-export default function Home() {
-    return (
-        <main>
-            <nav>
-                <a href="/ru">ru</a>
-                <a href="/en">en</a>
-            </nav>
-            <GoToApp path={i18n.defaultLocale} />
-        </main>
-    );
+export default function RootPage() {
+    redirect(`/${defaultLocale}`);
 }

@@ -1,14 +1,9 @@
-import { GoogleAnalytics } from "./analytics/GoogleAnalytics";
+import "./globals.scss";
+import "swiper/css";
+import "swiper/css/navigation";
 
-export const metadata = {
-    metadataBase: new URL(process.env.NEXT_PUBLIC_BASE_URL),
-};
-
-export default async function RootLayout({ children, params }) {
-    return (
-        <html lang={params.lang ? params.lang : "ru"}>
-            <GoogleAnalytics trackPageViews={{ ignoreHashChange: true }} />
-            <body className="page">{children}</body>
-        </html>
-    );
+// Since we have a `not-found.tsx` page on the root, a layout file
+// is required, even if it's just passing children through.
+export default function RootLayout({children}) {
+  return children;
 }

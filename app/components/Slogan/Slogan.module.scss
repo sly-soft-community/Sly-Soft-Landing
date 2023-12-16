@@ -1,0 +1,15 @@
+.slogan {
+  font-size: inherit;
+  color: wheat;
+}
+
+.slogan::after {
+  content: " ▋";
+  animation: cursor-blink 2s linear infinite;
+}
+
+@keyframes cursor-blink {
+  50% {
+    opacity: 0;
+  }
+}

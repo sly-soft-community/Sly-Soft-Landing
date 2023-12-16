@@ -1,0 +1,16 @@
+{
+  "Header": {
+    "services": "Services",
+    "projects": "Projects",
+    "workflow": "Workflow",
+    "contacts": "Contacts",
+    "faq": "FAQ",
+    "get-in-touch": "Get in touch"
+  },
+  "Hero": {
+    "slogan-1": "High-quality software development created for business automation",
+    "slogan-2": "Mobile, desktop and web applications",
+    "slogan-3": "Landing-pages and enterprise-projects",
+    "slogan-4": "Professional project support 24/7"
+  }
+}
