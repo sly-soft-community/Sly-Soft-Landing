@@ -1,6 +1,6 @@
 import { GoogleAnalytics } from "@/analytics/GoogleAnalytics";
-import Header from "@/components/Header/Header";
-import Footer from "@/components/Footer/Footer";
+import Header from "@/sections/Header/Header";
+import Footer from "@/sections/Footer/Footer";
 import { NextIntlClientProvider, useMessages } from 'next-intl';
 import { unstable_setRequestLocale } from 'next-intl/server';
 import { locales } from "@/navigation";

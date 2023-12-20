@@ -2,11 +2,12 @@ import React, { useMemo, useState } from "react";
 import Link from "next/link";
 import Logo from "@/media/Logo.png";
 import ExportedImage from "next-image-export-optimizer";
-import ImageSun from "@/components/Ui/ImageSun/ImageSun";
 import ImageGet from "@/components/Ui/ImageGet/ImageGet";
-import ImageLanguage from "@/components/Ui/ImageLanguage/ImageLanguage";
 import styles from "./NavBar.module.scss";
 import { useTranslations } from 'next-intl';
+import LanguageButton from "@/components/Buttons/header-buttons/language-button/Language";
+import ChangeOfTopic from "@/components/Buttons/header-buttons/change-of-topic/ChangeOfTopic";
+import Contact from "@/components/Buttons/header-buttons/contact-us/Contact";
 
 function NavBar() {
   const t = useTranslations('Header')
@@ -60,9 +61,9 @@ function NavBar() {
         </ul>
       </nav>
       <div className={`${styles.btn} ${isActive ? styles.active : ""}`}>
-        <ImageLanguage />
-        <ImageSun />
-        <ImageGet name={t("get-in-touch")} />
+        <LanguageButton />
+        <ChangeOfTopic />
+        <Contact name={t("get-in-touch")} />
       </div>
       <div className={styles.menu}>
         <div

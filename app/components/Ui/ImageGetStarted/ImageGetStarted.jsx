@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "./ImageGetStarted.module.scss";
-import Icons from "@/media/img";
+import { GetInTouch} from "@/media/img/index";
 
 const ImageGetStarted = ({ name }) => {
   const handleClick = () => {
@@ -9,7 +9,7 @@ const ImageGetStarted = ({ name }) => {
   return (
     <button type="button" className={styles.button} onClick={handleClick}>
       <div className={styles.iconContainer}>
-        <Icons.GetInTouch className={styles.bt} />
+        <GetInTouch className={styles.bt} />
         <span className={styles.text}>{name}</span>
       </div>
     </button>

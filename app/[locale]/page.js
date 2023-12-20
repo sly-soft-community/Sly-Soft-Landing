@@ -34,16 +34,16 @@ export default function Home() {
       <HeroSection />
       <Advantages />
       <div className="container">
-        <Services />
-        <OurWorks />
+        {/* <Services /> */}
+        {/* <OurWorks /> */}
       </div>
-      <OurTechnilogy />
+      {/* <OurTechnilogy /> */}
       <div className="container">
-        <WorkProcess />
+        {/* <WorkProcess /> */}
       </div>
-      <ContactUs />
+      {/* <ContactUs /> */}
       <div className="container">
-        <AnswersOnQuestions />
+        {/* <AnswersOnQuestions /> */}
       </div>
     </main>
   );

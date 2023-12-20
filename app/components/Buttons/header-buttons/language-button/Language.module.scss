@@ -1,0 +1,19 @@
+.wrapperImg {
+  max-width: 62px;
+  min-height: 40px;
+  background-image: url("../../../../media//img/buttons/Language.png");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+
+  .button {
+    padding: 9px 20px;
+    background: none;
+    .text {
+      color: var(--primary);
+      font-size: 16px;
+      line-height: 22px;
+      text-decoration-line: underline;
+      text-transform: uppercase;
+    }
+  }
+}

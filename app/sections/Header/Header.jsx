@@ -1,6 +1,6 @@
 "use client";
 
-import styles from "./Header.module.scss";
+import styles from "@/sections/Header/Header.module.scss";
 import NavBar from "@/components/NavBar/NavBar";
 
 function Header() {

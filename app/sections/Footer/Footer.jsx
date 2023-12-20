@@ -3,7 +3,7 @@ import React from "react";
 import Link from "next/link";
 import ExportedImage from "next-image-export-optimizer";
 import Logo from "@/media/Logo.png";
-import styles from "./Footer.module.scss";
+import styles from "@/sections/Footer/Footer.module.scss";
 
 const item = [
   {
