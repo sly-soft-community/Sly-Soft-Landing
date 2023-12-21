@@ -2,7 +2,6 @@ import React, { useMemo, useState } from "react";
 import Link from "next/link";
 import Logo from "@/media/Logo.png";
 import ExportedImage from "next-image-export-optimizer";
-import ImageGet from "@/components/Ui/ImageGet/ImageGet";
 import styles from "./NavBar.module.scss";
 import { useTranslations } from 'next-intl';
 import LanguageButton from "@/components/Buttons/header-buttons/language-button/Language";

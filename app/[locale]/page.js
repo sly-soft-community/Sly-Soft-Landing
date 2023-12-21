@@ -1,14 +1,14 @@
 import styles from "./page.module.scss";
 // import { getDictionary } from "../../../get-dictionary";
 // import { i18n } from "../../../i18n-config";
-import HeroSection from "@/components/Hero/HeroSection";
-import Advantages from "@/components/Advantages/Advantages";
-import Services from "@/components/Services/Services";
+import HeroSection from "@/sections/Hero/HeroSection";
+import Advantages from "@/sections/Advantages/AdvantagesSection";
+import Services from "@/sections/Services/Services";
 import AnswersOnQuestions from "@/components/AnswersOnQuestions/AnswersOnQuestions";
-import OurWorks from "@/components/OurWorks/OurWorks";
+import OurWorksSection from "@/sections/OurWorks/OurWorksSection";
+import OurTechnilogySection from "@/sections/OurTechnilogy/OurTechnilogySection";
 import WorkProcess from "@/components/WorkProcess/WorkProcess";
 import ContactUs from "@/components/ContactUs/ContactUs";
-import OurTechnilogy from "@/components/OurTechnilogy/OurTechnilogy";
 //
 // export async function generateStaticParams() {
 //   return i18n.locales.map((locale) => ({ lang: locale }));
@@ -31,13 +31,13 @@ import OurTechnilogy from "@/components/OurTechnilogy/OurTechnilogy";
 export default function Home() {
   return (
     <main className={styles.main}>
-      <HeroSection />
-      <Advantages />
+      {/* <HeroSection /> */}
+      {/* <Advantages /> */}
       <div className="container">
         {/* <Services /> */}
-        {/* <OurWorks /> */}
+        {/* <OurWorksSection /> */}
       </div>
-      {/* <OurTechnilogy /> */}
+      <OurTechnilogySection />
       <div className="container">
         {/* <WorkProcess /> */}
       </div>

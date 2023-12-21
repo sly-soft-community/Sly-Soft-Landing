@@ -11,6 +11,101 @@
     "slogan-1": "High-quality software development created for business automation",
     "slogan-2": "Mobile, desktop and web applications",
     "slogan-3": "Landing-pages and enterprise-projects",
-    "slogan-4": "Professional project support 24/7"
+    "slogan-4": "Professional project support 24/7",
+    "web-development": {
+      "title": "Web Development",
+      "subtitle": "By using latest technologies we shape digital products"
+    },
+    "ux-ui-design": {
+      "title": "UX/UI Design",
+      "subtitle": "We produce an engaging, cutting-edge, and useful design"
+    },
+    "database": {
+      "title": "Database",
+      "subtitle": "Empower Your Business with Robust Databases"
+    },
+    "infrastructure": {
+      "title": "Infrastructure",
+      "subtitle": "Building the Backbone of Digital Product"
+    }
+  },
+  "Advantages": {
+    "advantages": "Our benefits",
+    "project-development": {
+      "title": "Turnkey project development",
+      "subtitle": "From concept to execution - we provide a complete development of your software product!"
+    },
+    "optimal-solutions": {
+      "title": "Optimal solutions",
+      "subtitle": "The solution cannot be the only right one! We will analyze comprehensively your requirements and recommend several strategies based on your needs and project budget."
+    },
+    "future-proof-solutions": {
+      "title": "Future-proof solutions",
+      "subtitle": "Our software foundation is developed with further scalability and service."
+    },
+    "bundled": {
+      "title": "A fully 'bundled' set of experts",
+      "subtitle": "From designer and content makers, to DevOps developers. Want to integrate a CRM system? No problem! Ads for your promotional campaigns? All about us!"
+    },
+    "demo-subdomains": {
+      "title": "Demo subdomains for each project",
+      "subtitle": "You do not have to ask for any reports about the software development process! You can oversee all changes by yourself, anytime, wherever you are."
+    },
+    "project-manager": {
+      "title": "Project manager is always in touch",
+      "subtitle": "The project manager, assigned to you, will always recommend the best decisions in software development and answer any questions you may have!"
+    }
+  },
+  "Services": {
+    "services": "Services",
+    "website": {
+      "title": "Website Development",
+      "subtitle": "Want to increase your profits? A competently developed website will help you: landing-pages, online stores, enterprise decisions, customized sites, and promotional ones!"
+    },
+    "complex": {
+      "title": "Complex enterprise projects",
+      "subtitle": "Confidently solve complex issues! Our team has a great reputation in the development of multiple enterprise projects requiring an individual approach."
+    },
+    "web": {
+      "title": "Web Applications",
+      "subtitle": "Experience a dynamic and user-friendly web application which optimizes your business processes and grows your audience."
+    },
+    "branding": {
+      "title": "Branding & Website Design",
+      "subtitle": "Pump up your brand personality and attract users with an amazing and highly intuitive visual that reflects your identity."
+    },
+    "mobile": {
+      "title": "Mobile App Development",
+      "subtitle": "We are specialized in multi-platform app development using the cutting-edge technologies and relying on long-term user experience."
+    },
+    "quality": {
+      "title": "Quality Assurance (QA)",
+      "subtitle": "We thoroughly test and customize our solutions to ensure that they meet the highest standards of productivity and user satisfaction."
+    },
+    "explore": "Explore"
+  },
+  "OurWorks": {
+    "our-works": "Our works",
+    "description": "Check out our projects that represent innovations, excellence, and passion for turning ideas into reality. Each project is a unique story of collaboration, experience, and dedication to our work.",
+    "smart-pro": {
+      "title": "SmartPro",
+      "subtitle": "Dive into the space-inspired design of SmartPro online store!  Individual styling and perfect implementation of business processes will capture you from the first click!",
+      "tags": ["Branding,", "Ux Design,", "Frontend,", "Backend,", "DevOps,"]
+    },
+    "camp-ala-too": {
+      "title": "CAMP Ala-too Irrigation System",
+      "subtitle": "A customized project to preserve the country's irrigation resources. Check out the demo by clicking on the link below!",
+      "tags": ["UX Design,", "Frontend,", "Backend,", "DevOps,"]
+    },
+    "aplicant-kstu": {
+      "title": "Aplicant KSTU",
+      "subtitle": "Paying attention to information restructuring, we developed an optimized application that simplifies the process of enrollment in KSTU.",
+      "tags": ["Android dev,", "Landing page,", "Frontend,", "DevOps,"]
+    },
+    "synergy-group": {
+      "title": "Synergy Group KR",
+      "subtitle": "A landing page that describes the company's comprehensive services in the field of medical equipment maintenance.",
+      "tags": ["Design,", "Frontend,", "DevOps,"]
+    }
   }
 }
