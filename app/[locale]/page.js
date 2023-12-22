@@ -4,11 +4,11 @@ import styles from "./page.module.scss";
 import HeroSection from "@/sections/Hero/HeroSection";
 import Advantages from "@/sections/Advantages/AdvantagesSection";
 import Services from "@/sections/Services/Services";
-import AnswersOnQuestions from "@/components/AnswersOnQuestions/AnswersOnQuestions";
 import OurWorksSection from "@/sections/OurWorks/OurWorksSection";
 import OurTechnilogySection from "@/sections/OurTechnilogy/OurTechnilogySection";
-import WorkProcess from "@/components/WorkProcess/WorkProcess";
-import ContactUs from "@/components/ContactUs/ContactUs";
+import WorkProcessSection from "@/sections/WorkProcess/WorkProcessSection";
+import ContactUsSection from "@/sections/ContactUs/ContactUsSection";
+import AnswersSection from "@/sections/AnswersOnQuestions/AnswersSection";
 //
 // export async function generateStaticParams() {
 //   return i18n.locales.map((locale) => ({ lang: locale }));
@@ -37,13 +37,13 @@ export default function Home() {
         {/* <Services /> */}
         {/* <OurWorksSection /> */}
       </div>
-      <OurTechnilogySection />
+      {/* <OurTechnilogySection /> */}
       <div className="container">
-        {/* <WorkProcess /> */}
+        {/* <WorkProcessSection /> */}
       </div>
-      {/* <ContactUs /> */}
+      {/* <ContactUsSection /> */}
       <div className="container">
-        {/* <AnswersOnQuestions /> */}
+        {/* <AnswersSection /> */}
       </div>
     </main>
   );

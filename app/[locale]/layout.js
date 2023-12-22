@@ -1,6 +1,6 @@
 import { GoogleAnalytics } from "@/analytics/GoogleAnalytics";
-import Header from "@/sections/Header/Header";
-import Footer from "@/sections/Footer/Footer";
+import FooterSection from "@/sections/Footer/FooterSection";
+import HeaderSection from "@/sections/Header/HeaderSection";
 import { NextIntlClientProvider, useMessages } from 'next-intl';
 import { unstable_setRequestLocale } from 'next-intl/server';
 import { locales } from "@/navigation";
@@ -31,9 +31,9 @@ export default function RootLayout({ children, params: { locale } }) {
       <GoogleAnalytics trackPageViews={{ ignoreHashChange: true }} />
       <body>
         <NextIntlClientProvider messages={messages}>
-          <Header />
+          <HeaderSection />
           {children}
-          <Footer />
+          <FooterSection />
         </NextIntlClientProvider>
       </body>
     </html>

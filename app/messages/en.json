@@ -90,22 +90,143 @@
     "smart-pro": {
       "title": "SmartPro",
       "subtitle": "Dive into the space-inspired design of SmartPro online store!  Individual styling and perfect implementation of business processes will capture you from the first click!",
-      "tags": ["Branding,", "Ux Design,", "Frontend,", "Backend,", "DevOps,"]
+      "tags": [
+        "Branding,",
+        "Ux Design,",
+        "Frontend,",
+        "Backend,",
+        "DevOps,"
+      ]
     },
     "camp-ala-too": {
       "title": "CAMP Ala-too Irrigation System",
       "subtitle": "A customized project to preserve the country's irrigation resources. Check out the demo by clicking on the link below!",
-      "tags": ["UX Design,", "Frontend,", "Backend,", "DevOps,"]
+      "tags": [
+        "UX Design,",
+        "Frontend,",
+        "Backend,",
+        "DevOps,"
+      ]
     },
     "aplicant-kstu": {
       "title": "Aplicant KSTU",
       "subtitle": "Paying attention to information restructuring, we developed an optimized application that simplifies the process of enrollment in KSTU.",
-      "tags": ["Android dev,", "Landing page,", "Frontend,", "DevOps,"]
+      "tags": [
+        "Android dev,",
+        "Landing page,",
+        "Frontend,",
+        "DevOps,"
+      ]
     },
     "synergy-group": {
       "title": "Synergy Group KR",
       "subtitle": "A landing page that describes the company's comprehensive services in the field of medical equipment maintenance.",
-      "tags": ["Design,", "Frontend,", "DevOps,"]
+      "tags": [
+        "Design,",
+        "Frontend,",
+        "DevOps,"
+      ]
     }
+  },
+  "WorkProcess": {
+    "work-flow": "Workflow",
+    "planning": {
+      "title": "Planning",
+      "subTitle": {
+        "title": "Analysis",
+        "subtitle": "Drafting requirements"
+      }
+    },
+    "design": {
+      "title": "Design",
+      "subTitle": {
+        "title": "Branding",
+        "subtitle": "UX/UI Design"
+      }
+    },
+    "development": {
+      "title": "Development",
+      "subTitle": {
+        "title": "Frontend",
+        "subtitle": "Backend"
+      }
+    },
+    "testing": {
+      "title": "Testing",
+      "subTitle": {
+        "title": "Testing"
+      }
+    },
+    "launch-support": {
+      "title": "Launch & Support",
+      "subTitle": {
+        "title": "Launch, support"
+      }
+    }
+  },
+  "ContactUs": {
+    "contactText": "Let’s Keep in Touch",
+    "contactDesc": "Contact us! And we will make your digital desires real!",
+    "number": "+996 990 003 990",
+    "dot": "Worldwide",
+    "social-text": {
+      "title": "Social media:",
+      "desc": {
+        "title": "In Russian:",
+        "subtitle": "In English:",
+        "cases": "Cases:"
+      }
+    }
+  },
+  "ContactForm": {
+    "name": "your name",
+    "placeholder-name": "First name",
+    "number": "Phone number",
+    "placeholder-number": "+996 ххх ххх ххх",
+    "email": "your e-mail",
+    "message": "YOUR MESSAGE",
+    "placeholder-message": "Message",
+    "Send": "Send"
+  },
+  "Checkbox": {
+    "label-text": "I agree to the processing of my personal data in accordance with",
+    "link-text": "privacy policy"
+  },
+  "Answers": {
+    "answers-text": "Answers to your questions",
+    "id-1": {
+      "title": "How to get started?",
+      "subtitle": "Getting started is super easy. Contact us from our contact form or via our contact details and our project manager will consult you, discuss the requirements, goals and further steps."
+    },
+    "id-2": {
+      "title": "How long does it takes to develop project?",
+      "subtitle": "Project timelines vary depending on the scope and complexity of the project."
+    },
+    "id-3": {
+      "title": "Do you offer ongoing support after the project is completed?",
+      "subtitle": "Yes, we provide post-launch support to ensure your resource runs trouble-free. Our team is ready to resolve any issues that may arise or customize the product according to your preferences."
+    },
+    "id-4": {
+      "title": "Can you develop large-scale enterprise projects?",
+      "subtitle": "Absolutely! We have a successful experience in dealing with complex enterprise projects. Our team is well equipped to solve complex problems and to provide solutions customized to your company's needs."
+    },
+    "id-5": {
+      "title": "Can you guarantee the quality of your software?",
+      "subtitle": "Quality Assurance (QA) is a fundamental part of our development process. We conduct rigorous testing at all stages of development to ensure that our products are reliable, functional and user-friendly."
+    },
+    "id-6": {
+      "title": "What kind of specific degments have you worked with?",
+      "subtitle": "We have experience in working with such spheres as healthcare, e-commerce, education, GIS-development and many others. Our adaptive approach allows us to fulfill the needs of different segments."
+    }
+  },
+  "Footer": {
+    "services": "Services",
+    "projects": "Projects",
+    "workflow": "Workflow",
+    "contacts": "Contacts",
+    "faq": "FAQ",
+    "inside": "Inside Matters",
+    "privacy": "Privacy Policy",
+    "Terms": "Terms"
   }
 }

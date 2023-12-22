@@ -1,9 +1,9 @@
 "use client";
 
-import styles from "@/sections/Header/Header.module.scss";
+import styles from "@/sections/Header/HeaderSection.module.scss";
 import NavBar from "@/components/NavBar/NavBar";
 
-function Header() {
+function HeaderSection() {
   return (
     <header className={styles.header}>
       <div className="container">
@@ -13,4 +13,4 @@ function Header() {
   );
 }
 
-export default Header;
+export default HeaderSection;
