@@ -228,5 +228,19 @@
     "inside": "Inside Matters",
     "privacy": "Privacy Policy",
     "Terms": "Terms"
-  }
+  },
+  "OurTechnilogy": {
+    "title-text": "Technology stack",
+    "title-test": "QA Testing tools",
+    "stack": {
+      "management": "Project Management",
+      "development": "Frontend Development",
+      "mobile": "Mobile App Development",
+      "design": "Design",
+      "backend": "Backend Development",
+      "data-base": "Data Base Engineering",
+      "dev-ops": "DevOps"
+    }
+  } 
+ 
 }

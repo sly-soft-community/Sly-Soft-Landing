@@ -8,15 +8,17 @@ import { Stars } from "./components/Stars";
 import CollapseWrapper from "./components/CollapseWrapper/CollapseWrapper";
 import ExportedImage from "next-image-export-optimizer";
 import { ConfluenceIcon, GitIcon, JiraIcon, NotionIcon, } from "@/media/img";
+import { useTranslations } from "next-intl";
 // import TechnilogyItem from '../../sections/OurTechnilogy/components/TechnilogyItem/TechnilogyItem';
 // import Line from '../../sections/OurTechnilogy/components/Line/Line';
 
 const OurTechnilogySection = () => {
+  const t = useTranslations("OurTechnilogy");
   const collapseRef1 = useRef();
-  const [state, setState] = useState([
+  const [state, setState] = useState([  
     {
       id: 0,
-      title: "Управление проектом",
+      title: t("stack.management"),
       isOpen: false,
       data: [
         { title: "Confluence", icon: () => <ConfluenceIcon /> },
@@ -28,7 +30,7 @@ const OurTechnilogySection = () => {
     },
     {
       id: 1,
-      title: "Разработка интерфейса",
+      title: t("stack.development"),
       isOpen: false,
       data: [
         { title: "Angular", icon: () => <ConfluenceIcon /> },
@@ -42,7 +44,7 @@ const OurTechnilogySection = () => {
     },
     {
       id: 2,
-      title: "Разработка мобильных приложений",
+      title: t("stack.mobile"),
       isOpen: false,
       data: [
         { title: "React Native", icon: () => <ConfluenceIcon /> },
@@ -53,7 +55,7 @@ const OurTechnilogySection = () => {
     },
     {
       id: 3,
-      title: "Дизайн",
+      title: t("stack.design"),
       isOpen: false,
       ref: collapseRef1,
       data: [
@@ -64,7 +66,7 @@ const OurTechnilogySection = () => {
     },
     {
       id: 4,
-      title: "Разработка серверной части",
+      title: t("stack.backend"),
       isOpen: false,
       data: [
         { title: "Symphony", icon: () => <ConfluenceIcon /> },
@@ -81,7 +83,7 @@ const OurTechnilogySection = () => {
     },
     {
       id: 5,
-      title: "Базы даннных",
+      title: t("stack.data-base"),
       isOpen: false,
       data: [
         { title: "PostgreSQL", icon: () => <ConfluenceIcon /> },
@@ -92,7 +94,7 @@ const OurTechnilogySection = () => {
     },
     {
       id: 6,
-      title: "DevOps",
+      title: t("stack.dev-ops"),
       isOpen: false,
       data: [
         { title: "GoLang", icon: () => <ConfluenceIcon /> },
@@ -134,7 +136,7 @@ const OurTechnilogySection = () => {
         <Stars starsCount={240} FALLING_STARS_COUNT={5}>
           <div className={styles.backgroundWrapper}>
             <div className="container">
-              <h2 className={styles.title}>Стек технологий</h2>
+              <h2 className={styles.title}>{t("title-text")}</h2>
               <div className={styles.contantBox}>
                 <div className={styles.col}>
                   {[...state].splice(0, 3).map((item, hkey) => (
@@ -172,7 +174,7 @@ const OurTechnilogySection = () => {
                 </div>
 
                 <div className={styles.col}>
-                  <CollapseWrapper title="Тестирование">
+                  <CollapseWrapper title={t("title-test")}>
                     <div className=""></div>
                   </CollapseWrapper>
 

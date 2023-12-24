@@ -37,7 +37,7 @@ export default function Home() {
         {/* <Services /> */}
         {/* <OurWorksSection /> */}
       </div>
-      {/* <OurTechnilogySection /> */}
+      <OurTechnilogySection />
       <div className="container">
         {/* <WorkProcessSection /> */}
       </div>
