@@ -50,7 +50,14 @@ function NavBar() {
   return (
     <div className={styles.containerNav}>
       <div>
-        <Link href="/">
+        <Link
+          className={styles.logo}
+          to={"home"}
+          spy={true}
+          smooth={true}
+          offset={-70}
+          duration={500}
+        >
           <ExportedImage src={Logo} width={130} height={56} alt="SlySoft" />
         </Link>
       </div>
@@ -59,10 +66,10 @@ function NavBar() {
           {items.map((item) => (
             <li key={item.id} className={styles.item}>
               <Link
-                to={item.sectionId} 
+                to={item.sectionId}
                 spy={true}
                 smooth={true}
-                offset={-70} 
+                offset={-70}
                 duration={500}
               >
                 {item.title}
@@ -74,7 +81,7 @@ function NavBar() {
       <div className={`${styles.btn} ${isActive ? styles.active : ""}`}>
         <LanguageButton />
         <ChangeOfTopic />
-        <Contact name={t("get-in-touch")} />
+        <Contact name={t("get-in-touch")} targetSectionId="contacts" />
       </div>
       <div className={styles.menu}>
         <div

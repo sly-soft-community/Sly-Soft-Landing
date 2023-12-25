@@ -49,7 +49,7 @@ const HeroSection = () => {
   });
 
   return (
-    <div className={styles.customBg}>
+    <div className={styles.customBg} id={"home"}>
       <div className="container">
         <div className={styles.overlay}>
           <div className={styles.overlayB}>
