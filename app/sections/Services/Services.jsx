@@ -74,7 +74,7 @@ const Services = () => {
     query: "(max-width: 1200px)",
   });
   return (
-    <div className={styles.services}>
+    <div className={styles.services} id={"services"}>
       <div className={styles.servicesTitle}>
         <h3 className={styles.servicesText}>{t("services")}</h3>
       </div>

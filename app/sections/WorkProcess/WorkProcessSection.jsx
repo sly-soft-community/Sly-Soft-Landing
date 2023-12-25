@@ -175,7 +175,7 @@ const scrollToElement = (id) => {
 };
 
   return (
-    <div className={styles.workProcess}>
+    <div className={styles.workProcess} id={"workflow"}>
       {/* <div className="container"> */}
         <h1 className={styles.workProcessText}>{t("work-flow")}</h1>
         <div className={styles.wrapperItems}>

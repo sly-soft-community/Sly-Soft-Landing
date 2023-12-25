@@ -51,7 +51,7 @@ const OurWorksSection = () => {
     [t]
   );
   return (
-    <div className={styles.section}>
+    <div className={styles.section} id={"projects"}>
       <div className={styles.ourWorksTop}>
         <h2 className={styles.text}>{t("our-works")}</h2>
         <div className={styles.checkOut}>

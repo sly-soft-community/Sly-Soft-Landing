@@ -1,4 +1,4 @@
-"use client"
+"use client";
 
 import React, { useMemo } from "react";
 import styles from "./AnswersSection.module.scss";
@@ -43,7 +43,7 @@ const AnswersSection = () => {
     [t]
   );
   return (
-    <div className={styles.answers}>
+    <div className={styles.answers} id={"faq"}>
       <h3 className={styles.answersText}>{t("answers-text")}</h3>
       <div className={styles.answersSection}>
         {answersItems.map((item) => (

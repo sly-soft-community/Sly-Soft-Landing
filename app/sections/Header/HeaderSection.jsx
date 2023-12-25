@@ -9,21 +9,29 @@ function HeaderSection() {
   const headerRef = useRef(null);
 
   useEffect(() => {
-    window.addEventListener("scroll", () => {
+    const handleScroll = () => {
       const currentScroll = document.documentElement.scrollTop;
-      if (currentScroll > lastScroll) {
+      if (headerRef.current && currentScroll > lastScroll) {
         headerRef.current.style.top = `-${headerRef.current.offsetHeight}px`;
       } else {
         headerRef.current.style.top = "0";
       }
       setLastScroll(currentScroll <= 0 ? 0 : currentScroll);
-      // lastScroll = currentScroll <= 0 ? 0 : currentScroll;
-    });
-    // console.log("wdawdawwa");
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
   }, [lastScroll]);
+
   useEffect(() => {
-    document.body.style.paddingTop = `${headerRef.current.offsetHeight}px`;
+    if (headerRef.current) {
+      document.body.style.paddingTop = `${headerRef.current.offsetHeight}px`;
+    }
   }, []);
+
   return (
     <header ref={headerRef} className={styles.header}>
       <div className="container">

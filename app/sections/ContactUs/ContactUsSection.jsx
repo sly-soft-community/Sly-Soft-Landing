@@ -48,7 +48,7 @@ const ContactUsSection = () => {
   });
 
   return (
-    <div className={styles.customBg}>
+    <div className={styles.customBg} id={"contacts"}>
       <div className={styles.blur}></div>
       <div className={styles.contactSection}>
         <div className={styles.contact}>
