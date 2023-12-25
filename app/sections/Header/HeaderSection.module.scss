@@ -2,5 +2,11 @@
 
 .header {
     background-color: var(--primary-bg);
-    // transition: 0.5s;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    transition: .3s all ease;
+    z-index: 20;
 }
