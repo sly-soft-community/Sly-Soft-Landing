@@ -26,7 +26,7 @@ const ContactUsSection = () => {
     () => [
       {
         id: 1,
-        title: "social-text.desc.title",
+        title: t("social-text.desc.title"),
         icons: [
           {
             id: 1,
@@ -47,7 +47,7 @@ const ContactUsSection = () => {
       },
       {
         id: 2,
-        title: "social-text.desc.subtitle",
+        title: t("social-text.desc.subtitle"),
         icons: [
           {
             id: 4,
@@ -63,7 +63,7 @@ const ContactUsSection = () => {
       },
       {
         id: 3,
-        title: "social-text.desc.cases",
+        title: t("social-text.desc.cases"),
         icons: [
           {
             id: 6,
