@@ -22,7 +22,6 @@ import Link from "next/link";
 
 const ContactUsSection = () => {
   const t = useTranslations("ContactUs");
-
   const socialIconsItems = useMemo(
     () => [
       {
