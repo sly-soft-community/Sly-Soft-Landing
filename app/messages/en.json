@@ -11,6 +11,236 @@
     "slogan-1": "High-quality software development created for business automation",
     "slogan-2": "Mobile, desktop and web applications",
     "slogan-3": "Landing-pages and enterprise-projects",
-    "slogan-4": "Professional project support 24/7"
-  }
+    "slogan-4": "Professional project support 24/7",
+    "web-development": {
+      "title": "Web Development",
+      "subtitle": "By using latest technologies we shape digital products"
+    },
+    "ux-ui-design": {
+      "title": "UX/UI Design",
+      "subtitle": "We produce an engaging, cutting-edge, and useful design"
+    },
+    "database": {
+      "title": "Database",
+      "subtitle": "Empower Your Business with Robust Databases"
+    },
+    "infrastructure": {
+      "title": "Infrastructure",
+      "subtitle": "Building the Backbone of Digital Product"
+    }
+  },
+  "Advantages": {
+    "advantages": "Our benefits",
+    "project-development": {
+      "title": "Turnkey project development",
+      "subtitle": "From concept to execution - we provide a complete development of your software product!"
+    },
+    "optimal-solutions": {
+      "title": "Optimal solutions",
+      "subtitle": "The solution cannot be the only right one! We will analyze comprehensively your requirements and recommend several strategies based on your needs and project budget."
+    },
+    "future-proof-solutions": {
+      "title": "Future-proof solutions",
+      "subtitle": "Our software foundation is developed with further scalability and service."
+    },
+    "bundled": {
+      "title": "A fully 'bundled' set of experts",
+      "subtitle": "From designer and content makers, to DevOps developers. Want to integrate a CRM system? No problem! Ads for your promotional campaigns? All about us!"
+    },
+    "demo-subdomains": {
+      "title": "Demo subdomains for each project",
+      "subtitle": "You do not have to ask for any reports about the software development process! You can oversee all changes by yourself, anytime, wherever you are."
+    },
+    "project-manager": {
+      "title": "Project manager is always in touch",
+      "subtitle": "The project manager, assigned to you, will always recommend the best decisions in software development and answer any questions you may have!"
+    }
+  },
+  "Services": {
+    "services": "Services",
+    "website": {
+      "title": "Website Development",
+      "subtitle": "Want to increase your profits? A competently developed website will help you: landing-pages, online stores, enterprise decisions, customized sites, and promotional ones!"
+    },
+    "complex": {
+      "title": "Complex enterprise projects",
+      "subtitle": "Confidently solve complex issues! Our team has a great reputation in the development of multiple enterprise projects requiring an individual approach."
+    },
+    "web": {
+      "title": "Web Applications",
+      "subtitle": "Experience a dynamic and user-friendly web application which optimizes your business processes and grows your audience."
+    },
+    "branding": {
+      "title": "Branding & Website Design",
+      "subtitle": "Pump up your brand personality and attract users with an amazing and highly intuitive visual that reflects your identity."
+    },
+    "mobile": {
+      "title": "Mobile App Development",
+      "subtitle": "We are specialized in multi-platform app development using the cutting-edge technologies and relying on long-term user experience."
+    },
+    "quality": {
+      "title": "Quality Assurance (QA)",
+      "subtitle": "We thoroughly test and customize our solutions to ensure that they meet the highest standards of productivity and user satisfaction."
+    },
+    "explore": "Explore"
+  },
+  "OurWorks": {
+    "our-works": "Our works",
+    "description": "Check out our projects that represent innovations, excellence, and passion for turning ideas into reality. Each project is a unique story of collaboration, experience, and dedication to our work.",
+    "smart-pro": {
+      "title": "SmartPro",
+      "subtitle": "Dive into the space-inspired design of SmartPro online store!  Individual styling and perfect implementation of business processes will capture you from the first click!",
+      "tags": [
+        "Branding,",
+        "Ux Design,",
+        "Frontend,",
+        "Backend,",
+        "DevOps,"
+      ]
+    },
+    "camp-ala-too": {
+      "title": "CAMP Ala-too Irrigation System",
+      "subtitle": "A customized project to preserve the country's irrigation resources. Check out the demo by clicking on the link below!",
+      "tags": [
+        "UX Design,",
+        "Frontend,",
+        "Backend,",
+        "DevOps,"
+      ]
+    },
+    "aplicant-kstu": {
+      "title": "Aplicant KSTU",
+      "subtitle": "Paying attention to information restructuring, we developed an optimized application that simplifies the process of enrollment in KSTU.",
+      "tags": [
+        "Android dev,",
+        "Landing page,",
+        "Frontend,",
+        "DevOps,"
+      ]
+    },
+    "synergy-group": {
+      "title": "Synergy Group KR",
+      "subtitle": "A landing page that describes the company's comprehensive services in the field of medical equipment maintenance.",
+      "tags": [
+        "Design,",
+        "Frontend,",
+        "DevOps,"
+      ]
+    }
+  },
+  "WorkProcess": {
+    "work-flow": "Workflow",
+    "planning": {
+      "title": "Planning",
+      "subTitle": {
+        "title": "Analysis",
+        "subtitle": "Drafting requirements"
+      }
+    },
+    "design": {
+      "title": "Design",
+      "subTitle": {
+        "title": "Branding",
+        "subtitle": "UX/UI Design"
+      }
+    },
+    "development": {
+      "title": "Development",
+      "subTitle": {
+        "title": "Frontend",
+        "subtitle": "Backend"
+      }
+    },
+    "testing": {
+      "title": "Testing",
+      "subTitle": {
+        "title": "Testing"
+      }
+    },
+    "launch-support": {
+      "title": "Launch & Support",
+      "subTitle": {
+        "title": "Launch, support"
+      }
+    }
+  },
+  "ContactUs": {
+    "contactText": "Let’s Keep in Touch",
+    "contactDesc": "Contact us! And we will make your digital desires real!",
+    "number": "+996 990 003 990",
+    "dot": "Worldwide",
+    "social-text": {
+      "title": "Social media:",
+      "desc": {
+        "title": "In Russian:",
+        "subtitle": "In English:",
+        "cases": "Cases:"
+      }
+    }
+  },
+  "ContactForm": {
+    "name": "your name",
+    "placeholder-name": "First name",
+    "number": "Phone number",
+    "placeholder-number": "+996 ххх ххх ххх",
+    "email": "your e-mail",
+    "message": "YOUR MESSAGE",
+    "placeholder-message": "Message",
+    "Send": "Send"
+  },
+  "Checkbox": {
+    "label-text": "I agree to the processing of my personal data in accordance with",
+    "link-text": "privacy policy"
+  },
+  "Answers": {
+    "answers-text": "Answers to your questions",
+    "id-1": {
+      "title": "How to get started?",
+      "subtitle": "Getting started is super easy. Contact us from our contact form or via our contact details and our project manager will consult you, discuss the requirements, goals and further steps."
+    },
+    "id-2": {
+      "title": "How long does it takes to develop project?",
+      "subtitle": "Project timelines vary depending on the scope and complexity of the project."
+    },
+    "id-3": {
+      "title": "Do you offer ongoing support after the project is completed?",
+      "subtitle": "Yes, we provide post-launch support to ensure your resource runs trouble-free. Our team is ready to resolve any issues that may arise or customize the product according to your preferences."
+    },
+    "id-4": {
+      "title": "Can you develop large-scale enterprise projects?",
+      "subtitle": "Absolutely! We have a successful experience in dealing with complex enterprise projects. Our team is well equipped to solve complex problems and to provide solutions customized to your company's needs."
+    },
+    "id-5": {
+      "title": "Can you guarantee the quality of your software?",
+      "subtitle": "Quality Assurance (QA) is a fundamental part of our development process. We conduct rigorous testing at all stages of development to ensure that our products are reliable, functional and user-friendly."
+    },
+    "id-6": {
+      "title": "What kind of specific degments have you worked with?",
+      "subtitle": "We have experience in working with such spheres as healthcare, e-commerce, education, GIS-development and many others. Our adaptive approach allows us to fulfill the needs of different segments."
+    }
+  },
+  "Footer": {
+    "services": "Services",
+    "projects": "Projects",
+    "workflow": "Workflow",
+    "contacts": "Contacts",
+    "faq": "FAQ",
+    "inside": "Inside Matters",
+    "privacy": "Privacy Policy",
+    "Terms": "Terms"
+  },
+  "OurTechnilogy": {
+    "title-text": "Technology stack",
+    "title-test": "QA Testing tools",
+    "stack": {
+      "management": "Project Management",
+      "development": "Frontend Development",
+      "mobile": "Mobile App Development",
+      "design": "Design",
+      "backend": "Backend Development",
+      "data-base": "Data Base Engineering",
+      "dev-ops": "DevOps"
+    }
+  } 
+ 
 }

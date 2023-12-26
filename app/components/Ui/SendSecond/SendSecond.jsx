@@ -1,6 +1,6 @@
 import React from 'react'
 import styles from "./SendSecond.module.scss"
-import Icons from '../../../media/img'
+import { SendStrokeSecond } from '@/media/img';
 
 const SendSecond = ({name}) => {
     const handleClick = () => {
@@ -9,7 +9,7 @@ const SendSecond = ({name}) => {
   return (
     <button type="button" className={styles.button} onClick={handleClick}>
       <div className={styles.iconContainer}>
-        <Icons.SendStrokeSecond className={styles.bt}/>
+        <SendStrokeSecond className={styles.bt}/>
         <span className={styles.text}>{name}</span>
       </div>
     </button>

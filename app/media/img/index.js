@@ -1,127 +1,63 @@
-import Sun from "./sun.svg";
-import En from "./en.svg";
-import Get from "./get.svg";
-import GetInTouch from "./GetInTouch.svg";
-import SunMoon from "./sun-moon.svg";
-import Key from "./key.svg";
-import Stroke from "./Stroke.svg";
-import StrokeSmallSecond from "./StrokeSmallSecond.svg";
-import StrokeSmallThird from "./StrokeSmallThird.svg";
-import StrokeSmallForth from "./StrokeSmallForth.svg";
-import StrokeSmallFifth from "./StrokeSmallFifth.svg";
-import StrokeSmallSixth from "./StrokeSmallSixth.svg";
-import StrokeTwo from "./StrokeTwo.svg";
-import StrokeT from "./Stroke-2.svg";
-import StrokeSecond from "./StrokeSecond.svg";
-import StrokeThree from "./StrokeThree.svg";
-import StrokeForth from "./StrokeForth.svg";
-import Persone from "./Persone.svg";
-import Computer from "./Computer.svg";
-import People from "./People.svg";
-import Script from "./Script.svg";
-import Time from "./Time.svg";
-import ServicesBg from "./ServicesBg.svg";
-import ServicesBgSecond from "./ServicesBgSecond.svg";
-import ServicesBgThree from "./ServicesBgThree.svg";
-import ServicesBgFourth from "./ServicesbgFourth.svg";
-import Explore from "./Explore.svg";
-import OurWorks from "./OurWorks.svg";
-import OurWorksSecond from "./OurWorksSecond.svg";
-import OurWorksThree from "./OurWorksThree.svg";
-import OurWorksFourth from "./OurWorksFourth.svg";
-import StrokeOurWorks from "./StrokeOurWorks.svg";
-import StrokeOurWorksSecond from "./StrokeOurWorksSecond.svg";
-import Planning from "./Planning.svg";
-import Design from "./Design.svg";
-import Testing from "./Testing.svg";
-import Support from "./Support.svg";
-import Blur from "./contactUs/Blur.svg";
-import BlurSmall from "./contactUs/BlurSmall.svg";
-import Number from "./contactUs/Number.svg";
-import Dot from "./contactUs/Dot.svg";
-import ContactStroke from "./contactUs/ContactStroke.svg";
-import ContactStrokeSecond from "./contactUs/ContactStrokeSecond.svg";
-import ContactStrokeThree from "./contactUs/ContactStrokeThree.svg";
-import ContactStrokeFourth from "./contactUs/ContactStrokeFourth.svg";
-import Arrow from "./contactUs/Arrow.svg";
-import GitIcon from "./GitIcon.svg";
-import JiraIcon from "./jiraIcon.svg";
-import NotionIcon from "./NotionIcon.svg";
-import СonfluenceIcon from "./СonfluenceIcon.svg";
-import CheckIcon from "./contactUs/CheckIcon.svg";
-import SendStroke from "./contactUs/SendStroke.svg";
-import SendStrokeSecond from "./contactUs/SendStrokeSecond.svg";
-import Vk from "./contactUs/Vk.svg";
-import Tg from "./contactUs/Tg.svg";
-import Facebook from "./contactUs/Facebook.svg";
-import Inst from "./contactUs/Inst.svg";
-import Linkedin from "./contactUs/Linkedin.svg";
-import World from "./contactUs/World.svg";
-import Be from "./contactUs/Be.svg";
-import ContactStrokeSmall from "./contactUs/ContactStrokeSmall.svg";
+export { default as Sun } from "./buttons/sun.svg";
+export { default as Moon } from "./buttons/Moon.svg";
+export { default as Get } from "./buttons/Get.svg";
+export { default as Stroke } from "./advantages/Stroke.svg";
+export { default as StrokeT } from "./advantages/Stroke-2.svg";
+export { default as StrokeSecond } from "./advantages/StrokeSecond.svg";
+export { default as StrokeTwo } from "./advantages/StrokeTwo.svg";
+export { default as StrokeThree } from "./advantages/StrokeThree.svg";
+export { default as StrokeForth } from "./advantages/StrokeForth.svg";
+export { default as StrokeSmallSecond } from "./advantages/StrokeSmallSecond.svg";
+export { default as StrokeSmallThird } from "./advantages/StrokeSmallThird.svg";
+export { default as StrokeSmallForth } from "./advantages/StrokeSmallForth.svg";
+export { default as StrokeSmallFifth } from "./advantages/StrokeSmallFifth.svg";
+export { default as StrokeSmallSixth } from "./advantages/StrokeSmallSixth.svg";
+export { default as Persone } from "./advantages/Persone.svg";
+export { default as Computer } from "./advantages/Computer.svg";
+export { default as People } from "./advantages/People.svg";
+export { default as Script } from "./advantages/Script.svg";
+export { default as Time } from "./advantages/Time.svg";
+export { default as Key } from "./advantages/key.svg";
+export { default as ServicesBg } from "./services/ServicesBg.svg";
+export { default as ServicesBgThree } from "./services/ServicesBgThree.svg";
+export { default as ServicesBgFourth } from "./services/ServicesBgFourth.svg";
+export { default as GetInTouch } from "./GetInTouch.svg";
+export { default as Explore } from "./buttons/Explore.svg";
+export { default as JiraIcon } from "./ourTechnilogy/jiraIcon.svg";
+export { default as NotionIcon } from "./ourTechnilogy/NotionIcon.svg";
+export { default as GitIcon } from "./ourTechnilogy/GitIcon.svg";
+export { default as ConfluenceIcon } from "./ourTechnilogy/ConfluenceIcon.svg";
+export { default as Planning } from "./work-process/Planning.svg";
+export { default as Design } from "./work-process/Design.svg";
+export { default as Testing } from "./work-process/Testing.svg";
+export { default as Support } from "./work-process/Support.svg";
+export { default as Number } from "./contactUs/Number.svg";
+export { default as Dot } from "./contactUs/Dot.svg";
+export { default as Blur } from "./contactUs/Blur.svg";
+export { default as BlurSmall } from "./contactUs/BlurSmall.svg";
+export { default as Vk } from "./contactUs/Vk.svg";
+export { default as Tg } from "./contactUs/Tg.svg";
+export { default as Facebook } from "./contactUs/Facebook.svg";
+export { default as Inst } from "./contactUs/Inst.svg";
+export { default as Linkedin } from "./contactUs/Linkedin.svg";
+export { default as World } from "./contactUs/World.svg";
+export { default as Be } from "./contactUs/Be.svg";
+export { default as ContactStroke } from "./contactUs/ContactStroke.svg";
+export { default as ContactStrokeSecond } from "./contactUs/ContactStrokeSecond.svg";
+export { default as ContactStrokeThree } from "./contactUs/ContactStrokeThree.svg";
+export { default as ContactStrokeFourth } from "./contactUs/ContactStrokeFourth.svg";
+export { default as ContactStrokeSmall } from "./contactUs/ContactStrokeSmall.svg";
+export { default as SendStrokeSecond } from "./contactUs/SendStrokeSecond.svg";
+export { default as SendStroke } from "./contactUs/SendStroke.svg";
 
-const Icons = {
-  Sun,
-  En,
-  Get,
-  GetInTouch,
-  SunMoon,
-  Key,
-  Stroke,
-  StrokeTwo,
-  StrokeT,
-  StrokeSecond,
-  StrokeThree,
-  StrokeForth,
-  StrokeSmallSecond,
-  StrokeSmallThird,
-  StrokeSmallForth,
-  StrokeSmallFifth,
-  StrokeSmallSixth,
-  Persone,
-  Computer,
-  People,
-  Script,
-  Time,
-  ServicesBg,
-  ServicesBgSecond,
-  ServicesBgThree,
-  ServicesBgFourth,
-  Explore,
-  OurWorks,
-  OurWorksSecond,
-  OurWorksThree,
-  OurWorksFourth,
-  StrokeOurWorks,
-  StrokeOurWorksSecond,
-  Planning,
-  Design,
-  Testing,
-  Support,
-  Blur,
-  BlurSmall,
-  Number,
-  Dot,
-  ContactStroke,
-  ContactStrokeSecond,
-  ContactStrokeThree,
-  ContactStrokeFourth,
-  ContactStrokeSmall,
-  Arrow,
-  GitIcon,
-  JiraIcon,
-  NotionIcon,
-  СonfluenceIcon,
-  CheckIcon,
-  SendStroke,
-  SendStrokeSecond,
-  Vk,
-  Tg,
-  Facebook,
-  Inst,
-  Linkedin,
-  World,
-  Be,
-};
+// import StrokeThree from "./StrokeThree.svg";
+// import StrokeForth from "./StrokeForth.svg";
+// import OurWorks from "./OurWorks.svg";
+// import OurWorksSecond from "./OurWorksSecond.svg";
+// import OurWorksThree from "./OurWorksThree.svg";
+// import OurWorksFourth from "./OurWorksFourth.svg";
+// import StrokeOurWorks from "./StrokeOurWorks.svg";
+// import StrokeOurWorksSecond from "./StrokeOurWorksSecond.svg";
 
-export default Icons;
+// import Arrow from "./contactUs/Arrow.svg";
+// import CheckIcon from "./contactUs/CheckIcon.svg";
