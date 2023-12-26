@@ -18,26 +18,65 @@ import {
   World,
 } from "@/media/img";
 import { useTranslations } from "next-intl";
+import Link from "next/link";
 
 const ContactUsSection = () => {
   const t = useTranslations("ContactUs");
 
-  const contactUsItems = useMemo(
+  const socialIconsItems = useMemo(
     () => [
       {
         id: 1,
-        title: t("social-text.desc.title"),
-        icons: [Vk, Inst, Tg],
+        title: "social-text.desc.title",
+        icons: [
+          {
+            id: 1,
+            icon: Vk,
+            link: "https://vk.com/slysoftdev",
+          },
+          {
+            id: 2,
+            icon: Inst,
+            link: "https://www.instagram.com/slysoft.dev/",
+          },
+          {
+            id: 3,
+            icon: Tg,
+            link: "https://t.me/slysoft",
+          },
+        ],
       },
       {
         id: 2,
-        title: t("social-text.desc.subtitle"),
-        icons: [Facebook, Linkedin],
+        title: "social-text.desc.subtitle",
+        icons: [
+          {
+            id: 4,
+            icon: Facebook,
+            link: "https://www.facebook.com/slysoftdev",
+          },
+          {
+            id: 5,
+            icon: Linkedin,
+            link: "https://www.linkedin.com/company/slysoftdev/",
+          },
+        ],
       },
       {
         id: 3,
-        title: t("social-text.desc.cases"),
-        icons: [Be, World],
+        title: "social-text.desc.cases",
+        icons: [
+          {
+            id: 6,
+            icon: Be,
+            link: "https://www.behance.net/slysoftdev",
+          },
+          {
+            id: 7,
+            icon: World,
+            link: "https://dribbble.com/slysoftdev",
+          },
+        ],
       },
     ],
     [t]
@@ -54,9 +93,7 @@ const ContactUsSection = () => {
         <div className={styles.contact}>
           <div className={styles.contacts}>
             <h2 className={styles.contactText}>{t("contactText")}</h2>
-            <p className={styles.contactDesc}>
-            {t("contactDesc")}
-            </p>
+            <p className={styles.contactDesc}>{t("contactDesc")}</p>
           </div>
           <div className={styles.contactInfo}>
             <div className={styles.contactTop}>
@@ -71,12 +108,14 @@ const ContactUsSection = () => {
             </div>
             <div className={styles.contactBot}>
               <h6 className={styles.socialText}>{t("social-text.title")}</h6>
-              {contactUsItems.map((item) => (
+              {socialIconsItems.map((item) => (
                 <div key={item.id} className={styles.socialLayout}>
                   <div className={styles.socialDesc}>{item.title}</div>
                   <div className={styles.socialIcon}>
-                    {item.icons.map((Icon, index) => (
-                      <Icon key={index} />
+                    {item.icons.map((icon) => (
+                      <Link key={icon.id} href={icon.link} target="_blank" style={{ color: 'inherit', textDecoration: 'none' }}>
+                          <icon.icon />
+                      </Link>
                     ))}
                   </div>
                 </div>
