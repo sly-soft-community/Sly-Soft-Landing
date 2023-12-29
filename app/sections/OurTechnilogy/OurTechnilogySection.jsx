@@ -7,7 +7,7 @@ import SlyLogo from "@/media/img/ourTechnilogy/Slylogo.png";
 import { Stars } from "./components/Stars";
 import CollapseWrapper from "./components/CollapseWrapper/CollapseWrapper";
 import ExportedImage from "next-image-export-optimizer";
-import { ConfluenceIcon, GitIcon, JiraIcon, NotionIcon, } from "@/media/img";
+import { Adobe, Android, Angular, ConfluenceIcon, Discord, Docker, Figma, Flutter, GitIcon, Github, Golang, Java, Javascript, JiraIcon, Laravel, Mongodb, MySql, NextJs, NodeJs, NotionIcon, Php, PostgreSQL, Pyton, ReactIcon, Sql, Symphony, TypeScript, Vue, } from "@/media/img";
 import { useTranslations } from "next-intl";
 // import TechnilogyItem from '../../sections/OurTechnilogy/components/TechnilogyItem/TechnilogyItem';
 // import Line from '../../sections/OurTechnilogy/components/Line/Line';
@@ -24,7 +24,7 @@ const OurTechnilogySection = () => {
         { title: "Confluence", icon: () => <ConfluenceIcon /> },
         { title: "Git", icon: () => <GitIcon /> },
         { title: "Jira", icon: () => <JiraIcon /> },
-        { title: "Discord", icon: () => <ConfluenceIcon /> },
+        { title: "Discord", icon: () => <Discord /> },
         { title: "Notion", icon: () => <NotionIcon /> },
       ],
     },
@@ -33,12 +33,12 @@ const OurTechnilogySection = () => {
       title: t("stack.development"),
       isOpen: false,
       data: [
-        { title: "Angular", icon: () => <ConfluenceIcon /> },
-        { title: "Vue", icon: () => <GitIcon /> },
-        { title: "React", icon: () => <JiraIcon /> },
-        { title: "Next.js", icon: () => <ConfluenceIcon /> },
-        { title: "JavaScript", icon: () => <NotionIcon /> },
-        { title: "TypeScript", icon: () => <NotionIcon /> },
+        { title: "Angular", icon: () => <Angular /> },
+        { title: "Vue", icon: () => <Vue /> },
+        { title: "React", icon: () => <ReactIcon /> },
+        { title: "Next.js", icon: () => <NextJs /> },
+        { title: "JavaScript", icon: () => <Javascript /> },
+        { title: "TypeScript", icon: () => <TypeScript /> },
         { title: false, icon: () => <NotionIcon /> },
       ],
     },
@@ -47,9 +47,9 @@ const OurTechnilogySection = () => {
       title: t("stack.mobile"),
       isOpen: false,
       data: [
-        { title: "React Native", icon: () => <ConfluenceIcon /> },
-        { title: "Android", icon: () => <GitIcon /> },
-        { title: "Flutter", icon: () => <JiraIcon /> },
+        { title: "React Native", icon: () => <ReactIcon /> },
+        { title: "Android", icon: () => <Android /> },
+        { title: "Flutter", icon: () => <Flutter /> },
         { title: false, icon: () => <NotionIcon /> },
       ],
     },
@@ -59,9 +59,9 @@ const OurTechnilogySection = () => {
       isOpen: false,
       ref: collapseRef1,
       data: [
-        { title: "Figma", icon: () => <ConfluenceIcon /> },
-        { title: "Adobe", icon: () => <GitIcon /> },
-        { title: "Notion", icon: () => <JiraIcon /> },
+        { title: "Figma", icon: () => <Figma /> },
+        { title: "Adobe", icon: () => <Adobe /> },
+        { title: "Notion", icon: () => <NotionIcon /> },
       ],
     },
     {
@@ -69,16 +69,16 @@ const OurTechnilogySection = () => {
       title: t("stack.backend"),
       isOpen: false,
       data: [
-        { title: "Symphony", icon: () => <ConfluenceIcon /> },
-        { title: "PHP", icon: () => <GitIcon /> },
-        { title: "GitHub", icon: () => <JiraIcon /> },
-        { title: "Node.js", icon: () => <ConfluenceIcon /> },
-        { title: "JavaScript", icon: () => <NotionIcon /> },
-        { title: "Java", icon: () => <NotionIcon /> },
-        { title: "GoLang", icon: () => <NotionIcon /> },
-        { title: "Phyton", icon: () => <NotionIcon /> },
-        { title: "Laravel", icon: () => <NotionIcon /> },
-        { title: "Next.js", icon: () => <NotionIcon /> },
+        { title: "Symphony", icon: () => <Symphony /> },
+        { title: "PHP", icon: () => <Php /> },
+        { title: "GitHub", icon: () => <Github /> },
+        { title: "Node.js", icon: () => <NodeJs /> },
+        { title: "JavaScript", icon: () => <Javascript /> },
+        { title: "Java", icon: () => <Java /> },
+        { title: "GoLang", icon: () => <Golang /> },
+        { title: "Phyton", icon: () => <Pyton /> },
+        { title: "Laravel", icon: () => <Laravel /> },
+        { title: "Next.js", icon: () => <NextJs /> },
       ],
     },
     {
@@ -86,10 +86,10 @@ const OurTechnilogySection = () => {
       title: t("stack.data-base"),
       isOpen: false,
       data: [
-        { title: "PostgreSQL", icon: () => <ConfluenceIcon /> },
-        { title: "MongoDB", icon: () => <GitIcon /> },
-        { title: "MySQL", icon: () => <JiraIcon /> },
-        { title: "SQL", icon: () => <ConfluenceIcon /> },
+        { title: "PostgreSQL", icon: () => <PostgreSQL /> },
+        { title: "MongoDB", icon: () => <Mongodb /> },
+        { title: "MySQL", icon: () => <MySql /> },
+        { title: "SQL", icon: () => <Sql /> },
       ],
     },
     {
@@ -97,8 +97,8 @@ const OurTechnilogySection = () => {
       title: t("stack.dev-ops"),
       isOpen: false,
       data: [
-        { title: "GoLang", icon: () => <ConfluenceIcon /> },
-        { title: "Docker", icon: () => <GitIcon /> },
+        { title: "GoLang", icon: () => <Golang /> },
+        { title: "Docker", icon: () => <Docker /> },
       ],
     },
   ]);

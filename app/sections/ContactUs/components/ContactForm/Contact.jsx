@@ -13,13 +13,26 @@ import {
   ContactStrokeThree,
 } from "@/media/img";
 import { useTranslations } from "next-intl";
+import { useMask } from "@react-input/mask";
 
 const ContactForm = () => {
   const t = useTranslations("ContactForm");
+  const inputRef = useMask({
+    mask: "+996 ___ ___ ___",
+    replacement: { _: /\d/ },
+  });
+  const emailInputRef = useMask({
+    mask: "____@__.__",
+    replacement: { _: /[a-zA-Z0-9]/ },
+  });
 
   const isMobileScreen = useMediaQuery({
     query: "(max-width: 480px)",
   });
+
+  // const handleInputChange = () => {
+  //   console.log(inputRef.current.value);
+  // };
 
   return (
     <div>
@@ -40,12 +53,14 @@ const ContactForm = () => {
           </div>
           <div className={styles.number}>
             <label htmlFor="name" className={styles.labelText}>
-            {t("number")}
+              {t("number")}
             </label>
             <div className={styles.inputNumber}>
               <input
                 type="text"
                 placeholder={t("placeholder-number")}
+                ref={inputRef}
+                // onChange={handleInputChange}
                 className={styles.customInput}
               />
               <ContactStrokeSecond className={styles.numberStroke} />
@@ -54,12 +69,13 @@ const ContactForm = () => {
         </div>
         <div className={styles.email}>
           <label htmlFor="name" className={styles.labelText}>
-          {t("email")}
+            {t("email")}
           </label>
           <div className={styles.inputEmail}>
             <input
               type="email"
               placeholder="name@mail.com"
+              ref={emailInputRef}
               className={styles.customInput}
             />
             {isMobileScreen ? (
@@ -71,7 +87,7 @@ const ContactForm = () => {
         </div>
         <div className={styles.message}>
           <label htmlFor="name" className={styles.labelText}>
-          {t("message")}
+            {t("message")}
           </label>
           <div className={styles.textMessage}>
             <textarea
