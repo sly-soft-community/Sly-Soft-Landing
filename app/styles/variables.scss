@@ -30,6 +30,7 @@ html {
       rgba(237, 129, 39, 0.8) 1360%
     );
   --opacity: 0.5;
+  --star: #c1caf4;
 }
 
 html[data-theme="dark"] {
@@ -38,6 +39,7 @@ html[data-theme="dark"] {
   --primary-bg: #0a0a0a;
   --stop-color: #fff;
   --text-light: rgba(255, 255, 255, 0.8);
+  --star: #c1caf4;
 }
 
 html[data-theme="light"] {
@@ -57,4 +59,5 @@ html[data-theme="light"] {
   --hero-bg: linear-gradient(0deg, #fff 0%, rgba(255, 255, 255, 0) 100%);
   --blur:linear-gradient(180deg, #fff 0%, rgba(255, 255, 255, 0) 100%);
   --opacity: 0.8;
+  --star: #0a0a0a;
 }

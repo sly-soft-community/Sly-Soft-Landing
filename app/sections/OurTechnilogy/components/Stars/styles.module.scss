@@ -9,7 +9,7 @@ $randomNumber: random(5);
 
 .star {
   position: absolute;
-  background-color: #c1caf4;
+  background-color: var(--star);
   border-radius: 50%;
   z-index: 1;
   box-shadow: 0 0 12px 1px rgba(193, 202, 244, .6);

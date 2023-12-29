@@ -50,6 +50,31 @@ export { default as ContactStrokeSmall } from "./contactUs/ContactStrokeSmall.sv
 export { default as SendStrokeSecond } from "./contactUs/SendStrokeSecond.svg";
 export { default as SendStroke } from "./contactUs/SendStroke.svg";
 
+export { default as Adobe } from "./ourTechnilogy/Adobe.svg";
+export { default as Android } from "./ourTechnilogy/Android.svg";
+export { default as Angular } from "./ourTechnilogy/Angular.svg";
+export { default as Discord } from "./ourTechnilogy/Discord.svg";
+export { default as Docker } from "./ourTechnilogy/Docker.svg";
+export { default as Figma } from "./ourTechnilogy/Figma.svg";
+export { default as Flutter } from "./ourTechnilogy/Flutter.svg";
+export { default as Github } from "./ourTechnilogy/Github.svg";
+export { default as Golang } from "./ourTechnilogy/Golang.svg";
+export { default as Java } from "./ourTechnilogy/Java.svg";
+export { default as Javascript } from "./ourTechnilogy/Javascript.svg";
+export { default as Laravel } from "./ourTechnilogy/Laravel.svg";
+export { default as Mongodb } from "./ourTechnilogy/Mongodb.svg";
+export { default as MySql } from "./ourTechnilogy/Mysql.svg";
+export { default as NextJs } from "./ourTechnilogy/Next-js.svg";
+export { default as NodeJs } from "./ourTechnilogy/Node-js.svg";
+export { default as Php } from "./ourTechnilogy/Php.svg";
+export { default as PostgreSQL } from "./ourTechnilogy/PostgreSQL.svg";
+export { default as Pyton } from "./ourTechnilogy/Pyton.svg";
+export { default as ReactIcon } from "./ourTechnilogy/React.svg";
+export { default as Sql } from "./ourTechnilogy/Sql.svg";
+export { default as Symphony } from "./ourTechnilogy/Symphony.svg";
+export { default as TypeScript } from "./ourTechnilogy/Type-script.svg";
+export { default as Vue } from "./ourTechnilogy/Vue.svg";
+
 // import StrokeThree from "./StrokeThree.svg";
 // import StrokeForth from "./StrokeForth.svg";
 // import OurWorks from "./OurWorks.svg";

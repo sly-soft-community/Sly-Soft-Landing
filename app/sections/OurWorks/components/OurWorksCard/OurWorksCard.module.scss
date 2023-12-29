@@ -1,125 +1,140 @@
 @import "@/styles/mixins.scss";
 
-
 .card {
-    max-width: 570px;
-    background-image: url('./Placeholder.png');
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
-    min-height: 520px;
-    overflow: hidden;
+  max-width: 570px;
+  background-image: url("./Placeholder.png");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  min-height: 520px;
+  //   overflow: hidden;
 
-    @include respond-to("sm") {
-        max-width: 250px;
-        min-height: auto
+  @include respond-to("sm") {
+    max-width: 250px;
+    min-height: auto;
+  }
+//   filter: drop-shadow(0 0 60px whitesmoke) drop-shadow(80px 0 90px #ed8127)
+//     drop-shadow(-80px 0 90px #c2252c) drop-shadow(20px 0 300px #d75329)
+//     drop-shadow(0 0 30px #e26b28) drop-shadow(-10px 0 80px #e26b28)
+//     drop-shadow(10px 0 80px #d75329);
+  //   filter: drop-shadow(
+  //     inset 0 0 60px whitesmoke,
+  //     inset 80px 0 90px #ed8127,
+  //     inset -80px 0 90px #c2252c,
+  //     inset 20px 0 300px #d75329,
+  //     0 0 30px #e26b28,
+  //     -10px 0 80px #e26b28,
+  //     10px 0 80px #d75329
+  //   );
+
+  &:hover {
+    .img {
+      filter: grayscale(0%);
     }
 
-    &:hover {
-        .img {
-            filter: grayscale(0%);
-        }
-
-        .cardWrapper {
-            transition: .4s;
-            background: linear-gradient(118deg, rgba(249, 249, 249, 0.40) -22.02%, rgba(196, 196, 196, 0.08) 130.92%);
-        }
+    .cardWrapper {
+      transition: 0.4s;
+      //   background: linear-gradient(
+      //     118deg,
+      //     rgba(249, 249, 249, 0.4) -22.02%,
+      //     rgba(196, 196, 196, 0.08) 130.92%
+      //   );
     }
+  }
 }
 
 .cardWrapper {
-    clip-path: polygon(100.00% 0.00%, 100.00% 93.3%, 93% 100%, 0.00% 100%, 0.00% 7%, 6.7% 0.00%);
-    background: linear-gradient(118deg, rgba(249, 249, 249, 0) -22.02%, rgba(196, 196, 196, 0) 130.92%);
-    height: 100%;
+  background: linear-gradient(
+    118deg,
+    rgba(249, 249, 249, 0) -22.02%,
+    rgba(196, 196, 196, 0) 130.92%
+  );
+  
+  height: 100%;
 }
 
 .content {
-    padding: 22px 30px 14px;
-    transition: .4s;
+  padding: 22px 30px 14px;
+  transition: 0.4s;
 
-    @include respond-to("sm") {
-        padding: 7px 15px 8px;
-
-    }
+  @include respond-to("sm") {
+    padding: 7px 15px 8px;
+  }
 }
 
 .img {
-    width: 100%;
-    height: 330px;
-    filter: grayscale(100%);
-    transition: .4s;
+  width: 100%;
+  height: 330px;
+  filter: grayscale(100%);
+  transition: 0.4s;
 
-    @include respond-to("sm") {
-        height: 161px;
-    }
-
+  @include respond-to("sm") {
+    height: 161px;
+  }
 }
 
-
 .title {
-    color: var(--colors-white);
-    font-size: 22px;
-    line-height: 32px;
+  color: var(--colors-white);
+  font-size: 22px;
+  line-height: 32px;
+  font-weight: 700;
+  margin-bottom: 16px;
+
+  @include respond-to("sm") {
+    color: var(--white, #fff);
+    font-family: "Play";
+    font-size: 18px;
+    font-style: normal;
     font-weight: 700;
-    margin-bottom: 16px;
-
-    @include respond-to("sm") {
-        color: var(--white, #FFF);
-        font-family: "Play";
-        font-size: 18px;
-        font-style: normal;
-        font-weight: 700;
-        line-height: 24px;
-        /* 133.333% */
-    }
-
+    line-height: 24px;
+    /* 133.333% */
+  }
 }
 
 .titleSub {
-    color: var(--colors-white);
-    font-size: 16px;
-    line-height: 24px;
+  color: var(--colors-white);
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  opacity: 0.8;
+  margin-bottom: 16px;
+
+  @include respond-to("sm") {
+    color: #ebeaed;
+
+    font-family: "Play";
+    font-size: 12px;
+    font-style: normal;
     font-weight: 400;
-    opacity: 0.8;
-    margin-bottom: 16px;
-
-    @include respond-to("sm") {
-        color: #EBEAED;
-
-        font-family: "Play";
-        font-size: 12px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: 16px;
-        /* 133.333% */
-    }
+    line-height: 16px;
+    /* 133.333% */
+  }
 }
 
 .tag {
-    display: flex;
-    color: var(--C2-A);
-    font-size: 14px;
-    line-height: 16px;
+  display: flex;
+  color: var(--C2-A);
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+
+  @include respond-to("sm") {
+    font-family: "Play";
+    font-size: 10px;
+    font-style: normal;
     font-weight: 700;
+    line-height: 16px;
+    /* 160% */
     letter-spacing: 2px;
     text-transform: uppercase;
-
-    @include respond-to("sm") {
-        font-family: "Play";
-        font-size: 10px;
-        font-style: normal;
-        font-weight: 700;
-        line-height: 16px;
-        /* 160% */
-        letter-spacing: 2px;
-        text-transform: uppercase;
-    }
+  }
 }
 
 .cursor {
-    background: white;
-    position: fixed;
-    height: 30px;
-    width: 30px;
-    border-radius: 100%;
-
+  background: white;
+  position: fixed;
+  height: 30px;
+  width: 30px;
+  border-radius: 100%;
 }
