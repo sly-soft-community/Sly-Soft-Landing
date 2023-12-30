@@ -13,7 +13,6 @@ const OurWorksCard = ({ item }) => {
       <div className={styles.card}>
         <div className={styles.cardWrapper}>
           <div className={styles.cardBlur}> </div>
-          {/* <Corner borderWidth="0px" edgeSize="30px" minHeight="520px" maxWidth="570px" > */}
           <div className={styles.cardImg}>
             <ExportedImage
               src={item.img}
@@ -28,7 +27,6 @@ const OurWorksCard = ({ item }) => {
               </ul>
             </div>
           </div>
-         {/* </Corner> */}
         </div>
       </div>
     </div>
