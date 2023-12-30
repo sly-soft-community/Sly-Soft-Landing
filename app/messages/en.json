@@ -90,42 +90,22 @@
     "smart-pro": {
       "title": "SmartPro",
       "subtitle": "Dive into the space-inspired design of SmartPro online store!  Individual styling and perfect implementation of business processes will capture you from the first click!",
-      "tags": [
-        "Branding,",
-        "Ux Design,",
-        "Frontend,",
-        "Backend,",
-        "DevOps,"
-      ]
+      "tags": "Branding, Ux Design, Frontend, Backend, DevOps"
     },
     "camp-ala-too": {
       "title": "CAMP Ala-too Irrigation System",
       "subtitle": "A customized project to preserve the country's irrigation resources. Check out the demo by clicking on the link below!",
-      "tags": [
-        "UX Design,",
-        "Frontend,",
-        "Backend,",
-        "DevOps,"
-      ]
+      "tags": "UX Design, Frontend, Backend, DevOps"
     },
     "aplicant-kstu": {
       "title": "Aplicant KSTU",
       "subtitle": "Paying attention to information restructuring, we developed an optimized application that simplifies the process of enrollment in KSTU.",
-      "tags": [
-        "Android dev,",
-        "Landing page,",
-        "Frontend,",
-        "DevOps,"
-      ]
+      "tags": "Android dev, Landing page, Frontend, DevOps,"
     },
     "synergy-group": {
       "title": "Synergy Group KR",
       "subtitle": "A landing page that describes the company's comprehensive services in the field of medical equipment maintenance.",
-      "tags": [
-        "Design,",
-        "Frontend,",
-        "DevOps,"
-      ]
+      "tags": "Design, Frontend, DevOps,"
     }
   },
   "WorkProcess": {

@@ -34,8 +34,8 @@ export default function Home() {
       {/* <HeroSection />
       <Advantages /> */}
       <div className="container">
-        {/* <Services />
-        <OurWorksSection /> */}
+        {/* <Services /> */}
+        {/* <OurWorksSection /> */}
       </div>
       {/* <OurTechnilogySection /> */}
       <div className="container">

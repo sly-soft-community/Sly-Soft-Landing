@@ -16,6 +16,8 @@ const WorkProcessSection = () => {
 
   const wrapperRef = useRef(null);
   const elementRefs = useRef([]);
+  const workflowRef = useRef();
+  // console.log(workflowRef);
 
   const workProcessItems = useMemo(
     () => [
@@ -222,7 +224,7 @@ const WorkProcessSection = () => {
   }, [workProcessItems]);
 
   return (
-    <div className={styles.workProcess} id={"workflow"}>
+    <div ref={workflowRef} className={styles.workProcess} id={"workflow"}>
       <div className="container">
         <h1 className={styles.workProcessText}>{t("work-flow")}</h1>
         <div className={styles.wrapperItems}>
