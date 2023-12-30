@@ -21,8 +21,9 @@ html {
   --text-dark: rgba(10, 10, 10, 0.8);
   --main-bg: url("../media/img/home/SlySoft-Background.jpg") center/cover
     no-repeat fixed;
-  --services-bg: url("../media/ServicesBg.png") center/cover no-repeat;
-  --hero-bg: linear-gradient(0deg, #0b0b0b 0%, rgba(0, 0, 0, 0) 100%);
+    --services-bg: url("../media/ServicesBg.png") center/cover no-repeat;
+    --process-bg: url("../media/img/work-process/BgWork.svg");
+    --hero-bg: linear-gradient(0deg, #0b0b0b 0%, rgba(0, 0, 0, 0) 100%);
   --blur: linear-gradient(180deg, #0a0a0a 0%, rgba(0, 0, 0, 0) 100%);
   --bttn: linear-gradient(0deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 100%),
     linear-gradient(
