@@ -1,10 +1,13 @@
+
+
 .corner {
     --border-width: 3px;
     --edge-size: 20px;
     --padding: padding;
     --width: width,
     --height: height,
-  
+    
+    
     cursor: pointer;
     position: relative;
     display: flex;
@@ -20,15 +23,20 @@
       calc(100% - var(--edge-size)) 100%,
       0 100%,
       0% var(--edge-size)
-    );
+      );
   }
   .corner::before {
     content: "";
     position: absolute;
     inset: 0;
-    background: var(--C1-D);
+    background: transparent;
     // opacity: 0.3;
     z-index: -2;
+    
+  }
+
+  .corner:hover::before {
+    background: linear-gradient(90deg, #ed8127, #d75329, #c2252c);
     transition: 0.5s all ease;
   }
   
@@ -36,8 +44,6 @@
     content: "";
     position: absolute;
     inset: 0;
-    background: var(--C1-C);
-    // opacity: 0.3;
     z-index: -1;
     transition: 0.5s all ease;
     clip-path: polygon(
@@ -57,3 +63,11 @@
       calc(var(--border-width)) calc(100% - var(--border-width))
     );
   }
+  .corner:hover:after {
+background: linear-gradient(
+    140deg,
+    rgba(249, 249, 249, 0.4) 14.88%,
+    rgba(196, 196, 196, 0.08) 121.57%
+  );
+  }
+  
