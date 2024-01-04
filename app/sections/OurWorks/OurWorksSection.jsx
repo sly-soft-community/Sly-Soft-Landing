@@ -21,15 +21,15 @@ const OurWorksSection = () => {
         mobileFillIcon: ServicesBgThree,
         title: t("smart-pro.title"),
         subtitle: t("smart-pro.subtitle"),
-        tags: t("smart-pro.tags").split(", "),
+        tags: t("smart-pro.tags")
       },
       {
         id: 2,
         img: CampImg,
         mobileFillIcon: ServicesBgThree,
-        title: t("aplicant-kstu.title"),
-        subtitle: t("aplicant-kstu.subtitle"),
-        tags: t("aplicant-kstu.tags").split(", "),
+        title: t("camp-ala-too.title"),
+        subtitle: t("camp-ala-too.subtitle"),
+        tags: t("camp-ala-too.tags"),
       },
       {
         id: 3,
@@ -37,7 +37,7 @@ const OurWorksSection = () => {
         mobileFillIcon: ServicesBgThree,
         title: t("aplicant-kstu.title"),
         subtitle: t("aplicant-kstu.subtitle"),
-        tags: t("aplicant-kstu.tags").split(", "),
+        tags: t("aplicant-kstu.tags"),
       },
       {
         id: 4,

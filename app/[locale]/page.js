@@ -31,13 +31,13 @@ import AnswersSection from "@/sections/AnswersOnQuestions/AnswersSection";
 export default function Home() {
   return (
     <main className={styles.main}>
-      <HeroSection />
-      <Advantages />
+      {/* <HeroSection />
+      <Advantages /> */}
       <div className="container">
-        <Services />
-        <OurWorksSection />
+        {/* <Services /> */}
+        {/* <OurWorksSection /> */}
       </div>
-      <OurTechnilogySection />
+      {/* <OurTechnilogySection /> */}
       <div className="container">
         <WorkProcessSection />
       </div>

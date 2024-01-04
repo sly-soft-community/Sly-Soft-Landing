@@ -3,7 +3,6 @@
 import React, { useMemo } from "react";
 import styles from "./Services.module.scss";
 import { useMediaQuery } from "react-responsive";
-import { servicesItems } from "./servicesItem";
 import ExploreButton from "@/components/Ui/ui-buttons/explore-button/ExploreButton";
 import { useTranslations } from "next-intl";
 import { ServicesBg, ServicesBgThree, ServicesBgFourth } from "@/media/img";

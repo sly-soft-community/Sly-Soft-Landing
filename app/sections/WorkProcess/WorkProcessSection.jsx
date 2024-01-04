@@ -4,15 +4,20 @@ import React, { useEffect, useMemo, useRef, useState } from "react";
 import styles from "./WorkProcessSection.module.scss";
 import "../../globals.scss";
 import { Design, Planning, Script, Support, Testing } from "@/media/img";
-import { workProcessItems } from "./workProcessItems";
 import { useTranslations } from "next-intl";
+import gsap from "gsap";
+// import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 const WorkProcessSection = () => {
-  const [hoverItem, SetHoverItem] = useState(null);
-  const wrapperRef = useRef(null)
-  const [elementRefs,SetElementRefs] = useState([])
-  
+  // const [workProcessItems, setWorkProcessItems] = useState([]);
+  const [hoverItem, setHoverItem] = useState(null);
+
   const t = useTranslations("WorkProcess");
+
+  const wrapperRef = useRef(null);
+  const elementRefs = useRef([]);
+  const workflowRef = useRef();
+  // console.log(workflowRef);
 
   const workProcessItems = useMemo(
     () => [
@@ -99,7 +104,7 @@ const WorkProcessSection = () => {
               padding: "4px 289px",
               background:
                 "linear-gradient(0deg, rgba(0, 0, 0, 0.00) 0%, rgba(0, 0, 0, 0.00) 100%), linear-gradient(180deg, rgba(194, 37, 44, 0.80) -720%, rgba(237, 129, 39, 0.80) 640%)",
-                alignSelf: "flex-end",
+              alignSelf: "flex-end",
             },
           },
           {
@@ -109,7 +114,6 @@ const WorkProcessSection = () => {
               padding: "4px 368px",
               background:
                 "linear-gradient(0deg, rgba(0, 0, 0, 0.00) 0%, rgba(0, 0, 0, 0.00) 100%), linear-gradient(180deg, rgba(194, 37, 44, 0.80) -898.75%, rgba(237, 129, 39, 0.80) 460%)",
-              
             },
           },
         ],
@@ -160,74 +164,131 @@ const WorkProcessSection = () => {
     [t]
   );
 
-useEffect(() => {
-  SetElementRefs(workProcessItems.map(element => ({id:element.id, ref:React.createRef()})))
-},[])
+  useEffect(() => {
+    if (workProcessItems && workProcessItems.length > 0) {
+      elementRefs.current = workProcessItems.map(() => React.createRef());
+    }
+  }, [workProcessItems]);
 
-const scrollToElement = (id) => {
-  const elementRef = elementRefs.find((ref) => ref.id === id);
+  const handleMouseEnter = (index) => {
+    gsap.to(elementRefs.current[index].current, {
+      duration: 0.3,
+      ease: "power1.inOut",
+    });
+    setHoverItem(index);
 
-  if (elementRef && elementRef.ref.current) {
-    const wrapperLeft = wrapperRef.current.offsetLeft;
-    const elementLeft = elementRef.ref.current.offsetLeft;
-    wrapperRef.current.scrollTo({ left: elementLeft - wrapperLeft, behavior: 'smooth' });
-  }
-};
+    if (wrapperRef.current && elementRefs.current[index].current) {
+      wrapperRef.current.scrollTo({
+        left: elementRefs.current[index].current.offsetLeft,
+        behavior: "smooth",
+      });
+    }
+  };
+
+  const handleMouseLeave = () => {
+    gsap.to(elementRefs.current[0].current, {
+      duration: 0.3,
+      ease: "power1.inOut",
+    });
+    setHoverItem(null);
+
+    if (wrapperRef.current) {
+      wrapperRef.current.scrollTo({ left: 0, behavior: "smooth" });
+    }
+  };
+
+  useEffect(() => {
+    const animateElements = async () => {
+      for (let index = 0; index < workProcessItems.length; index++) {
+        const item = workProcessItems[index];
+        const element = document.getElementById(item.id);
+
+        await gsap.to(element, {
+          duration: 0.2,
+          ease: "power1.inOut",
+          onStart: () => setHoverItem(index),
+        });
+
+        setHoverItem(null);
+      }
+    };
+
+    animateElements();
+
+    return () => {
+      workProcessItems.forEach((item) => {
+        const element = document.getElementById(item.id);
+        gsap.killTweensOf(element);
+      });
+    };
+  }, [workProcessItems]);
 
   return (
-    <div className={styles.workProcess} id={"workflow"}>
-      {/* <div className="container"> */}
+    <div ref={workflowRef} className={styles.workProcess} id={"workflow"}>
+      <div className="container">
         <h1 className={styles.workProcessText}>{t("work-flow")}</h1>
         <div className={styles.wrapperItems}>
-        <div className={styles.workProcessItmes}>
-          {workProcessItems.map((item, index) => (
-            <div
-              onMouseMove={() => SetHoverItem(index)}
-              onMouseLeave={() => SetHoverItem(null)}
-              onClick={(e) => scrollToElement(item.id)}
-              key={item.id}
-              className={`${styles.items} ${
-                hoverItem !== index && hoverItem !== null ? styles.hovered : ""
-              }`}
-            >
-              <item.icon className={styles.icon} />
-              <h4 className={styles.title}>{item.title}</h4>
-            </div>
-          ))}
-        </div>
-        </div>
-        <div ref={wrapperRef} style={{maxWidth:"1205px", overflowX:"auto", overflow:"hidden"}}>
-          <div className={styles.wrapper}>
+          <div className={styles.workProcessItmes}>
             {workProcessItems.map((item, index) => (
-              <ul ref={elementRefs.find((element) => element.id === item.id)?.ref}
+              <div
                 key={item.id}
-                className={`${styles.list} ${
+                id={item.id}
+                className={`${styles.items} ${
                   hoverItem !== index && hoverItem !== null
                     ? styles.hovered
                     : ""
                 }`}
-                style={item.styles}
+                onMouseEnter={() => handleMouseEnter(index)}
+                onMouseLeave={() => handleMouseLeave(index)}
               >
-                {item.subTitle.map((subItem, index) => (
-                  <li
-                    key={index}
-                    style={{
-                      display: subItem.styles.display,
-                      width: subItem.styles.width,
-                      padding: subItem.styles.padding,
-                      background: subItem.styles.background,
-                      alignSelf: subItem.styles.alignSelf,
-                    }}
-                    className={styles.subTitle}
-                  >
-                    {subItem.title}
-                  </li>
-                ))}
-              </ul>
+                <item.icon className={styles.icon} />
+                <h4 className={styles.title}>{item.title}</h4>
+              </div>
             ))}
           </div>
         </div>
-      {/* </div> */}
+        <div className={styles.blur}>
+          <div
+            ref={wrapperRef}
+            style={{
+              maxWidth: "1205px",
+              overflowX: "auto",
+              overflow: "hidden",
+            }}
+          >
+            <div className={styles.wrapper}>
+              {workProcessItems.map((item, index) => (
+                <ul
+                  ref={elementRefs.current[index]}
+                  key={item.id}
+                  className={`${styles.list} ${
+                    hoverItem !== index && hoverItem !== null
+                      ? styles.hovered
+                      : ""
+                  }`}
+                  style={item.styles}
+                >
+                  {item.subTitle.map((subItem, subIndex) => (
+                    <li
+                      key={subIndex}
+                      style={{
+                        display: subItem.styles.display,
+                        width: subItem.styles.width,
+                        padding: subItem.styles.padding,
+                        background: subItem.styles.background,
+                        alignSelf: subItem.styles.alignSelf,
+                      }}
+                      className={styles.subTitle}
+                    >
+                      {subItem.title}
+                    </li>
+                  ))}
+                </ul>
+              ))}
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   );
 };
