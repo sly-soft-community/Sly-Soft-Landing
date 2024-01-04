@@ -43,6 +43,7 @@ export { default as Linkedin } from "./contactUs/Linkedin.svg";
 export { default as World } from "./contactUs/World.svg";
 export { default as Be } from "./contactUs/Be.svg";
 export { default as ContactStroke } from "./contactUs/ContactStroke.svg";
+export { default as ContactStrokeMobile } from "./contactUs/ContactStrokeMobile.svg";
 export { default as ContactStrokeSecond } from "./contactUs/ContactStrokeSecond.svg";
 export { default as ContactStrokeThree } from "./contactUs/ContactStrokeThree.svg";
 export { default as ContactStrokeFourth } from "./contactUs/ContactStrokeFourth.svg";

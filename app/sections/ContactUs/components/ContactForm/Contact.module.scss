@@ -41,6 +41,10 @@
           border: none;
           color: var(--text-light);
           background-color: transparent;
+          @media (max-width:480px) {
+            width: 195px;
+            padding: 13px 0px 11px 24px;
+          }
         }
         .customInput::placeholder {
           color: var(--text-light);
@@ -48,7 +52,8 @@
           line-height: 24px;
         }
         .nameStroke {
-          width: 193px;
+          // width: 193px;
+          // height: 48px;
           color: var(--C1-E);
         }
       }
@@ -77,6 +82,10 @@
           border: none;
           color: var(--text-light);
           background-color: transparent;
+          @media (max-width:480px) {
+            width: 195px;
+            padding: 13px 0px 11px 24px;
+          }
         }
         .customInput::placeholder {
           color: var(--text-light);
@@ -84,7 +93,7 @@
           line-height: 24px;
         }
         .numberStroke {
-          width: 193px;
+          // width: 193px;
           color: var(--C1-E);
         }
       }
@@ -117,7 +126,8 @@
         color: var(--colors-white);
         background-color: transparent;
         @media (max-width:480px) {
-          width: 193px;
+          width: 195px;
+          padding: 13px 0px 11px 20px
         }
       }
       .customInput::placeholder {
@@ -128,9 +138,9 @@
       .emailStroke {
         width: 410px;
         color: var(--C1-E);
-        @media (max-width:480px) {
-          width: 193px;
-        }
+        // @media (max-width:480px) {
+        //   width: 193px;
+        // }
       }
     }
   }
