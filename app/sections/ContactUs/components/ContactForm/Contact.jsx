@@ -8,6 +8,7 @@ import { useMediaQuery } from "react-responsive";
 import {
   ContactStroke,
   ContactStrokeFourth,
+  ContactStrokeMobile,
   ContactStrokeSecond,
   ContactStrokeSmall,
   ContactStrokeThree,
@@ -48,7 +49,11 @@ const ContactForm = () => {
                 placeholder={t("placeholder-name")}
                 className={styles.customInput}
               />
-              <ContactStroke className={styles.nameStroke} />
+              {isMobileScreen ? (
+                <ContactStrokeMobile className={styles.nameStroke} />
+              ) : (
+                <ContactStroke className={styles.nameStroke} />
+              )}
             </div>
           </div>
           <div className={styles.number}>
@@ -63,7 +68,11 @@ const ContactForm = () => {
                 // onChange={handleInputChange}
                 className={styles.customInput}
               />
-              <ContactStrokeSecond className={styles.numberStroke} />
+              {isMobileScreen ? (
+                <ContactStrokeMobile className={styles.numberStroke} />
+              ) : (
+                <ContactStroke className={styles.numberStroke} />
+              )}
             </div>
           </div>
         </div>
@@ -79,7 +88,7 @@ const ContactForm = () => {
               className={styles.customInput}
             />
             {isMobileScreen ? (
-              <ContactStrokeSecond className={styles.emailStroke} />
+              <ContactStrokeMobile className={styles.emailStroke} />
             ) : (
               <ContactStrokeThree className={styles.emailStroke} />
             )}
