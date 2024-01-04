@@ -20,7 +20,7 @@ export { default as Time } from "./advantages/Time.svg";
 export { default as Key } from "./advantages/key.svg";
 export { default as ServicesBg } from "./services/ServicesBg.svg";
 export { default as ServicesBgThree } from "./services/ServicesBgThree.svg";
-export { default as ServicesBgFourth } from "./services/ServicesBgFourth.svg";
+export { default as ServicesBgFourth } from "./services/ServicesbgFourth.svg";
 export { default as GetInTouch } from "./GetInTouch.svg";
 export { default as Explore } from "./buttons/Explore.svg";
 export { default as JiraIcon } from "./ourTechnilogy/jiraIcon.svg";
