@@ -200,14 +200,17 @@
     }
   },
   "Footer": {
+    "advantages": "Advantages",
     "services": "Services",
     "projects": "Projects",
+    "work-process": "Work process",
     "workflow": "Workflow",
     "contacts": "Contacts",
     "faq": "FAQ",
     "inside": "Inside Matters",
     "privacy": "Privacy Policy",
-    "Terms": "Terms"
+    "community": "© 2024 SlySoft Community.",
+    "rights": "All rights reserved."
   },
   "OurTechnilogy": {
     "title-text": "Technology stack",
@@ -221,6 +224,5 @@
       "data-base": "Data Base Engineering",
       "dev-ops": "DevOps"
     }
-  } 
- 
+  }
 }

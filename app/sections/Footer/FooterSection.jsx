@@ -14,26 +14,36 @@ const FooterSection = ({ dictionary }) => {
     () => [
       {
         id: 1,
+        title: t("advantages"),
+        sectionId: "faq",
+      },
+      {
+        id: 2,
         title: t("services"),
         sectionId: "services",
       },
       {
-        id: 2,
+        id: 3,
         title: t("projects"),
         sectionId: "projects",
       },
       {
-        id: 3,
+        id: 4,
+        title: t("work-process"),
+        sectionId: "faq",
+      },
+      {
+        id: 5,
         title: t("workflow"),
         sectionId: "workflow",
       },
       {
-        id: 4,
+        id: 6,
         title: t("contacts"),
         sectionId: "contacts",
       },
       {
-        id: 5,
+        id: 7,
         title: t("faq"),
         sectionId: "faq",
       },
@@ -43,39 +53,51 @@ const FooterSection = ({ dictionary }) => {
   return (
     <footer className={styles.footerContainer}>
       <div className="container">
-        <ul className={styles.links}>
-          {item.map((items) => (
-            <li key={items.id} className={styles.item}>
+        <div className={styles.footerSection}>
+          <div className={styles.footerTop}>
+            <ul className={styles.links}>
+              {item.map((items) => (
+                <li key={items.id} className={styles.item}>
+                  <Link
+                    to={items.sectionId}
+                    spy={true}
+                    smooth={true}
+                    offset={-70}
+                    duration={500}
+                  >
+                    {items.title}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+            <div className={styles.policy}>
+              <span>{t("privacy")}</span>
+            </div>
+          </div>
+          <div className={styles.footerLine}></div>
+          <div className={styles.footerBot}>
+            <div className={styles.footerInsideMatters}>
               <Link
-                to={items.sectionId}
+                className={styles.logo}
+                to={"home"}
                 spy={true}
                 smooth={true}
                 offset={-70}
                 duration={500}
               >
-                {items.title}
+                <ExportedImage
+                  src={Logo}
+                  width={130}
+                  height={56}
+                  alt="SlySoft"
+                />
               </Link>
-            </li>
-          ))}
-        </ul>
-        <div className={styles.footerLine}></div>
-        <div className={styles.footerBot}>
-          <div className={styles.footerInsideMatters}>
-            <Link
-              className={styles.logo}
-              to={"home"}
-              spy={true}
-              smooth={true}
-              offset={-70}
-              duration={500}
-            >
-              <ExportedImage src={Logo} width={130} height={56} alt="SlySoft" />
-            </Link>
-            <span>{t("inside")}</span>
-          </div>
-          <div className={styles.policy}>
-            <span>{t("privacy")}</span>
-            <span>{t("Terms")}</span>
+              <span>{t("inside")}</span>
+            </div>
+            <div className={styles.rights}>
+              <span className={styles.community}>{t("community")}</span>
+              <span>{t("rights")}</span>
+            </div>
           </div>
         </div>
       </div>

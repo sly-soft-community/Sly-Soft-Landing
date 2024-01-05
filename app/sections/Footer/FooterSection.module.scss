@@ -1,26 +1,40 @@
 @import "@/styles/mixins.scss";
 
 .footerContainer {
-  margin-bottom: 85px;
-  margin-top: 140px;
+  box-shadow: 0px -10px 10px -5px rgba(237, 129, 39, 0.4),
+    0px -20px 25px -5px rgba(237, 129, 39, 0.2);
+  margin-top: 209px;
 }
+.footerSection {
+  padding: 39px 0 39px 0;
 
-.links {
-  display: inline-flex;
-  align-items: center;
-  font-weight: 700;
-  gap: 30px;
-  margin-bottom: 34px;
-  @media (max-width: 580px) {
+  .footerTop {
     display: flex;
-    align-items: center;
-    align-content: center;
-    gap: 8px 16px;
-    align-self: stretch;
-    flex-wrap: wrap;
-    margin-bottom: 23px;
+    justify-content: space-between;
+    margin-bottom: 34px;
+
+    .links {
+      display: inline-flex;
+      align-items: center;
+      font-weight: 700;
+      gap: 30px;
+      @media (max-width: 580px) {
+        display: flex;
+        align-items: center;
+        align-content: center;
+        gap: 8px 16px;
+        align-self: stretch;
+        flex-wrap: wrap;
+      }
+    }
+    .policy {
+      color: var(--primary);
+      font-size: 16px;
+      line-height: 26px;
+    }
   }
 }
+
 .item {
   color: var(--primary);
   cursor: pointer;
@@ -35,37 +49,33 @@
 }
 
 .footerBot {
-  max-width: 1040px;
+  // max-width: 1040px;
   display: flex;
+  align-items: center;
   justify-content: space-between;
   color: var(--primary);
-  @media (max-width: 580px) {
-    display: block;
-  }
+  // @media (max-width: 580px) {
+  //   display: block;
+  // }
 }
 
 .footerInsideMatters {
   display: flex;
   align-items: center;
-  gap: 62px;
-  @media (max-width: 580px) {
-    justify-content: center;
-    align-items: center;
-    gap: 16px;
-  }
+  gap: 40px;
+  // @media (max-width: 580px) {
+  //   justify-content: center;
+  //   align-items: center;
+  //   gap: 16px;
+  // }
   .logo {
     cursor: pointer;
   }
 }
-
-.policy {
+.rights {
   display: flex;
-  align-items: center;
-  gap: 72px;
-  @media (max-width: 580px) {
-    span:last-child {
-      display: none;
-    }
-    justify-content: center;
+  flex-direction: column;
+  .community {
+    margin-bottom: 20px;
   }
 }

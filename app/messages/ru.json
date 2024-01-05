@@ -200,14 +200,17 @@
     }
   },
   "Footer": {
+    "advantages": "Преимущества",
     "services": "Услуги",
     "projects": "Проекты",
+    "work-process": "Процесс работы",
     "workflow": "Этапы разработки",
     "contacts": "Контакты",
     "faq": "FAQ",
-    "inside": "Внутренние вопросы",
+    "inside": "Inside Matters",
     "privacy": "Политика конфиденциальности",
-    "Terms": "Условия"
+    "community": "© 2024 SlySoft Community.",
+    "rights": "Все права защищены."
   },
   "OurTechnilogy": {
     "title-text": "Стек технологий",
