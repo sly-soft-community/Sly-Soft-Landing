@@ -7,24 +7,28 @@ import { useEffect, useRef, useState } from "react";
 function HeaderSection() {
   let [lastScroll, setLastScroll] = useState(0);
   const headerRef = useRef(null);
+  const [isActive, setIsActive] = useState(false);
+
 
   useEffect(() => {
-    const handleScroll = () => {
-      const currentScroll = document.documentElement.scrollTop;
-      if (headerRef.current && currentScroll > lastScroll) {
-        headerRef.current.style.top = `-${headerRef.current.offsetHeight}px`;
-      } else {
-        headerRef.current.style.top = "0";
-      }
-      setLastScroll(currentScroll <= 0 ? 0 : currentScroll);
-    };
+    if (!isActive) {
+      const handleScroll = () => {
+        const currentScroll = document.documentElement.scrollTop;
+        if (headerRef.current && currentScroll > lastScroll) {
+          headerRef.current.style.top = `-${headerRef.current.offsetHeight}px`;
+        } else {
+          headerRef.current.style.top = "0";
+        }
+        setLastScroll(currentScroll <= 0 ? 0 : currentScroll);
+      };
 
-    window.addEventListener("scroll", handleScroll);
+      window.addEventListener("scroll", handleScroll);
 
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, [lastScroll]);
+      return () => {
+        window.removeEventListener("scroll", handleScroll);
+      };
+    }
+  }, [lastScroll, isActive]);
 
   useEffect(() => {
     if (headerRef.current) {
@@ -35,7 +39,7 @@ function HeaderSection() {
   return (
     <header ref={headerRef} className={styles.header}>
       <div className="container">
-        <NavBar />
+        <NavBar isActive={isActive} setIsActive={setIsActive} />
       </div>
     </header>
   );
