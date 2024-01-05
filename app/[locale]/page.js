@@ -43,7 +43,7 @@ export default function Home() {
       </div>
       {/* <ContactUsSection /> */}
       <div className="container">
-        {/* <AnswersSection /> */}
+        <AnswersSection />
       </div>
     </main>
   );

@@ -4,6 +4,12 @@
   box-shadow: 0px -10px 10px -5px rgba(237, 129, 39, 0.4),
     0px -20px 25px -5px rgba(237, 129, 39, 0.2);
   margin-top: 209px;
+  @media (max-width: 1180px) {
+    margin-top: 80px;
+  }
+  @media (max-width: 320px) {
+    margin-top: 55px;
+  }
 }
 .footerSection {
   padding: 39px 0 39px 0;
@@ -11,20 +17,36 @@
   .footerTop {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 34px;
+    margin-bottom: 35px;
+    @media (max-width: 1180px) {
+      text-align: center;
+      flex-direction: column;
+      margin-bottom: 23px;
+    }
 
     .links {
       display: inline-flex;
       align-items: center;
-      font-weight: 700;
       gap: 30px;
-      @media (max-width: 580px) {
-        display: flex;
-        align-items: center;
-        align-content: center;
+      @media (max-width: 1180px) {
+        justify-content: center;
+        margin-bottom: 24px;
+        gap: 15px;
+      }
+      @media (max-width: 675px) {
         gap: 8px 16px;
-        align-self: stretch;
         flex-wrap: wrap;
+      }
+      .item {
+        color: var(--primary);
+        font-size: 16px;
+        line-height: 26px;
+        font-weight: 700;
+        cursor: pointer;
+        @media (max-width: 845px) {
+          font-size: 14px;
+          line-height: 16px;
+        }
       }
     }
     .policy {
@@ -35,15 +57,10 @@
   }
 }
 
-.item {
-  color: var(--primary);
-  cursor: pointer;
-}
-
 .footerLine {
   border-bottom: 1px solid #bbb;
-  margin-bottom: 58px;
-  @media (max-width: 580px) {
+  margin-bottom: 35px;
+  @media (max-width: 1180px) {
     margin-bottom: 23px;
   }
 }
@@ -54,20 +71,20 @@
   align-items: center;
   justify-content: space-between;
   color: var(--primary);
-  // @media (max-width: 580px) {
-  //   display: block;
-  // }
+  @media (max-width: 530px) {
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+  }
 }
 
 .footerInsideMatters {
   display: flex;
   align-items: center;
   gap: 40px;
-  // @media (max-width: 580px) {
-  //   justify-content: center;
-  //   align-items: center;
-  //   gap: 16px;
-  // }
+  @media (max-width: 530px) {
+    margin-bottom: 16px;
+  }
   .logo {
     cursor: pointer;
   }
@@ -77,5 +94,8 @@
   flex-direction: column;
   .community {
     margin-bottom: 20px;
+    @media (max-width: 845px) {
+      margin-bottom: 10px;
+    }
   }
 }
