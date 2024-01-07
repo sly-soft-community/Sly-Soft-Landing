@@ -7,6 +7,8 @@ import { Design, Planning, Script, Support, Testing } from "@/media/img";
 import { useTranslations } from "next-intl";
 import gsap from "gsap";
 // import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { useDraggable } from "react-use-draggable-scroll";
+
 
 const WorkProcessSection = () => {
   // const [workProcessItems, setWorkProcessItems] = useState([]);
@@ -17,8 +19,7 @@ const WorkProcessSection = () => {
   const wrapperRef = useRef(null);
   const elementRefs = useRef([]);
   const workflowRef = useRef();
-  // console.log(workflowRef);
-
+  const { events } = useDraggable(wrapperRef);
   const workProcessItems = useMemo(
     () => [
       {
@@ -172,7 +173,7 @@ const WorkProcessSection = () => {
 
   const handleMouseEnter = (index) => {
     gsap.to(elementRefs.current[index].current, {
-      duration: 0.3,
+      duration: 2,
       ease: "power1.inOut",
     });
     setHoverItem(index);
@@ -233,11 +234,10 @@ const WorkProcessSection = () => {
               <div
                 key={item.id}
                 id={item.id}
-                className={`${styles.items} ${
-                  hoverItem !== index && hoverItem !== null
-                    ? styles.hovered
-                    : ""
-                }`}
+                className={`${styles.items} ${hoverItem !== index && hoverItem !== null
+                  ? styles.hovered
+                  : ""
+                  }`}
                 onMouseEnter={() => handleMouseEnter(index)}
                 onMouseLeave={() => handleMouseLeave(index)}
               >
@@ -247,25 +247,24 @@ const WorkProcessSection = () => {
             ))}
           </div>
         </div>
-        <div className={styles.blur}>
+        <div className={styles.blurBox}>
+          <div className={styles.popFilter} />
+          <div className={styles.popFilter} />
           <div
             ref={wrapperRef}
-            style={{
-              maxWidth: "1205px",
-              overflowX: "auto",
-              overflow: "hidden",
-            }}
+            {...events}
+            className={styles.globalWrapper}
           >
-            <div className={styles.wrapper}>
+            <div
+              className={styles.wrapper}>
               {workProcessItems.map((item, index) => (
                 <ul
                   ref={elementRefs.current[index]}
                   key={item.id}
-                  className={`${styles.list} ${
-                    hoverItem !== index && hoverItem !== null
-                      ? styles.hovered
-                      : ""
-                  }`}
+                  className={`${styles.list} ${hoverItem !== index && hoverItem !== null
+                    ? styles.hovered
+                    : ""
+                    }`}
                   style={item.styles}
                 >
                   {item.subTitle.map((subItem, subIndex) => (
