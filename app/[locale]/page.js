@@ -41,9 +41,9 @@ export default function Home() {
       <div className="container">
         {/* <WorkProcessSection /> */}
       </div>
-      {/* <ContactUsSection /> */}
+      <ContactUsSection />
       <div className="container">
-        <AnswersSection />
+        {/* <AnswersSection /> */}
       </div>
     </main>
   );

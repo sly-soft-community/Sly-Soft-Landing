@@ -1,7 +1,10 @@
 .wrapper {
   margin-bottom: 24px;
-  @media (max-width:480px) {
+  @media (max-width: 1025px) {
     margin-bottom: 16px;
+  }
+  @media (max-width: 425px) {
+    margin-bottom: 10px;
   }
   .group {
     display: flex;
@@ -47,9 +50,15 @@
       max-width: 380px;
       color: var(--colors-white);
       font-size: 12px;
-      line-height: 16px; 
+      line-height: 16px;
       cursor: pointer;
-      @media (max-width:480px) {
+      @media (max-width: 1025px) {
+        max-width: 260px;
+      }
+      @media (max-width: 625px) {
+        max-width: 350px;
+      }
+      @media (max-width: 425px) {
         max-width: 190px;
       }
     }

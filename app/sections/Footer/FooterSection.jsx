@@ -15,7 +15,7 @@ const FooterSection = ({ dictionary }) => {
       {
         id: 1,
         title: t("advantages"),
-        sectionId: "#",
+        sectionId: "advantages",
       },
       {
         id: 2,
@@ -30,7 +30,7 @@ const FooterSection = ({ dictionary }) => {
       {
         id: 4,
         title: t("technologies"),
-        sectionId: "#",
+        sectionId: "technilogy",
       },
       {
         id: 5,

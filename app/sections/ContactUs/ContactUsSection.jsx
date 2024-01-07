@@ -16,6 +16,8 @@ import {
   Tg,
   Vk,
   World,
+  BlurAverage,
+  BlurSmallSmall,
 } from "@/media/img";
 import { useTranslations } from "next-intl";
 import Link from "next/link";
@@ -82,7 +84,13 @@ const ContactUsSection = () => {
   );
 
   const isMobileScreen = useMediaQuery({
-    query: "(max-width: 480px)",
+    query: "(max-width: 1025px)",
+  });
+  const isSmallScreen = useMediaQuery({
+    query: "(max-width: 625px)",
+  });
+  const isExtraSmallScreen = useMediaQuery({
+    query: "(max-width: 425px)",
   });
 
   return (
@@ -96,13 +104,13 @@ const ContactUsSection = () => {
           </div>
           <div className={styles.contactInfo}>
             <div className={styles.contactTop}>
-              <div className={styles.contactNumber}>
-                <Number className={styles.number} />
-                {t("dot")}
-              </div>
               <div className={styles.contactWorld}>
                 <Dot className={styles.dot} />
                 {t("number")}
+              </div>
+              <div className={styles.contactNumber}>
+                <Number className={styles.number} />
+                {t("dot")}
               </div>
             </div>
             <div className={styles.contactBot}>
@@ -112,8 +120,13 @@ const ContactUsSection = () => {
                   <div className={styles.socialDesc}>{item.title}</div>
                   <div className={styles.socialIcon}>
                     {item.icons.map((icon) => (
-                      <Link key={icon.id} href={icon.link} target="_blank" style={{ color: 'inherit', textDecoration: 'none' }}>
-                          <icon.icon />
+                      <Link
+                        key={icon.id}
+                        href={icon.link}
+                        target="_blank"
+                        style={{ color: "inherit", textDecoration: "none" }}
+                      >
+                        <icon.icon />
                       </Link>
                     ))}
                   </div>
@@ -123,13 +136,23 @@ const ContactUsSection = () => {
           </div>
         </div>
         <div className={styles.contactBlur}>
-          <div>
-            {isMobileScreen ? (
+          <div className={styles.bgBlur}>
+            {isExtraSmallScreen ? (
+              <div>
+                <BlurSmallSmall />
+              </div>
+            ) : isSmallScreen ? (
+              <div>
+                <BlurAverage />
+              </div>
+            ) : isMobileScreen ? (
               <div>
                 <BlurSmall />
               </div>
             ) : (
-              <Blur />
+              <div>
+                <Blur />
+              </div>
             )}
           </div>
           <ContactForm />

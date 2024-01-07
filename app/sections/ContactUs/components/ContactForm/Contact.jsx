@@ -7,7 +7,11 @@ import SendSecond from "@/components/Ui/SendSecond/SendSecond";
 import { useMediaQuery } from "react-responsive";
 import {
   ContactStroke,
+  ContactStrokeAverage,
+  ContactStrokeExtraSmall,
   ContactStrokeFourth,
+  ContactStrokeFourthExtraSmall,
+  ContactStrokeFourthSmall,
   ContactStrokeMobile,
   ContactStrokeSecond,
   ContactStrokeSmall,
@@ -28,12 +32,14 @@ const ContactForm = () => {
   });
 
   const isMobileScreen = useMediaQuery({
-    query: "(max-width: 480px)",
+    query: "(max-width: 1025px)",
   });
-
-  // const handleInputChange = () => {
-  //   console.log(inputRef.current.value);
-  // };
+  const isSmallScreen = useMediaQuery({
+    query: "(max-width: 625px)",
+  });
+  const isExtraSmallScreen = useMediaQuery({
+    query: "(max-width: 425px)",
+  });
 
   return (
     <div>
@@ -49,7 +55,11 @@ const ContactForm = () => {
                 placeholder={t("placeholder-name")}
                 className={styles.customInput}
               />
-              {isMobileScreen ? (
+              {isExtraSmallScreen ? (
+                <ContactStrokeExtraSmall className={styles.nameStroke} />
+              ) : isSmallScreen ? (
+                <ContactStrokeAverage className={styles.nameStroke} />
+              ) : isMobileScreen ? (
                 <ContactStrokeMobile className={styles.nameStroke} />
               ) : (
                 <ContactStroke className={styles.nameStroke} />
@@ -68,7 +78,11 @@ const ContactForm = () => {
                 // onChange={handleInputChange}
                 className={styles.customInput}
               />
-              {isMobileScreen ? (
+              {isExtraSmallScreen ? (
+                <ContactStrokeExtraSmall className={styles.numberStroke} />
+              ) : isSmallScreen ? (
+                <ContactStrokeAverage className={styles.numberStroke} />
+              ) : isMobileScreen ? (
                 <ContactStrokeMobile className={styles.numberStroke} />
               ) : (
                 <ContactStroke className={styles.numberStroke} />
@@ -87,7 +101,11 @@ const ContactForm = () => {
               ref={emailInputRef}
               className={styles.customInput}
             />
-            {isMobileScreen ? (
+            {isExtraSmallScreen ? (
+              <ContactStrokeExtraSmall className={styles.emailStroke} />
+            ) : isSmallScreen ? (
+              <ContactStrokeAverage className={styles.emailStroke} />
+            ) : isMobileScreen ? (
               <ContactStrokeMobile className={styles.emailStroke} />
             ) : (
               <ContactStrokeThree className={styles.emailStroke} />
@@ -104,7 +122,11 @@ const ContactForm = () => {
               placeholder={t("placeholder-message")}
               className={styles.customText}
             ></textarea>
-            {isMobileScreen ? (
+            {isExtraSmallScreen ? (
+              <ContactStrokeFourthExtraSmall className={styles.emailStroke} />
+            ) : isSmallScreen ? (
+              <ContactStrokeFourthSmall className={styles.emailStroke} />
+            ) : isMobileScreen ? (
               <ContactStrokeSmall className={styles.emailStroke} />
             ) : (
               <ContactStrokeFourth className={styles.emailStroke} />
@@ -113,11 +135,13 @@ const ContactForm = () => {
         </div>
         <div className={styles.contactSend}>
           <Checkbox />
-          {isMobileScreen ? (
-            <SendSecond name={t("Send")} />
-          ) : (
-            <Send name={t("Send")} />
-          )}
+          <div>
+            {isMobileScreen ? (
+              <SendSecond name={t("Send")} />
+            ) : (
+              <Send name={t("Send")} />
+            )}
+          </div>
         </div>
       </form>
     </div>

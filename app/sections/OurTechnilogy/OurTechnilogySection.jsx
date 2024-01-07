@@ -131,7 +131,7 @@ const OurTechnilogySection = () => {
   // }, [collapseRef1])
 
   return (
-    <div className={styles.block}>
+    <div className={styles.block} id={"technilogy"}>
       <div className={styles.desctop}>
         <Stars starsCount={240} FALLING_STARS_COUNT={5}>
           <div className={styles.backgroundWrapper}>
