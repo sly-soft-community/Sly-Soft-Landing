@@ -129,8 +129,16 @@
               font-size: 18px;
             }
           }
+          .socialItems {
+            display: flex;
+            flex-wrap: wrap;
+            column-gap: 20px;
+          }
           .socialLayout {
             margin-bottom: 8px;
+            @media (min-width:625px) {
+              width: 100%;
+            }
 
             .socialDesc {
               color: var(--colors-white);

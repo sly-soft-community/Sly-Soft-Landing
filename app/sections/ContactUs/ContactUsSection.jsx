@@ -115,7 +115,8 @@ const ContactUsSection = () => {
             </div>
             <div className={styles.contactBot}>
               <h6 className={styles.socialText}>{t("social-text.title")}</h6>
-              {socialIconsItems.map((item) => (
+            <div className={styles.socialItems}>
+            {socialIconsItems.map((item) => (
                 <div key={item.id} className={styles.socialLayout}>
                   <div className={styles.socialDesc}>{item.title}</div>
                   <div className={styles.socialIcon}>
@@ -132,6 +133,7 @@ const ContactUsSection = () => {
                   </div>
                 </div>
               ))}
+            </div>
             </div>
           </div>
         </div>
