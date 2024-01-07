@@ -180,7 +180,7 @@
   @media (max-width: 1024px) {
     justify-content: flex-start;
 
-    background: black;
+    background: var(--primary-bg);
     position: fixed;
     top: 0;
     left: -100%;
