@@ -136,6 +136,23 @@
       background: linear-gradient(90deg, rgba(10, 10, 10, 0.00) 0%, #0A0A0A 100%);
       right: 0;
     }
+
+    @media (max-width: 765px) {
+      &:nth-child(1) {
+        left: 0;
+        width: 5px;
+
+        background: linear-gradient(90deg, #0A0A0A 0%, rgba(10, 10, 10, 0.00) 100%);
+
+      }
+
+      &:nth-child(2) {
+        background: linear-gradient(90deg, rgba(10, 10, 10, 0.00) 0%, #0A0A0A 100%);
+        right: 0;
+        width: 7px;
+
+      }
+    }
   }
 
   .globalWrapper::-webkit-scrollbar {
