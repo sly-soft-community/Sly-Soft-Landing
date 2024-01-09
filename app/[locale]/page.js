@@ -9,24 +9,7 @@ import OurTechnilogySection from "@/sections/OurTechnilogy/OurTechnilogySection"
 import WorkProcessSection from "@/sections/WorkProcess/WorkProcessSection";
 import ContactUsSection from "@/sections/ContactUs/ContactUsSection";
 import AnswersSection from "@/sections/AnswersOnQuestions/AnswersSection";
-//
-// export async function generateStaticParams() {
-//   return i18n.locales.map((locale) => ({ lang: locale }));
-// }
 
-// export async function generateMetadata() {
-//   return {
-//     title: "Sly Soft",
-//     description: 'It company',
-//     alternates: {
-//       languages: {
-//         "x-default": "/",
-//         ru: "/ru",
-//         en: "/en",
-//       },
-//     },
-//   };
-// }
 
 export default function Home() {
   return (

@@ -27,7 +27,7 @@ export default function RootLayout({ children, params: { locale } }) {
   const messages = useMessages()
 
   return (
-    <html lang={locale}>
+      <html lang={locale}>
       <GoogleAnalytics trackPageViews={{ ignoreHashChange: true }} />
       <body>
         <NextIntlClientProvider messages={messages}>

@@ -9,6 +9,8 @@ import SmartProImg from "@/media/img/ourWorks/SmartPro.png";
 import CampImg from "@/media/img/ourWorks/Camp.png";
 import KSTUImg from "@/media/img/ourWorks/KSTU.png";
 import SynergyImg from "@/media/img/ourWorks/Synergy.png";
+import GrandRealize from "@/media/img/ourWorks/GrandRealize.png";
+import OdonStroy from "@/media/img/ourWorks/OdonStroy.png";
 
 const OurWorksSection = () => {
   const t = useTranslations("OurWorks");
@@ -21,7 +23,8 @@ const OurWorksSection = () => {
         mobileFillIcon: ServicesBgThree,
         title: t("smart-pro.title"),
         subtitle: t("smart-pro.subtitle"),
-        tags: t("smart-pro.tags")
+        tags: t("smart-pro.tags"),
+        link: "#",
       },
       {
         id: 2,
@@ -30,6 +33,7 @@ const OurWorksSection = () => {
         title: t("camp-ala-too.title"),
         subtitle: t("camp-ala-too.subtitle"),
         tags: t("camp-ala-too.tags"),
+        link: "https://www.mk.kg/economics/2023/11/08/associaciyam-vodopolzovateley-kyrgyzstana-ne-khvataet-specialistov-deneg-i-vodomerov.html",
       },
       {
         id: 3,
@@ -38,6 +42,7 @@ const OurWorksSection = () => {
         title: t("aplicant-kstu.title"),
         subtitle: t("aplicant-kstu.subtitle"),
         tags: t("aplicant-kstu.tags"),
+        link: "#",
       },
       {
         id: 4,
@@ -46,6 +51,25 @@ const OurWorksSection = () => {
         title: t("synergy-group.title"),
         subtitle: t("synergy-group.subtitle"),
         tags: t("synergy-group.tags"),
+        link: "https://synergygroup.kg/ru/",
+      },
+      {
+        id: 5,
+        img: GrandRealize,
+        mobileFillIcon: ServicesBgThree,
+        title: t("grand-realize.title"),
+        subtitle: t("grand-realize.subtitle"),
+        tags: t("grand-realize.tags"),
+        link: "https://grand-realize.kg/ru/",
+      },
+      {
+        id: 6,
+        img: OdonStroy,
+        mobileFillIcon: ServicesBgThree,
+        title: t("odon-stroy.title"),
+        subtitle: t("odon-stroy.subtitle"),
+        tags: t("odon-stroy.tags"),
+        link: "https://odon.kg/ru/",
       },
     ],
     [t]
@@ -55,9 +79,7 @@ const OurWorksSection = () => {
       <div className={styles.ourWorksTop}>
         <h2 className={styles.text}>{t("our-works")}</h2>
         <div className={styles.checkOut}>
-          <p className={styles.checkOutDesc}>
-           {t("description")}
-          </p>
+          <p className={styles.checkOutDesc}>{t("description")}</p>
         </div>
       </div>
       <div className={styles.containerBlock}>
