@@ -1,22 +1,31 @@
 .contactForm {
   position: absolute;
-  max-width: 470px;
   top: 0;
-  padding: 48px 30px;
-  @media (max-width: 480px) {
+  max-width: 470px;
+  padding: 48px 27px;
+
+  @media (max-width: 1025px) {
+    max-width: 330px;
+    padding: 24px 20px;
+  }
+  @media (max-width: 625px) {
+    max-width: 410px;
+    padding: 16px 15px;
+  }
+  @media (max-width: 425px) {
     max-width: 250px;
     padding: 16px 15px;
   }
   .filling {
     display: flex;
     margin-bottom: 24px;
-    @media (max-width: 480px) {
+    @media (max-width: 1025px) {
       flex-direction: column;
       margin-bottom: 16px;
     }
     .firstName {
       margin-right: 24px;
-      @media (max-width:480px) {
+      @media (max-width: 1025px) {
         margin-right: 0px;
         margin-bottom: 16px;
       }
@@ -41,9 +50,15 @@
           border: none;
           color: var(--text-light);
           background-color: transparent;
-          @media (max-width:480px) {
-            width: 195px;
-            padding: 13px 0px 11px 24px;
+          @media (max-width: 1025px) {
+            width: 290px;
+            padding: 12px 20px 12px 20px;
+          }
+          @media (max-width: 625px) {
+            width: 380px;
+          }
+          @media (max-width: 425px) {
+            width: 220px;
           }
         }
         .customInput::placeholder {
@@ -66,7 +81,7 @@
         font-weight: 700;
         letter-spacing: 2px;
         text-transform: uppercase;
-        @media (max-width:480px) {
+        @media (max-width: 480px) {
           margin-left: 20px;
         }
       }
@@ -74,7 +89,7 @@
         margin-top: 8px;
         .customInput {
           position: absolute;
-          padding: 13px 24px 11px 24px;
+          padding: 13px 23px 11px 24px;
           width: 193px;
           font-size: 18px;
           line-height: 24px;
@@ -82,9 +97,9 @@
           border: none;
           color: var(--text-light);
           background-color: transparent;
-          @media (max-width:480px) {
-            width: 195px;
-            padding: 13px 0px 11px 24px;
+          @media (max-width: 1025px) {
+            width: 290px;
+            padding: 12px 20px 12px 20px;
           }
         }
         .customInput::placeholder {
@@ -101,7 +116,7 @@
   }
   .email {
     margin-bottom: 24px;
-    @media (max-width:480px) {
+    @media (max-width: 1025px) {
       margin-bottom: 16px;
     }
     .labelText {
@@ -125,9 +140,15 @@
         border: none;
         color: var(--colors-white);
         background-color: transparent;
-        @media (max-width:480px) {
-          width: 195px;
-          padding: 13px 0px 11px 20px
+        @media (max-width: 1025px) {
+          width: 290px;
+          padding: 12px 20px 12px 20px;
+        }
+        @media (max-width: 625px) {
+          width: 380px;
+        }
+        @media (max-width: 425px) {
+          width: 220px;
         }
       }
       .customInput::placeholder {
@@ -146,7 +167,7 @@
   }
   .message {
     margin-bottom: 40px;
-    @media (max-width:480px) {
+    @media (max-width: 1025px) {
       margin-bottom: 24px;
     }
     .labelText {
@@ -171,11 +192,18 @@
         font-size: 18px;
         line-height: 24px;
         overflow: hidden;
-        @media (max-width:480px) {
-          width: 187px;
-          height: 97px;
+        @media (max-width: 1025px) {
+          width: 255px;
+          height: 110px;
           margin-left: 16px;
           margin-top: 10px;
+        }
+        @media (max-width: 625px) {
+          width: 350px;
+          height: 110px;
+        }
+        @media (max-width: 425px) {
+          width: 195px;
         }
       }
       .customText::placeholder {
@@ -191,5 +219,6 @@
     justify-content: center;
     display: flex;
     flex-wrap: wrap;
+    
   }
 }

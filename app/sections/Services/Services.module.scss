@@ -4,8 +4,11 @@
 
   .servicesTitle {
     display: flex;
-    justify-content: space-between;
     margin-bottom: 40px;
+
+    @media (max-width: 1200px) {
+      justify-content: center;
+    }
 
     @media (max-width: 450px) {
       justify-content: center;
@@ -130,7 +133,7 @@
         z-index: 1;
 
         @media (max-width: 600px) {
-          padding: 20px 60px 0px 70px;
+          padding: 24px 35px 24px 20px;
         }
         @media (max-width: 460px) {
           padding: 16px 15px;
@@ -147,6 +150,7 @@
             font-size: 18px;
             line-height: 24px;
             margin-bottom: 8px;
+            max-width: 225px;
           }
         }
         .titleSub {
@@ -159,13 +163,17 @@
           margin-bottom: 64px;
           opacity: 0.8;
 
+          @media (max-width: 600px) {
+            margin-bottom: 16px;
+          }
+
           @media (max-width: 425px) {
             line-height: 18px;
           }
           @media (max-width: 350px) {
             font-size: 12px;
             line-height: 16px;
-            margin-bottom: 24px;
+            margin-bottom: 16px;
           }
         }
       }

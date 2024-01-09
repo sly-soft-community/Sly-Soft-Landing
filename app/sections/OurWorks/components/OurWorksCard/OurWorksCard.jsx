@@ -3,14 +3,21 @@ import React, { useState } from "react";
 import styles from "./OurWorksCard.module.scss";
 import AnimatedCursor from "react-animated-cursor";
 import ExportedImage from "next-image-export-optimizer";
+import Link from "next/link";
+// import { useRouter } from 'next/router'
 // import Corner from "@/components/Ui/Corner/Corner";
 
 const OurWorksCard = ({ item }) => {
   const [isVisible, setIsVisible] = useState(false);
+  // const navigate  = useRouter();
+
+  // const handleItemClick = () => {
+  //   navigate.push(item.link);
+  // };
 
   return (
     <div>
-      <div className={styles.card}>
+      <Link href={item.link} target="blank" className={styles.card}>
         <div className={styles.cardWrapper}>
           <div className={styles.cardBlur}> </div>
           <div className={styles.cardImg}>
@@ -28,7 +35,7 @@ const OurWorksCard = ({ item }) => {
             </div>
           </div>
         </div>
-      </div>
+      </Link>
     </div>
   );
 };

@@ -86,7 +86,7 @@ const Advantages = ({}) => {
   });
 
   return (
-    <div className={styles.advantages}>
+    <div className={styles.advantages} id={"advantages"}>
       <h2 className={styles.advantagesTitle}>{t("advantages")}</h2>
       <div className="container">
         <div className={styles.section}>

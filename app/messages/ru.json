@@ -106,6 +106,16 @@
       "title": "Synergy Group KR",
       "subtitle": "Целевая страница, которая рассказывает о комплексных услугах компании в области обслуживания медицинского оборудования.",
       "tags": "Design, Frontend, DevOps,"
+    },
+    "grand-realize": {
+      "title": "Grand Realize",
+      "subtitle": "Целевая страница для строительной компании с индивидуальными визуальными эффектами и брендингом.",
+      "tags": "Branding, Design, Frontend, DevOps,"
+    },
+    "odon-stroy": {
+      "title": "Odon-Stroy",
+      "subtitle": "Лендинг строительной компании, с авторским дизайном и брендингом.",
+      "tags": "Branding, Design, Frontend, DevOps,"
     }
   },
   "WorkProcess": {
@@ -200,14 +210,18 @@
     }
   },
   "Footer": {
+    "advantages": "Преимущества",
     "services": "Услуги",
     "projects": "Проекты",
+    "technologies": "Технологии",
+    "work-process": "Процесс работы",
     "workflow": "Этапы разработки",
     "contacts": "Контакты",
     "faq": "FAQ",
-    "inside": "Внутренние вопросы",
+    "inside": "Inside Matters",
     "privacy": "Политика конфиденциальности",
-    "Terms": "Условия"
+    "community": "© 2024 SlySoft Community.",
+    "rights": "Все права защищены."
   },
   "OurTechnilogy": {
     "title-text": "Стек технологий",

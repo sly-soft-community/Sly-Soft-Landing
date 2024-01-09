@@ -106,6 +106,16 @@
       "title": "Synergy Group KR",
       "subtitle": "A landing page that describes the company's comprehensive services in the field of medical equipment maintenance.",
       "tags": "Design, Frontend, DevOps,"
+    },
+    "grand-realize": {
+      "title": "Grand Realize",
+      "subtitle": "Landing of a construction company, with author's design and branding.",
+      "tags": "Branding, Design, Frontend, DevOps,"
+    },
+    "odon-stroy": {
+      "title": "Odon-Stroy",
+      "subtitle": "A landing page for a construction company, with customized visuals and branding.",
+      "tags": "Branding, Design, Frontend, DevOps,"
     }
   },
   "WorkProcess": {
@@ -200,14 +210,18 @@
     }
   },
   "Footer": {
+    "advantages": "Advantages",
     "services": "Services",
     "projects": "Projects",
+    "work-process": "Work process",
+    "technologies": "Technologies",
     "workflow": "Workflow",
     "contacts": "Contacts",
     "faq": "FAQ",
     "inside": "Inside Matters",
     "privacy": "Privacy Policy",
-    "Terms": "Terms"
+    "community": "© 2024 SlySoft Community.",
+    "rights": "All rights reserved."
   },
   "OurTechnilogy": {
     "title-text": "Technology stack",
@@ -221,6 +235,5 @@
       "data-base": "Data Base Engineering",
       "dev-ops": "DevOps"
     }
-  } 
- 
+  }
 }
